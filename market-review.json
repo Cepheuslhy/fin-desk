@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-07T21:53:49+08:00",
+  "updatedAt": "2026-08-07T21:58:06+08:00",
   "reviews": [
     {
       "date": "2026-08-07",
@@ -27,90 +27,9 @@
         "s3": [],
         "s4": ""
       },
-      "indices": [
-        {
-          "name": "上证指数",
-          "close": "3940.04",
-          "chg": "+1.02%",
-          "chgPts": "+40.19",
-          "ampl": "39.69%",
-          "amount": "12095",
-          "ma4090.166": "-",
-          "ma4090.166Dev": "-",
-          "ma4108.9400000000005": "-",
-          "ma4108.9400000000005Dev": "-",
-          "ma4140.2635": "-",
-          "ma4140.2635Dev": "-",
-          "ma4125.054666666667": "-",
-          "ma4125.054666666667Dev": "-",
-          "ma4075.7763333333332": "-",
-          "ma4075.7763333333332Dev": "-",
-          "maPills": [
-            {
-              "label": "—",
-              "cls": "p-gray"
-            },
-            {
-              "label": "—",
-              "cls": "p-gray"
-            },
-            {
-              "label": "—",
-              "cls": "p-gray"
-            },
-            {
-              "label": "—",
-              "cls": "p-gray"
-            },
-            {
-              "label": "—",
-              "cls": "p-gray"
-            }
-          ]
-        },
-        {
-          "name": "深证成指",
-          "close": "14311.01",
-          "chg": "+1.42%",
-          "chgPts": "+203.22",
-          "ampl": "200.89%",
-          "amount": "14549",
-          "ma15027.785999999998": "-",
-          "ma15027.785999999998Dev": "-",
-          "ma15129.937": "-",
-          "ma15129.937Dev": "-",
-          "ma15395.082": "-",
-          "ma15395.082Dev": "-",
-          "ma15490.098999999998": "-",
-          "ma15490.098999999998Dev": "-",
-          "ma15434.716666666667": "-",
-          "ma15434.716666666667Dev": "-",
-          "maPills": [
-            {
-              "label": "—",
-              "cls": "p-gray"
-            },
-            {
-              "label": "—",
-              "cls": "p-gray"
-            },
-            {
-              "label": "—",
-              "cls": "p-gray"
-            },
-            {
-              "label": "—",
-              "cls": "p-gray"
-            },
-            {
-              "label": "—",
-              "cls": "p-gray"
-            }
-          ]
-        }
-      ],
+      "indices": [],
       "volume": {
-        "turnover": "26644",
+        "turnover": "0",
         "ratio5": "—",
         "ratio10": "—",
         "up": 0,
@@ -130,7 +49,168 @@
           0
         ]
       },
-      "sectors": [],
+      "sectors": [
+        {
+          "rank": 1,
+          "name": "医疗研发外包",
+          "chg": "+13.03%",
+          "amount": "0",
+          "share": "—",
+          "mainNet": "+21.5",
+          "limitUp": -1222719232.0,
+          "up5": "-",
+          "upCnt": 29,
+          "downCnt": 0,
+          "leader": "—",
+          "leaderChg": "—",
+          "fundLabel": "—",
+          "fundPill": "p-gray"
+        },
+        {
+          "rank": 2,
+          "name": "印制电路板",
+          "chg": "+8.31%",
+          "amount": "0",
+          "share": "—",
+          "mainNet": "+103.9",
+          "limitUp": -6973434624.0,
+          "up5": "-",
+          "upCnt": 48,
+          "downCnt": 0,
+          "leader": "—",
+          "leaderChg": "—",
+          "fundLabel": "—",
+          "fundPill": "p-gray"
+        },
+        {
+          "rank": 3,
+          "name": "医疗服务",
+          "chg": "+8.19%",
+          "amount": "0",
+          "share": "—",
+          "mainNet": "+21.3",
+          "limitUp": -1320722944.0,
+          "up5": "-",
+          "upCnt": 51,
+          "downCnt": 1,
+          "leader": "—",
+          "leaderChg": "—",
+          "fundLabel": "—",
+          "fundPill": "p-gray"
+        },
+        {
+          "rank": 4,
+          "name": "其他生物制品",
+          "chg": "+8.09%",
+          "amount": "0",
+          "share": "—",
+          "mainNet": "+6.1",
+          "limitUp": -508096000.0,
+          "up5": "-",
+          "upCnt": 39,
+          "downCnt": 0,
+          "leader": "—",
+          "leaderChg": "—",
+          "fundLabel": "—",
+          "fundPill": "p-gray"
+        },
+        {
+          "rank": 5,
+          "name": "钴",
+          "chg": "+7.19%",
+          "amount": "0",
+          "share": "—",
+          "mainNet": "-0.2",
+          "limitUp": -105803760.0,
+          "up5": "-",
+          "upCnt": 2,
+          "downCnt": 0,
+          "leader": "—",
+          "leaderChg": "—",
+          "fundLabel": "—",
+          "fundPill": "p-gray"
+        },
+        {
+          "rank": 6,
+          "name": "稀土",
+          "chg": "+6.90%",
+          "amount": "0",
+          "share": "—",
+          "mainNet": "+14.6",
+          "limitUp": -750885536.0,
+          "up5": "-",
+          "upCnt": 4,
+          "downCnt": 0,
+          "leader": "—",
+          "leaderChg": "—",
+          "fundLabel": "—",
+          "fundPill": "p-gray"
+        },
+        {
+          "rank": 7,
+          "name": "白银",
+          "chg": "+6.84%",
+          "amount": "0",
+          "share": "—",
+          "mainNet": "+3.4",
+          "limitUp": -361547088.0,
+          "up5": "-",
+          "upCnt": 3,
+          "downCnt": 0,
+          "leader": "—",
+          "leaderChg": "—",
+          "fundLabel": "—",
+          "fundPill": "p-gray"
+        },
+        {
+          "rank": 8,
+          "name": "生物制品",
+          "chg": "+6.56%",
+          "amount": "0",
+          "share": "—",
+          "mainNet": "+7.2",
+          "limitUp": -695833088.0,
+          "up5": "-",
+          "upCnt": 57,
+          "downCnt": 1,
+          "leader": "—",
+          "leaderChg": "—",
+          "fundLabel": "—",
+          "fundPill": "p-gray"
+        },
+        {
+          "rank": 9,
+          "name": "元件",
+          "chg": "+6.41%",
+          "amount": "0",
+          "share": "—",
+          "mainNet": "+106.6",
+          "limitUp": -7360732928.0,
+          "up5": "-",
+          "upCnt": 62,
+          "downCnt": 5,
+          "leader": "—",
+          "leaderChg": "—",
+          "fundLabel": "—",
+          "fundPill": "p-gray"
+        },
+        {
+          "rank": 10,
+          "name": "镍",
+          "chg": "+6.30%",
+          "amount": "0",
+          "share": "—",
+          "mainNet": "+1.1",
+          "limitUp": -411809456.0,
+          "up5": "-",
+          "upCnt": 1,
+          "downCnt": 0,
+          "leader": "—",
+          "leaderChg": "—",
+          "fundLabel": "—",
+          "fundPill": "p-gray"
+        }
+      ],
       "centers": [],
       "tiers": [],
       "boardLadder": [],
