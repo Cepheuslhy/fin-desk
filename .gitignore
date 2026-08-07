@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.DS_Store
+_raw_input.json
+_build_raw.py
+_fetch.py
+_merge.py
+_process.py
