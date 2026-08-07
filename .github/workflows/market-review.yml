@@ -44,6 +44,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add market-review.json
+          git pull --rebase origin main
           git commit -m "📊 行情复盘 · $(TZ='Asia/Shanghai' date +'%m-%d %H:%M') · [skip ci]"
           git push
 
