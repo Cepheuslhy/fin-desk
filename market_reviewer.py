@@ -84,26 +84,25 @@ def fetch_index_spot():
 
 # ── 2. 指数历史 K 线 (算 MA) ──
 def fetch_index_kline(secid, days=70):
-    """拉取指数日K线，返回收盘价列表 (最新→最旧)"""
-    params = {
-        "secid": secid, "klt": "101", "fqt": "1",
-        "fields1": "f1,f2,f3,f4,f5,f6",
-        "fields2": "f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61",
-        "end": "20500101", "lmt": str(days + 5),
-    }
-    data = http_get("https://push2his.eastmoney.com/api/qt/stock/kline/get", params)
-    lines = data.get("data", {}).get("klines", [])
-    if not lines:
+    """拉取指数日K线（腾讯 web.ifzq.gtimg.cn），返回收盘价列表 (最新→最旧)"""
+    parts = secid.split(".")
+    prefix = "sh" if parts[0] == "1" else "sz"
+    code = prefix + parts[1]
+    data = http_get(f"http://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param={code},day,,,{days+5},qfq")
+    klines = []
+    if data and data.get("code") == 0:
+        stock = data.get("data", {}).get(code, {})
+        klines = stock.get("qfqday", stock.get("day", []))
+    if not klines:
         return [], 0
     closes = []
-    total_amt = 0
-    for line in lines:
-        parts = line.split(",")
-        if len(parts) >= 3:
-            closes.append(float(parts[2]))  # close
-        if len(parts) >= 7:
-            total_amt += float(parts[6])      # amount(元)
-    return closes, total_amt
+    for line in klines:
+        if len(line) >= 3:
+            try:
+                closes.append(float(line[2]))  # close
+            except (ValueError, TypeError):
+                pass
+    return closes, 0
 
 def calc_ma_pills(close, mas):
     """计算 MA 均线偏差，返回 pills 和偏差百分比"""
