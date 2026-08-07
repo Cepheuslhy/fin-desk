@@ -30,8 +30,18 @@ INDICES = [
 WEEKDAYS = ["星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日"]
 
 
-def http_get(url, params=None, timeout=15):
+# Rate limiter: 最小请求间隔 500ms（QPS ≤ 2，防止东财反爬 RST）
+_last_req_time = 0
+
+
+def http_get(url, params=None, timeout=15, min_interval=0.5):
     """HTTP GET 请求，返回解析后的 JSON"""
+    global _last_req_time
+    elapsed = time.time() - _last_req_time
+    if elapsed < min_interval:
+        time.sleep(min_interval - elapsed)
+    _last_req_time = time.time()
+
     if params:
         qs = "&".join(f"{k}={v}" for k, v in params.items())
         url = f"{url}?{qs}"
