@@ -4,7 +4,7 @@
 每天 15:31 收盘后自动运行，生成/更新 market-review.json。
 """
 
-import json, os, sys, time, urllib.request
+import json, os, ssl, sys, time, urllib.request
 from datetime import datetime, date, timedelta, timezone
 
 CST = timezone(timedelta(hours=8))
@@ -36,11 +36,16 @@ def http_get(url, params=None, timeout=15):
         qs = "&".join(f"{k}={v}" for k, v in params.items())
         url = f"{url}?{qs}"
     req = urllib.request.Request(url, headers={
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
         "Referer": "https://www.eastmoney.com/",
+        "Accept": "application/json, text/plain, */*",
+        "Accept-Language": "zh-CN,zh;q=0.9",
     })
+    ctx = ssl.create_default_context()
+    ctx.check_hostname = False
+    ctx.verify_mode = ssl.CERT_NONE
     try:
-        with urllib.request.urlopen(req, timeout=timeout) as resp:
+        with urllib.request.urlopen(req, timeout=timeout, context=ctx) as resp:
             return json.loads(resp.read().decode("utf-8"))
     except Exception as e:
         print(f"  HTTP GET error: {e}")
@@ -148,17 +153,27 @@ def fetch_limit_up(date_str):
     """拉取涨停板池数据"""
     params = {"Date": date_str, "PageSize": "200", "pageNo": "1"}
     data = http_get("https://push2ex.eastmoney.com/getTopicZTPool", params)
-    items = data.get("data", {}).get("data", [])
-    if not items:
-        items = []
-    return items
+    if not data:
+        return []
+    items = data.get("data")
+    if items is None:
+        return []
+    if isinstance(items, list):
+        return items
+    return items.get("data", items.get("Data", []))
 
 def fetch_blasting(date_str):
     """拉取炸板数据"""
     params = {"Date": date_str, "PageSize": "200", "pageNo": "1"}
     data = http_get("https://push2ex.eastmoney.com/getTopicZTPool", {**params, "Pool": "blasting"})
-    items = data.get("data", {}).get("data", [])
-    return len(items) if items else 0
+    if not data:
+        return 0
+    items = data.get("data")
+    if items is None:
+        return 0
+    if isinstance(items, list):
+        return len(items)
+    return len(items.get("data", items.get("Data", [])))
 
 # ── 4. 板块排名 ──
 def fetch_sector_ranking(top=10):
