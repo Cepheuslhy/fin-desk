@@ -1,0 +1,60 @@
+# ============================================
+# Security: NEVER commit credentials to git
+# ============================================
+
+# Environment variables
+.env
+*_secret*
+*_SECRET*
+
+# Broker account configs (contain sensitive data)
+*qt_client.json
+*account.json
+account.json
+*.pem
+*.key
+*.crt
+jqdata.json
+xueqiu.json
+
+# Pickle cache (may contain session tokens)
+*.pkl
+*.pickle
+session_cache*
+
+# Monitoring data
+monitoring.log
+data2/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Data
+*.db
+*.sqlite
+# qbot/gui/csv/
+
+# Jupyter
+.ipynb_checkpoints/
