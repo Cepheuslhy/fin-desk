@@ -58,3 +58,10 @@ logs/
 
 # Jupyter
 .ipynb_checkpoints/
+
+# Local raw-input / build scripts (from remote repo)
+_raw_input.json
+_build_raw.py
+_fetch.py
+_merge.py
+_process.py
