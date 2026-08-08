@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-08T01:55:24.565739",
+  "timestamp": "2026-08-08T02:03:42.130312",
   "market": {
     "index": 3940.04,
     "index_change": 0.0,
@@ -98,7 +98,7 @@
       "web_turnover": null,
       "index_diff_pct": 0.0,
       "turnover_diff_pct": null,
-      "note": "已与东方财富公开行情交叉校验一致"
+      "note": "指数已校验，但全市场成交额源未取到，维持拉取数据"
     }
   },
   "sentiment": {
