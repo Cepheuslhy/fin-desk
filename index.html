@@ -1540,7 +1540,7 @@ function renderSentimentRow(sentiment){
 }
 function renderSectorRotation(phase){
   const rot=SECTOR_ROTATION[phase]||SECTOR_ROTATION["震荡"]||SECTOR_ROTATION["分歧"];
-  let h='<h3 style="margin:20px 0 10px;font-size:15px;color:var(--cy-txt);display:flex;align-items:center;gap:8px;"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--cy-blue)"><path d="M17.5 19H9a7 7 0 116.7-4.3L21 8"/><path d="M21 3v5h-5"/></svg>行业轮动建议（基于「${esc(phase)}」阶段）</h3>';
+  let h=`<h3 style="margin:20px 0 10px;font-size:15px;color:var(--cy-txt);display:flex;align-items:center;gap:8px;"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--cy-blue)"><path d="M17.5 19H9a7 7 0 116.7-4.3L21 8"/><path d="M21 3v5h-5"/></svg>行业轮动建议（基于「${esc(phase)}」阶段）</h3>`;
   h+=`<div class="cy-sectors">`;
   if(rot.overweight&&rot.overweight.length){
     rot.overweight.forEach(s=>{h+=`<div class="cy-sec-card overweight"><div class="sec-h"><span class="sec-name">${esc(s)}</span><span class="sec-badge ow">超配</span></div><div class="sec-desc">当前阶段受益方向，建议增配</div></div>`;});
