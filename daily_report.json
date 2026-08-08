@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-08T02:15:26.444291",
+  "timestamp": "2026-08-08T02:27:25.487194",
   "market": {
     "index": 3940.04,
     "index_change": 0.0,
@@ -104,16 +104,26 @@
   },
   "sentiment": {
     "2026-08-06": {
-      "avg_sentiment": 0.431,
-      "articles": 586
+      "avg_sentiment": 0.436,
+      "articles": 552
     },
     "2026-08-07": {
-      "avg_sentiment": 0.449,
-      "articles": 1287
+      "avg_sentiment": 0.461,
+      "articles": 738
     },
     "2026-08-08": {
-      "avg_sentiment": 0.379,
-      "articles": 500
+      "avg_sentiment": 0.7,
+      "articles": 12
+    }
+  },
+  "news_stats": {
+    "raw_total": 2373,
+    "dedup_total": 1302,
+    "duplicates_removed": 1071,
+    "per_day": {
+      "2026-08-06": 552,
+      "2026-08-07": 738,
+      "2026-08-08": 12
     }
   },
   "phase": "震荡",
@@ -124,7 +134,7 @@
       "name": "绿的谐波",
       "industry": "机器人",
       "position": "超配120%",
-      "news_hits": 30,
+      "news_hits": 20,
       "price": 347.76,
       "change_pct": 3.49
     },
@@ -132,8 +142,8 @@
       "code": "sz300502",
       "name": "新易盛",
       "industry": "光模块",
-      "position": "维持85%",
-      "news_hits": 7,
+      "position": "满仓",
+      "news_hits": 4,
       "price": 420.95,
       "change_pct": -0.22
     },
@@ -141,8 +151,8 @@
       "code": "sh688981",
       "name": "中芯国际",
       "industry": "半导体",
-      "position": "加至85%",
-      "news_hits": 56,
+      "position": "满仓",
+      "news_hits": 30,
       "price": 128.5,
       "change_pct": 3.5
     },
@@ -151,7 +161,7 @@
       "name": "赣锋锂业",
       "industry": "锂矿",
       "position": "满仓",
-      "news_hits": 23,
+      "news_hits": 8,
       "price": 52.82,
       "change_pct": 1.11
     },
@@ -160,7 +170,7 @@
       "name": "锡业股份",
       "industry": "锡",
       "position": "满仓",
-      "news_hits": 1,
+      "news_hits": 0,
       "price": 40.34,
       "change_pct": 2.78
     },
@@ -177,8 +187,8 @@
       "code": "sh518880",
       "name": "黄金ETF",
       "industry": "黄金",
-      "position": "维持20%",
-      "news_hits": 3,
+      "position": "加至25%",
+      "news_hits": 1,
       "price": 8.892,
       "change_pct": 1.1
     },
@@ -186,8 +196,8 @@
       "code": "sh588000",
       "name": "科创50ETF",
       "industry": "科技",
-      "position": "加至80%",
-      "news_hits": 103,
+      "position": "满仓",
+      "news_hits": 55,
       "price": 1.84,
       "change_pct": 2.56
     }
