@@ -418,8 +418,12 @@ def validate_against_web(snapshot: Dict) -> Tuple[Dict, Dict]:
         report["web_sci50"] = kc["current"]
 
         # 成交额: 沪(上证指数) + 深(深证成指) 估算两市
-        if sz and sz["amount"] > 0:
-            two_mkt = (sh["amount"] + sz["amount"]) / 1e8  # 元→亿
+        # 深市源不可达时回退: 两市 ≈ 2× 沪市指数成交额 (沪≈深)
+        if sh and sh["amount"] > 0:
+            if sz and sz["amount"] > 0:
+                two_mkt = (sh["amount"] + sz["amount"]) / 1e8  # 元→亿
+            else:
+                two_mkt = sh["amount"] * 2 / 1e8
             report["web_turnover"] = round(two_mkt, 1)
             if two_mkt > TURNOVER_MIN:
                 snapshot["turnover"] = round(two_mkt, 1)
