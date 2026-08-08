@@ -1594,7 +1594,7 @@ function renderCyclePanel(data){
   const idxChg=m.index_change||0;const s50Chg=m.sci50_change||0;
   h+=`<div class="cy-kpi"><div class="k">上证指数</div><div class="v">${(m.index||0).toFixed(0)}</div><div class="s" style="color:${idxChg>=0?'var(--cy-red)':'var(--cy-grn)'}">${idxChg>=0?'+':''}${idxChg.toFixed(2)}%</div></div>`;
   h+=`<div class="cy-kpi"><div class="k">科创50</div><div class="v">${(m.sci50||0).toFixed(0)}</div><div class="s" style="color:${s50Chg>=0?'var(--cy-red)':'var(--cy-grn)'}">${s50Chg>=0?'+':''}${s50Chg.toFixed(2)}%</div></div>`;
-  h+=`<div class="cy-kpi"><div class="k">全市场成交额</div><div class="v">${(m.turnover||0).toFixed(0)}<span style="font-size:13px;opacity:.55"> 亿</span></div><div class="s">${m.turnover>30000?'放量':m.turnover>20000?'温和':'缩量'}</div></div>`;
+  h+=`<div class="cy-kpi"><div class="k">全市场成交额</div><div class="v">${(m.turnover||0).toFixed(0)}<span style="font-size:13px;opacity:.55"> 亿</span></div><div class="s">${m.turnover>30000?'放量':m.turnover>20000?'温和':'缩量'}${({live:' · 实时',cache:' · 最近交易日',default:' · 基准值'}[v.web_turnover_source]||'')}</div></div>`;
   h+=`<div class="cy-kpi hl"><div class="k">周期阶段</div><div class="v" style="color:var(--cy-blue);">${esc(phase)}</div><div class="s">${esc(advice)}</div></div>`;
   h+=`</div></div>`;
 

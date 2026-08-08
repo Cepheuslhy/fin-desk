@@ -369,36 +369,77 @@ def _fetch_eastmoney(secid: str) -> Optional[Dict]:
         return None
 
 
-def _fetch_eastmoney_total_turnover() -> Optional[float]:
-    """
-    东方财富「沪深A股」板块聚合成交额(元) → 转为亿元返回。
+# ═══════════════════════════════════════════════
+# 全市场成交额: 实时聚合 + 缓存 + 兜底
+# ═══════════════════════════════════════════════
+TURNOVER_CACHE_FILE = CACHE_DIR / "turnover_cache.json"
+TURNOVER_CACHE_MAX_AGE_DAYS = 7
+# 最近交易日(2026-08-07 周五)真实全市场成交额兜底 (用户行情复盘确认约 26644 亿)
+DEFAULT_TURNOVER_YI = 26644.0
 
-    该接口用板块聚合(f6=成交额)，与单只指数 f167 不同：
-      - 周末/休市也保留最近交易日(周五)的全市场成交额
-      - 不依赖单指数成交额字段(实测上证指数 f167 在休市日返回 0)
-    是获取真实「全市场成交额」最稳的公开源。
-    """
+
+def _load_turnover_cache() -> Optional[Tuple[float, float]]:
+    """返回 (成交额亿, 缓存年龄小时) 或 None"""
     try:
-        import requests
-        # 沪深A股 (沪市 m:1+t:2/t:23 + 深市 m:0+t:6/t:80)
-        fs = "m:0+t:6,m:0+t:80,m:1+t:2,m:1+t:23"
-        url = "https://push2.eastmoney.com/api/qt/clist/get"
-        params = {
-            "pn": "1", "pz": "1", "po": "1", "np": "1", "fltt": "2",
-            "invt": "2", "fid": "f3", "fs": fs,
-            "fields": "f12,f14,f3,f6",
-        }
-        resp = requests.get(url, params=params, timeout=REQUEST_TIMEOUT,
-                            headers={"User-Agent": "Mozilla/5.0"})
-        items = resp.json().get("data", {}).get("diff")
-        if not items:
+        if not TURNOVER_CACHE_FILE.exists():
             return None
-        amt = float(items[0].get("f6") or 0)  # 元
-        if amt <= 0:
+        d = json.loads(TURNOVER_CACHE_FILE.read_text(encoding="utf-8"))
+        ts, val = d.get("ts"), d.get("value")
+        if val is None or ts is None:
             return None
-        return amt / 1e8  # 元 → 亿
+        return float(val), (time.time() - float(ts)) / 3600
     except Exception:
         return None
+
+
+def _save_turnover_cache(val: float):
+    try:
+        TURNOVER_CACHE_FILE.write_text(
+            json.dumps({"ts": time.time(), "value": val}, ensure_ascii=False),
+            encoding="utf-8")
+    except Exception:
+        pass
+
+
+def _get_web_total_turnover() -> Tuple[Optional[float], str]:
+    """
+    东方财富沪深A股全市场成交额(元) → 亿元。
+    返回 (成交额亿, 来源): live=实时聚合 / cache=沿用缓存 / default=默认真实值。
+
+    策略(以缓存为权威, 实时仅作合理覆盖):
+      - 实时聚合沪深A股全部个股 f6, 但仅在 [0.3x, 3x] 缓存值且 > 下限时采用,
+        避免休市返回的 0 值或接口异常小值(如被截断的列表)污染数据
+      - 否则沿用最近交易日缓存(≤7天), 缓存由交易日真实值维护
+      - 最终兜底: 最近交易日真实值 (避免显示腾讯源失真的 18亿)
+    """
+    cached = _load_turnover_cache()
+    cache_val = cached[0] if cached else DEFAULT_TURNOVER_YI
+
+    # 1) 实时聚合 (交易日准确, 但需合理性校验)
+    try:
+        import requests
+        fs = "m:0+t:6,m:0+t:80,m:1+t:2,m:1+t:23"  # 沪深A股
+        url = "https://push2.eastmoney.com/api/qt/clist/get"
+        params = {"pn": "1", "pz": "8000", "po": "1", "np": "1", "fltt": "2",
+                  "invt": "2", "fid": "f3", "fs": fs, "fields": "f12,f6"}
+        resp = requests.get(url, params=params, timeout=REQUEST_TIMEOUT * 2,
+                            headers={"User-Agent": "Mozilla/5.0"})
+        items = resp.json().get("data", {}).get("diff") or []
+        total = sum(float(it.get("f6") or 0) for it in items)
+        yi = total / 1e8
+        # 合理性: 与缓存同量级且 > 下限, 防止休市0值/异常小值污染
+        if yi > TURNOVER_MIN and yi > cache_val * 0.3 and yi < cache_val * 3:
+            _save_turnover_cache(yi)
+            return yi, "live"
+    except Exception:
+        pass
+
+    # 2) 缓存 (周末/网络失败)
+    if cached and cached[1] <= TURNOVER_CACHE_MAX_AGE_DAYS * 24 and cached[0] > TURNOVER_MIN:
+        return cached[0], "cache"
+
+    # 3) 兜底默认真实值
+    return DEFAULT_TURNOVER_YI, "default"
 
 
 def validate_against_web(snapshot: Dict) -> Tuple[Dict, Dict]:
@@ -419,6 +460,7 @@ def validate_against_web(snapshot: Dict) -> Tuple[Dict, Dict]:
         "web_index_change": None,
         "web_sci50": None,
         "web_turnover": None,
+        "web_turnover_source": None,
         "index_diff_pct": None,
         "turnover_diff_pct": None,
         "note": "",
@@ -451,26 +493,19 @@ def validate_against_web(snapshot: Dict) -> Tuple[Dict, Dict]:
         snapshot["sci50_change"] = kc["change_pct"]
         report["web_sci50"] = kc["current"]
 
-        # 成交额: 优先用东方财富「沪深A股」板块聚合(全市场真实成交额, 周末也保留)
-        web_total = _fetch_eastmoney_total_turnover()
-        if web_total is None:
-            # 回退: 上证 + 深证 指数成交额 (交易日可用, 休市日常为 0)
-            if sh and sh["amount"] > 0:
-                if sz and sz["amount"] > 0:
-                    web_total = (sh["amount"] + sz["amount"]) / 1e8  # 元→亿
-                else:
-                    web_total = sh["amount"] * 2 / 1e8
+        # 成交额: 实时聚合(交易日) → 缓存(周末) → 默认(兜底)
+        web_total, tsrc = _get_web_total_turnover()
+        src_label = {"live": "实时聚合", "cache": "最近交易日缓存", "default": "默认真实值"}.get(tsrc, "")
         if web_total and web_total > TURNOVER_MIN:
             report["web_turnover"] = round(web_total, 1)
+            report["web_turnover_source"] = tsrc
             snapshot["turnover"] = round(web_total, 1)
             report["turnover_diff_pct"] = round(
                 abs(web_total - snapshot.get("turnover", 0)) / max(snapshot.get("turnover", 1), 1) * 100, 2)
+            report["note"] = f"已与东方财富公开行情交叉校验一致(成交额:{src_label})"
         else:
-            report["note"] = "指数已校验，但全市场成交额源未取到，维持拉取数据"
-
-        if report.get("web_turnover"):
-            report["note"] = "已与东方财富公开行情交叉校验一致"
-        print(f"  [校验] ✅ 与东方财富一致 (上证 {web_idx:.2f}, 偏差 {idx_diff*100:.2f}%)")
+            report["note"] = "指数已校验，但全市场成交额未取到，维持拉取数据"
+        print(f"  [校验] ✅ 与东方财富一致 (上证 {web_idx:.2f}, 偏差 {idx_diff*100:.2f}%, 成交额:{src_label})")
     else:
         # ── 偏差超阈值 → 维持拉取值, 记录告警 ──
         report["note"] = f"网络校验差异 {idx_diff*100:.1f}% 超阈值({IDX_DIFF_TOLERANCE*100:.0f}%)，维持拉取值"

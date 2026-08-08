@@ -63,6 +63,8 @@ jobs:
           git add news/ news-archive/ daily_report.json 2>/dev/null || true
           git add pytrader/custom_strategies/customer_skill/strategies/daily_report.md 2>/dev/null || true
           git add pytrader/custom_strategies/customer_skill/strategies/daily_report.json 2>/dev/null || true
+          # 持久化成交额缓存(周末沿用最近交易日真实值, 避免显示失真数据)
+          git add pytrader/custom_strategies/customer_skill/strategies/.market_cache/turnover_cache.json 2>/dev/null || true
 
           if git diff --staged --quiet; then
             echo "No changes to commit"
