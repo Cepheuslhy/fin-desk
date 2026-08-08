@@ -332,6 +332,111 @@ def get_turnover_billion(snapshot: Dict) -> float:
 
 
 # ═══════════════════════════════════════════════
+# 数据校验: 与东方财富公开行情交叉比对
+# ═══════════════════════════════════════════════
+# 独立公开源 (secid 格式: 市场.代码, 1=沪 0=深)
+EM_SECIDS = {
+    "sh000001": "1.000001",   # 上证指数
+    "sh000688": "1.000688",   # 科创50
+    "sz399001": "0.399001",   # 深证成指 (用于两市成交额估算)
+}
+IDX_DIFF_TOLERANCE = 0.02   # 指数偏差容忍度 2%
+TURNOVER_MIN = 1000         # 两市成交额合理下限(亿)
+
+
+def _fetch_eastmoney(secid: str) -> Optional[Dict]:
+    """
+    东方财富 push2 单标的快照 (与腾讯源完全独立)
+    字段: f43=最新价 f58=名称 f162=涨跌幅(%) f167=成交额(元)
+    """
+    try:
+        import requests
+        url = (f"https://push2.eastmoney.com/api/qt/stock/get"
+               f"?secid={secid}&fields=f43,f58,f162,f167&fltt=2")
+        resp = requests.get(url, timeout=REQUEST_TIMEOUT,
+                           headers={"User-Agent": "Mozilla/5.0"})
+        data = resp.json().get("data")
+        if not data:
+            return None
+        return {
+            "current": float(data.get("f43") or 0),
+            "change_pct": float(data.get("f162") or 0),
+            "amount": float(data.get("f167") or 0),  # 元
+        }
+    except Exception:
+        return None
+
+
+def validate_against_web(snapshot: Dict) -> Tuple[Dict, Dict]:
+    """
+    将拉取的数据与东方财富公开行情交叉校验。
+
+    规则:
+      - 网络可达且偏差 ≤ 容忍度 → 采用网络权威值, validated=True
+      - 网络不可达 (搜不到)       → 维持拉取数据, validated=False
+      - 网络可达但偏差超阈值      → 维持拉取数据, 记录差异告警
+
+    返回: (report, snapshot)  snapshot 可能被就地修正
+    """
+    report = {
+        "validated": False,
+        "web_source": "eastmoney",
+        "web_index": None,
+        "web_index_change": None,
+        "web_sci50": None,
+        "web_turnover": None,
+        "index_diff_pct": None,
+        "turnover_diff_pct": None,
+        "note": "",
+    }
+
+    sh = _fetch_eastmoney(EM_SECIDS["sh000001"])
+    kc = _fetch_eastmoney(EM_SECIDS["sh000688"])
+    sz = _fetch_eastmoney(EM_SECIDS["sz399001"])
+
+    # ── 网络不可达: 维持拉取数据 ──
+    if not sh or not kc:
+        report["note"] = "网络校验源(东方财富)不可达，维持拉取数据"
+        print(f"  [校验] ⚠️ 东方财富不可达，维持拉取数据")
+        return report, snapshot
+
+    # ── 上证指数一致性比对 ──
+    pulled_idx = snapshot.get("index", 0) or 1
+    web_idx = sh["current"]
+    idx_diff = abs(web_idx - pulled_idx) / pulled_idx
+    report["web_index"] = web_idx
+    report["web_index_change"] = sh["change_pct"]
+    report["index_diff_pct"] = round(idx_diff * 100, 2)
+
+    if idx_diff <= IDX_DIFF_TOLERANCE:
+        # ── 一致 → 采用网络权威值 ──
+        report["validated"] = True
+        snapshot["index"] = web_idx
+        snapshot["index_change"] = sh["change_pct"]
+        snapshot["sci50"] = kc["current"]
+        snapshot["sci50_change"] = kc["change_pct"]
+        report["web_sci50"] = kc["current"]
+
+        # 成交额: 沪(上证指数) + 深(深证成指) 估算两市
+        if sz and sz["amount"] > 0:
+            two_mkt = (sh["amount"] + sz["amount"]) / 1e8  # 元→亿
+            report["web_turnover"] = round(two_mkt, 1)
+            if two_mkt > TURNOVER_MIN:
+                snapshot["turnover"] = round(two_mkt, 1)
+            report["turnover_diff_pct"] = round(
+                abs(two_mkt - snapshot.get("turnover", 0)) / max(snapshot.get("turnover", 1), 1) * 100, 2)
+
+        report["note"] = "已与东方财富公开行情交叉校验一致"
+        print(f"  [校验] ✅ 与东方财富一致 (上证 {web_idx:.2f}, 偏差 {idx_diff*100:.2f}%)")
+    else:
+        # ── 偏差超阈值 → 维持拉取值, 记录告警 ──
+        report["note"] = f"网络校验差异 {idx_diff*100:.1f}% 超阈值({IDX_DIFF_TOLERANCE*100:.0f}%)，维持拉取值"
+        print(f"  [校验] ⚠️ 差异 {idx_diff*100:.1f}% 超阈值，维持拉取值")
+
+    return report, snapshot
+
+
+# ═══════════════════════════════════════════════
 # 独立测试
 # ═══════════════════════════════════════════════
 if __name__ == "__main__":

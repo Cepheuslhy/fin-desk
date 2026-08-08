@@ -1487,7 +1487,7 @@ const SECTOR_ROTATION={
 };
 const CY_SEED={
   timestamp:"2026-08-07T15:30:00",
-  market:{index:3940.04,index_change:1.02,sci50:1744.02,sci50_change:2.51,turnover:26644,source:"seed"},
+  market:{index:3940.04,index_change:1.02,sci50:1744.02,sci50_change:2.51,turnover:26644,source:"seed",validation:{validated:false,note:"本地种子数据(非实时)"}},
   sentiment:{"20260805":{avg_sentiment:0.15,articles:42},"20260806":{avg_sentiment:0.28,articles:38},"20260807":{avg_sentiment:0.42,articles:31}},
   phase:"启动/发酵",advice:"5-7成仓位，积极操作",
   actions:[
@@ -1575,7 +1575,12 @@ function renderCyclePanel(data){
   /* Hero */
   h+=`<div class="cy-hero"><div class="cy-tag">景 气 周 期 轮 动 · 规 则 引 擎</div>`;
   h+=`<h2>当前阶段：${esc(phase)}</h2>`;
+  const v=m.validation||{};
+  const vBadge = v.validated
+    ? `<span style="color:var(--cy-grn);font-weight:600;">✅ 已与东方财富校验一致</span>`
+    : `<span style="color:var(--cy-gold);font-weight:600;">⚠️ 未校验（${esc((v.note||'网络不可达').replace('网络校验源(东方财富)不可达，','网络不可达，'))}）</span>`;
   h+=`<div class="cy-hero-sub">仓位建议：<b>${esc(advice)}</b> · 数据源：${esc(m.source||'seed')} · 更新于 ${esc((data.timestamp||'').slice(0,16)||'--')}</div>`;
+  h+=`<div class="cy-hero-sub" style="margin-top:4px;">${vBadge}</div>`;
   h+=`<div class="cy-phase-indicator">`;
   CYCLE_STAGES.forEach((s,i)=>{
     const active=i===phaseIdx?' active':'';const past=i<phaseIdx?' past':'';

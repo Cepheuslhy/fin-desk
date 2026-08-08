@@ -53,11 +53,11 @@ WATCHLIST = {
 # 1. 行情获取
 # ═══════════════════════════════════════════════
 def get_market_data() -> Dict:
-    """获取行情快照 (多源回退)"""
+    """获取行情快照 (多源回退 + 网络校验)"""
     try:
-        from multi_source_data import get_market_snapshot, get_turnover_billion
+        from multi_source_data import get_market_snapshot, get_turnover_billion, validate_against_web
         snap = get_market_snapshot()
-        return {
+        market = {
             "index": snap["index"],
             "index_change": snap.get("index_change", 0),
             "sci50": snap["sci50"],
@@ -66,12 +66,17 @@ def get_market_data() -> Dict:
             "stocks": snap.get("stocks", {}),
             "source": snap.get("source", "unknown"),
         }
+        # 网络校验: 与东方财富公开行情交叉比对 (搜不到则维持拉取数据)
+        validation, market = validate_against_web(market)
+        market["validation"] = validation
+        return market
     except Exception as e:
         print(f"[行情] 获取失败: {e}")
         return {
             "index": 0, "index_change": 0, "sci50": 0,
             "sci50_change": 0, "turnover": 0, "stocks": {},
             "source": "fallback",
+            "validation": {"validated": False, "note": f"行情获取异常: {e}"},
         }
 
 
@@ -302,6 +307,14 @@ def generate_report(market: Dict, sentiment: Dict,
     lines.append(f"> 自动生成于 {today_str} | 数据源: {market['source']} | 规则引擎 v1.0")
     lines.append(f"")
     
+    # ── 数据校验状态 ──
+    v = market.get("validation", {})
+    if v.get("validated"):
+        lines.append(f"> ✅ **数据已校验**: {v.get('note', '')} (东方财富)")
+    else:
+        lines.append(f"> ⚠️ **数据未校验**: {v.get('note', '无校验信息')}")
+    lines.append(f"")
+    
     # ── 一、大盘定位 ──
     lines.append(f"## 一、大盘定位")
     lines.append(f"")
@@ -387,7 +400,9 @@ def main():
     # Step 1: 行情
     print("\n[1/4] 获取行情...")
     market = get_market_data()
-    print(f"  上证: {market['index']:.0f} | 科创50: {market['sci50']:.0f} | 成交: {market['turnover']:.0f}亿 | 源: {market['source']}")
+    v = market.get("validation", {})
+    vflag = "✅已校验" if v.get("validated") else "⚠️未校验"
+    print(f"  上证: {market['index']:.0f} | 科创50: {market['sci50']:.0f} | 成交: {market['turnover']:.0f}亿 | 源: {market['source']} | 校验: {vflag}")
     
     # Step 2: 新闻情感
     print("\n[2/4] 分析三日新闻情感...")
