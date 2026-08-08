@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-08-08T01:38:34.740608",
+  "timestamp": "2026-08-08T01:53:29.060304",
   "market": {
     "index": 3940.04,
-    "index_change": 1.02,
+    "index_change": 0.0,
     "sci50": 1744.02,
-    "sci50_change": 2.51,
+    "sci50_change": 0.0,
     "turnover": 18.9491,
     "stocks": {
       "sh688017": {
@@ -88,7 +88,18 @@
         "amount": 774023.0
       }
     },
-    "source": "tencent"
+    "source": "tencent",
+    "validation": {
+      "validated": true,
+      "web_source": "eastmoney",
+      "web_index": 3940.04,
+      "web_index_change": 0.0,
+      "web_sci50": 1744.02,
+      "web_turnover": null,
+      "index_diff_pct": 0.0,
+      "turnover_diff_pct": null,
+      "note": "已与东方财富公开行情交叉校验一致"
+    }
   },
   "sentiment": {
     "2026-08-06": {
