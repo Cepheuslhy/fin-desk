@@ -25,12 +25,19 @@ import pandas as pd
 SCRIPT_DIR = Path(__file__).parent
 sys.path.insert(0, str(SCRIPT_DIR))
 
+# 查找 repo 根目录（向上找到 .git 或 news/ 目录）
+REPO_ROOT = SCRIPT_DIR
+for _ in range(5):
+    if (REPO_ROOT / "news").exists() or (REPO_ROOT / ".git").exists():
+        break
+    REPO_ROOT = REPO_ROOT.parent
+
 # ═══════════════════════════════════════════════
 # 配置
 # ═══════════════════════════════════════════════
 OUTPUT_MD = SCRIPT_DIR / "daily_report.md"
 OUTPUT_JSON = SCRIPT_DIR / "daily_report.json"
-NEWS_BASE = SCRIPT_DIR / "新闻时事理念"
+NEWS_DIR = REPO_ROOT / "news"  # 使用 fin-desk 已有的华尔街见闻新闻抓取
 WATCHLIST = {
     "sh688017": {"name": "绿的谐波", "industry": "机器人"},
     "sz300502": {"name": "新易盛", "industry": "光模块"},
@@ -92,23 +99,24 @@ KEYWORDS_BY_SYMBOL = {
 
 
 def get_three_day_sentiment() -> Tuple[Dict, Dict[str, List[float]]]:
-    """合并最近三天新闻情感"""
+    """合并最近三天新闻情感（读取 fin-desk 已有的华尔街见闻新闻）"""
     today = datetime.now()
-    dates = [(today - timedelta(days=i)).strftime("%Y%m%d") for i in range(3)]
+    dates = [(today - timedelta(days=i)).strftime("%Y-%m-%d") for i in range(3)]
     dates.sort()
     
     daily_sent = {}
     stock_hits = {code: [] for code in WATCHLIST}
     
     for d in dates:
-        idx_file = NEWS_BASE / d / "skill_index.json"
-        if not idx_file.exists():
+        news_file = NEWS_DIR / f"{d}.json"
+        if not news_file.exists():
             daily_sent[d] = {"avg_sentiment": 0, "articles": 0}
             continue
         
         try:
-            with open(idx_file, "r", encoding="utf-8") as f:
-                skills = json.load(f).get("skills", [])
+            with open(news_file, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            items = data.get("items", [])
         except Exception:
             daily_sent[d] = {"avg_sentiment": 0, "articles": 0}
             continue
@@ -116,10 +124,11 @@ def get_three_day_sentiment() -> Tuple[Dict, Dict[str, List[float]]]:
         sent_total = 0
         sent_count = 0
         
-        for s in skills:
-            title = s.get("title", "")
-            content = s.get("content", "")[:500]
-            text = title + content
+        for item in items:
+            # 新闻内容 + 频道标签作为上下文
+            content = (item.get("c", "") or "")[:500]
+            channel = item.get("ch", "") or ""
+            text = content + channel
             
             # 情感计算
             for w, v in BULL.items():
@@ -131,16 +140,16 @@ def get_three_day_sentiment() -> Tuple[Dict, Dict[str, List[float]]]:
                     sent_total += v
                     sent_count += 1
             
-            # 标的匹配
+            # 标的匹配（需 ≥2 个关键词同时命中）
             for code, kws in KEYWORDS_BY_SYMBOL.items():
                 if sum(1 for kw in kws if kw in text) >= 2:
                     stock_hits[code].append({
-                        "date": d, "title": title[:80],
+                        "date": d, "title": content[:80],
                         "keywords": [kw for kw in kws if kw in text],
                     })
         
         avg = sent_total / max(sent_count, 1)
-        daily_sent[d] = {"avg_sentiment": round(avg, 3), "articles": len(skills)}
+        daily_sent[d] = {"avg_sentiment": round(avg, 3), "articles": len(items)}
     
     return daily_sent, stock_hits
 
