@@ -259,7 +259,9 @@ def get_market_snapshot() -> Dict:
                         if idx_code == "sh000001":
                             result["index"] = d["current"]
                             result["index_change"] = d.get("change_pct", 0)
-                            result["turnover"] = d.get("amount", 0) / 1e8  # 转亿
+                            # 腾讯上证指数 amount 字段单位/口径不可靠(实测仅~18亿)，低于合理下限不采用
+                            amt_yi = d.get("amount", 0) / 1e8  # 转亿
+                            result["turnover"] = amt_yi if amt_yi > TURNOVER_MIN else 0
                         elif idx_code == "sh000688":
                             result["sci50"] = d["current"]
                             result["sci50_change"] = d.get("change_pct", 0)
@@ -367,6 +369,38 @@ def _fetch_eastmoney(secid: str) -> Optional[Dict]:
         return None
 
 
+def _fetch_eastmoney_total_turnover() -> Optional[float]:
+    """
+    东方财富「沪深A股」板块聚合成交额(元) → 转为亿元返回。
+
+    该接口用板块聚合(f6=成交额)，与单只指数 f167 不同：
+      - 周末/休市也保留最近交易日(周五)的全市场成交额
+      - 不依赖单指数成交额字段(实测上证指数 f167 在休市日返回 0)
+    是获取真实「全市场成交额」最稳的公开源。
+    """
+    try:
+        import requests
+        # 沪深A股 (沪市 m:1+t:2/t:23 + 深市 m:0+t:6/t:80)
+        fs = "m:0+t:6,m:0+t:80,m:1+t:2,m:1+t:23"
+        url = "https://push2.eastmoney.com/api/qt/clist/get"
+        params = {
+            "pn": "1", "pz": "1", "po": "1", "np": "1", "fltt": "2",
+            "invt": "2", "fid": "f3", "fs": fs,
+            "fields": "f12,f14,f3,f6",
+        }
+        resp = requests.get(url, params=params, timeout=REQUEST_TIMEOUT,
+                            headers={"User-Agent": "Mozilla/5.0"})
+        items = resp.json().get("data", {}).get("diff")
+        if not items:
+            return None
+        amt = float(items[0].get("f6") or 0)  # 元
+        if amt <= 0:
+            return None
+        return amt / 1e8  # 元 → 亿
+    except Exception:
+        return None
+
+
 def validate_against_web(snapshot: Dict) -> Tuple[Dict, Dict]:
     """
     将拉取的数据与东方财富公开行情交叉校验。
@@ -417,20 +451,25 @@ def validate_against_web(snapshot: Dict) -> Tuple[Dict, Dict]:
         snapshot["sci50_change"] = kc["change_pct"]
         report["web_sci50"] = kc["current"]
 
-        # 成交额: 沪(上证指数) + 深(深证成指) 估算两市
-        # 深市源不可达时回退: 两市 ≈ 2× 沪市指数成交额 (沪≈深)
-        if sh and sh["amount"] > 0:
-            if sz and sz["amount"] > 0:
-                two_mkt = (sh["amount"] + sz["amount"]) / 1e8  # 元→亿
-            else:
-                two_mkt = sh["amount"] * 2 / 1e8
-            report["web_turnover"] = round(two_mkt, 1)
-            if two_mkt > TURNOVER_MIN:
-                snapshot["turnover"] = round(two_mkt, 1)
+        # 成交额: 优先用东方财富「沪深A股」板块聚合(全市场真实成交额, 周末也保留)
+        web_total = _fetch_eastmoney_total_turnover()
+        if web_total is None:
+            # 回退: 上证 + 深证 指数成交额 (交易日可用, 休市日常为 0)
+            if sh and sh["amount"] > 0:
+                if sz and sz["amount"] > 0:
+                    web_total = (sh["amount"] + sz["amount"]) / 1e8  # 元→亿
+                else:
+                    web_total = sh["amount"] * 2 / 1e8
+        if web_total and web_total > TURNOVER_MIN:
+            report["web_turnover"] = round(web_total, 1)
+            snapshot["turnover"] = round(web_total, 1)
             report["turnover_diff_pct"] = round(
-                abs(two_mkt - snapshot.get("turnover", 0)) / max(snapshot.get("turnover", 1), 1) * 100, 2)
+                abs(web_total - snapshot.get("turnover", 0)) / max(snapshot.get("turnover", 1), 1) * 100, 2)
+        else:
+            report["note"] = "指数已校验，但全市场成交额源未取到，维持拉取数据"
 
-        report["note"] = "已与东方财富公开行情交叉校验一致"
+        if report.get("web_turnover"):
+            report["note"] = "已与东方财富公开行情交叉校验一致"
         print(f"  [校验] ✅ 与东方财富一致 (上证 {web_idx:.2f}, 偏差 {idx_diff*100:.2f}%)")
     else:
         # ── 偏差超阈值 → 维持拉取值, 记录告警 ──
