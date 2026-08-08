@@ -33,14 +33,19 @@ jobs:
           cache-dependency-path: 'requirements_daily.txt'
 
       - name: 安装依赖
-        run: pip install -r requirements_daily.txt
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements_daily.txt
+          python -c "import pandas; import numpy; import requests; print('✅ 依赖就绪: pandas', pandas.__version__, 'numpy', numpy.__version__)"
 
       - name: 运行每日评估
         id: review
         run: |
           cd pytrader/custom_strategies/customer_skill/strategies
+          echo "=== 工作目录: $(pwd) ==="
+          echo "=== 已有文件 ===" && ls -la
           python _auto_daily_review.py
-        continue-on-error: true
+          echo "=== 生成文件 ===" && ls -la daily_report.* 2>/dev/null || echo "NO OUTPUT"
 
       - name: 复制日报到 Pages 根目录
         run: |
