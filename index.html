@@ -363,6 +363,79 @@
   .news-archive-card .wk{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--line);cursor:pointer;font-size:13.5px;}
   .news-archive-card .wk:hover{color:var(--primary);}
   .news-empty{padding:50px 0;text-align:center;color:var(--sub);font-size:14px;}
+  /* ===== 景气轮动策略 ===== */
+  #panel-cycle{
+    --cy-bg:#f8fafc;--cy-card:#fff;--cy-line:#e5e7eb;--cy-txt:#1f2937;--cy-sub:#6b7280;--cy-txt3:#9ca3af;
+    --cy-red:#dc2626;--cy-redbg:#fef2f2;--cy-grn:#059669;--cy-grnbg:#ecfdf5;
+    --cy-gold:#d97706;--cy-goldbg:#fffbeb;--cy-blue:#2563eb;--cy-bluebg:#eff6ff;
+    --cy-purple:#7c3aed;--cy-purplebg:#f5f3ff;
+  }
+  #panel-cycle .cy-hero{
+    background:linear-gradient(135deg,#1e293b 0%,#0f172a 40%,#1a1a2e 100%);
+    color:#e2e8f0;border-radius:14px;padding:32px 22px 28px;margin-bottom:18px;
+    position:relative;overflow:hidden;
+  }
+  #panel-cycle .cy-hero::after{content:"";position:absolute;right:-60px;top:-60px;width:240px;height:240px;background:radial-gradient(circle,rgba(59,130,246,.18),transparent 60%);}
+  #panel-cycle .cy-hero .cy-tag{display:inline-block;font-size:11px;letter-spacing:3px;color:#60a5fa;border:1px solid rgba(96,165,250,.4);padding:3px 12px;border-radius:2px;margin-bottom:14px;background:rgba(59,130,246,.08);}
+  #panel-cycle .cy-hero h2{font-size:26px;font-weight:700;margin:0 0 6px;color:#f1f5f9;letter-spacing:.5px;}
+  #panel-cycle .cy-hero .cy-hero-sub{font-size:13px;color:#94a3b8;}
+  #panel-cycle .cy-hero .cy-hero-sub b{color:#e2e8f0;}
+  #panel-cycle .cy-phase-indicator{display:flex;gap:6px;margin:18px 0 0;flex-wrap:wrap;}
+  #panel-cycle .cy-phase-dot{flex:1;min-width:60px;text-align:center;padding:10px 4px;border:1px solid rgba(148,163,184,.25);border-radius:8px;background:rgba(30,41,59,.6);font-size:11px;color:#64748b;position:relative;transition:all .2s;}
+  #panel-cycle .cy-phase-dot .ps{font-size:15px;font-weight:700;display:block;margin-bottom:2px;color:#94a3b8;}
+  #panel-cycle .cy-phase-dot.active{background:linear-gradient(160deg,rgba(59,130,246,.25),rgba(59,130,246,.06));border-color:#3b82f6;color:#93c5fd;}
+  #panel-cycle .cy-phase-dot.active .ps{color:#60a5fa;}
+  #panel-cycle .cy-phase-dot.active::after{content:"当前";position:absolute;top:-9px;left:50%;transform:translateX(-50%);background:#3b82f6;color:#fff;font-size:10px;font-weight:700;padding:1px 8px;border-radius:8px;}
+  #panel-cycle .cy-phase-dot.past{opacity:.45;}
+  /* cy kpi */
+  #panel-cycle .cy-kpi-row{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:14px;}
+  @media(min-width:600px){#panel-cycle .cy-kpi-row{grid-template-columns:repeat(4,1fr);}}
+  #panel-cycle .cy-kpi{background:var(--cy-card);border:1px solid var(--cy-line);border-radius:11px;padding:12px 14px;box-shadow:var(--shadow);}
+  #panel-cycle .cy-kpi .k{font-size:12px;color:var(--cy-sub);margin-bottom:4px;}
+  #panel-cycle .cy-kpi .v{font-size:20px;font-weight:700;color:var(--cy-txt);}
+  #panel-cycle .cy-kpi .s{font-size:11.5px;color:var(--cy-txt3);margin-top:3px;}
+  #panel-cycle .cy-kpi.hl{border-color:rgba(37,99,235,.3);background:var(--cy-bluebg);}
+  /* sector rotation */
+  #panel-cycle .cy-sectors{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;}
+  @media(min-width:700px){#panel-cycle .cy-sectors{grid-template-columns:repeat(3,1fr);}}
+  #panel-cycle .cy-sec-card{border:1px solid var(--cy-line);border-radius:11px;padding:14px;background:var(--cy-card);box-shadow:var(--shadow);transition:all .2s;}
+  #panel-cycle .cy-sec-card:hover{box-shadow:0 4px 16px rgba(0,0,0,.06);transform:translateY(-1px);}
+  #panel-cycle .cy-sec-card.overweight{border-left:4px solid var(--cy-red);}
+  #panel-cycle .cy-sec-card.neutral{border-left:4px solid var(--cy-gold);}
+  #panel-cycle .cy-sec-card.underweight{border-left:4px solid var(--cy-grn);}
+  #panel-cycle .cy-sec-card .sec-h{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;}
+  #panel-cycle .cy-sec-card .sec-name{font-weight:700;font-size:14.5px;color:var(--cy-txt);}
+  #panel-cycle .cy-sec-card .sec-badge{font-size:10.5px;padding:2px 8px;border-radius:999px;font-weight:600;letter-spacing:.3px;}
+  #panel-cycle .cy-sec-card .sec-badge.ow{background:var(--cy-redbg);color:var(--cy-red);}
+  #panel-cycle .cy-sec-card .sec-badge.nt{background:var(--cy-goldbg);color:var(--cy-gold);}
+  #panel-cycle .cy-sec-card .sec-badge.uw{background:var(--cy-grnbg);color:var(--cy-grn);}
+  #panel-cycle .cy-sec-card .sec-desc{font-size:12.5px;color:var(--cy-sub);line-height:1.55;}
+  /* watchlist table */
+  #panel-cycle .cy-table-wrap{overflow-x:auto;border:1px solid var(--cy-line);border-radius:10px;background:var(--cy-card);box-shadow:var(--shadow);}
+  #panel-cycle .cy-table-wrap table{width:100%;border-collapse:collapse;font-size:13px;}
+  #panel-cycle .cy-table-wrap th{background:#f8fafc;color:var(--cy-sub);font-weight:600;text-align:left;padding:10px 12px;border-bottom:1px solid var(--cy-line);white-space:nowrap;font-size:12px;}
+  #panel-cycle .cy-table-wrap td{padding:9px 12px;border-bottom:1px solid #f1f5f9;white-space:nowrap;color:var(--cy-txt);}
+  #panel-cycle .cy-table-wrap tbody tr:hover{background:var(--cy-bluebg);}
+  #panel-cycle .cy-table-wrap .cy-pos{font-weight:700;}
+  #panel-cycle .cy-table-wrap .cy-chg-up{color:var(--cy-red);}
+  #panel-cycle .cy-table-wrap .cy-chg-dn{color:var(--cy-grn);}
+  /* sentiment mini chart */
+  #panel-cycle .cy-sent-row{display:flex;gap:10px;align-items:stretch;flex-wrap:wrap;}
+  #panel-cycle .cy-sent-card{flex:1;min-width:100px;text-align:center;padding:14px 10px;border:1px solid var(--cy-line);border-radius:11px;background:var(--cy-card);box-shadow:var(--shadow);}
+  #panel-cycle .cy-sent-card .sent-date{font-size:11px;color:var(--cy-sub);margin-bottom:4px;}
+  #panel-cycle .cy-sent-card .sent-val{font-size:22px;font-weight:700;}
+  #panel-cycle .cy-sent-card .sent-bar{height:6px;border-radius:3px;background:#f1f5f9;margin:8px 0;overflow:hidden;}
+  #panel-cycle .cy-sent-card .sent-bar-fill{height:100%;border-radius:3px;transition:width .5s ease;}
+  #panel-cycle .cy-sent-card .sent-art{font-size:11px;color:var(--cy-sub);}
+  #panel-cycle .cy-risk-list{font-size:13px;color:var(--cy-sub);line-height:1.8;}
+  #panel-cycle .cy-risk-list li{margin-bottom:4px;}
+  #panel-cycle .cy-risk-list li b{color:var(--cy-red);}
+  #panel-cycle .cy-empty{padding:40px 0;text-align:center;color:var(--cy-sub);font-size:14px;}
+  #panel-cycle .cy-disclaimer{font-size:11.5px;color:var(--cy-txt3);background:var(--cy-bluebg);border:1px solid #bfdbfe;border-radius:8px;padding:10px 14px;margin-top:18px;line-height:1.7;}
+  #panel-cycle .cy-trend-tag{display:inline-block;padding:2px 10px;border-radius:999px;font-size:11px;font-weight:600;margin-left:6px;}
+  #panel-cycle .cy-trend-up{background:var(--cy-redbg);color:var(--cy-red);}
+  #panel-cycle .cy-trend-dn{background:var(--cy-grnbg);color:var(--cy-grn);}
+  #panel-cycle .cy-trend-v{background:var(--cy-purplebg);color:var(--cy-purple);}
 </style>
 </head>
 <body>
@@ -399,6 +472,7 @@
     <button data-tab="mq"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 12l4 4 6-8"/></svg>行情复盘</button>
     <button data-tab="ai"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a4 4 0 014 4 4 4 0 010 8 4 4 0 01-8 0 4 4 0 010-8 4 4 0 014-4z"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg>AI分析</button>
     <button data-tab="news"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10l5 5v11a2 2 0 01-2 2z"/><path d="M15 4v5h5"/><path d="M8 13h8M8 17h4"/></svg>新闻快讯</button>
+    <button data-tab="cycle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 11-3-6.7L21 8"/><path d="M21 3v5h-5"/><path d="M12 7v5l3 3"/></svg>景气轮动</button>
   </nav>
 
   <!-- 交易记录 -->
@@ -529,6 +603,15 @@
       <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 3h14v18l-7-3-7 3z"/></svg>已保存的分析结论 <span class="muted" id="aiCount"></span></h3>
       <div id="aiList"></div>
     </div>
+  </section>
+
+  <!-- 景气轮动策略 -->
+  <section class="panel" id="panel-cycle">
+    <div class="cy-head" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:12px;">
+      <div class="brand"><h1 style="font-size:16px;">景气轮动策略</h1><span class="tag">周期定位 · 行业轮动 · 仓位配置</span></div>
+      <button class="btn ghost sm" id="btnCyRefresh"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 11-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg>刷新</button>
+    </div>
+    <div id="cyContent"></div>
   </section>
 
   <!-- 新闻快讯 -->
@@ -837,6 +920,7 @@ function switchTab(name){
   if(name==="mq")renderMarket();
   if(name==="review")maybeMqDigest();
   if(name==="news")renderNews();
+  if(name==="cycle")renderCycle();
   window.scrollTo({top:0,behavior:"smooth"});
 }
 $$("nav.tabs button").forEach(b=>b.onclick=()=>switchTab(b.dataset.tab));
@@ -1382,6 +1466,167 @@ if($("#btnNewsArchive"))$("#btnNewsArchive").onclick=async()=>{
 };
 if($("#btnArchiveClose"))$("#btnArchiveClose").onclick=()=>$("#archiveModal").classList.add("hidden");
 if($("#archiveMask"))$("#archiveMask").onclick=()=>$("#archiveModal").classList.add("hidden");
+
+/* ---------- 景气轮动策略 ---------- */
+const CYCLE_STAGES=["冰点","启动","发酵","高潮","分歧","退潮"];
+const CYCLE_STAGE_DESC={
+  "冰点":"市场极端悲观，成交萎缩，恐慌情绪主导。防御为主。",
+  "启动":"信心初现，资金试探性入场，主线开始形成。",
+  "发酵":"赚钱效应扩散，板块轮动加速，增量资金进场。",
+  "高潮":"全面亢奋，龙头高度打开，但分化风险上升。",
+  "分歧":"多空博弈加剧，龙头走弱但中军尚稳，结构性机会。",
+  "退潮":"龙头断板、连板断层，亏钱效应扩散，减仓避险。"
+};
+const SECTOR_ROTATION={
+  "冰点":{overweight:["公用事业","银行","食品饮料","黄金"],neutral:["医药","建筑装饰","交通运输"],underweight:["半导体","券商","新能源"]},
+  "启动":{overweight:["半导体","AI/算力","通信设备","券商"],neutral:["电子","计算机","军工"],underweight:["公用事业","银行","黄金"]},
+  "发酵":{overweight:["券商","有色金属","化工","电子"],neutral:["新能源","汽车","机械"],underweight:["食品饮料","公用事业"]},
+  "高潮":{overweight:["小盘成长","电子化学品","PCB","主题ETF"],neutral:["券商","通信","传媒"],underweight:["食品饮料","银行"]},
+  "分歧":{overweight:["煤炭","红利","资源","封测"],neutral:["电子","半导体材料","电力"],underweight:["小盘成长","主题炒作"]},
+  "退潮":{overweight:["黄金","国债","现金等价"],neutral:["公用事业","医药"],underweight:["科技","周期","小盘"]}
+};
+const CY_SEED={
+  timestamp:new Date().toISOString(),
+  market:{index:3900,index_change:0.57,sci50:1701,sci50_change:0.45,turnover:25475,source:"seed"},
+  sentiment:{"20260805":{avg_sentiment:0.28,articles:42},"20260806":{avg_sentiment:0.22,articles:38},"20260807":{avg_sentiment:0.15,articles:31}},
+  phase:"分歧",advice:"5-6成仓位，持股但警惕分化",
+  actions:[
+    {code:"sh688017",name:"绿的谐波",industry:"机器人",position:"满仓",news_hits:3,price:128.5,change_pct:2.3},
+    {code:"sz300502",name:"新易盛",industry:"光模块",position:"减至60%",news_hits:1,price:142.8,change_pct:-0.57},
+    {code:"sh688981",name:"中芯国际",industry:"半导体",position:"维持85%",news_hits:5,price:98.6,change_pct:1.2},
+    {code:"sz002460",name:"赣锋锂业",industry:"锂矿",position:"满仓",news_hits:2,price:42.3,change_pct:0.8},
+    {code:"sz000960",name:"锡业股份",industry:"锡",position:"满仓",news_hits:1,price:18.9,change_pct:1.5},
+    {code:"sh601881",name:"中国银河",industry:"券商",position:"维持70%",news_hits:4,price:15.2,change_pct:2.1},
+    {code:"sh518880",name:"黄金ETF",industry:"黄金",position:"维持20%",news_hits:2,price:5.68,change_pct:0.3},
+    {code:"sh588000",name:"科创50ETF",industry:"科技",position:"维持80%",news_hits:3,price:1.72,change_pct:0.45}
+  ]
+};
+let CY_CACHE=null;
+function getSentTrend(sent){
+  const dates=Object.keys(sent).sort();if(dates.length<3)return {label:"数据不足",cls:""};
+  const s=dates.map(d=>sent[d].avg_sentiment||0);
+  if(s[2]>s[1]&&s[1]>s[0])return {label:"三连升 ↗",cls:"cy-trend-up"};
+  if(s[2]<s[1]&&s[1]<s[0])return {label:"三连降 ↘",cls:"cy-trend-dn"};
+  if(s[2]>s[1]&&s[1]<s[0])return {label:"V型修复",cls:"cy-trend-v"};
+  if(s[2]<s[1]&&s[1]>s[0])return {label:"倒V回落",cls:"cy-trend-v"};
+  return {label:"震荡",cls:""};
+}
+async function loadCycleData(){
+  try{const r=await fetch('./daily_report.json?_='+Date.now(),{cache:"no-store"});if(r.ok){const j=await r.json();if(j&&j.market)return j;}}catch(e){}
+  return CY_SEED;
+}
+function renderSentimentRow(sentiment){
+  const dates=Object.keys(sentiment).sort();if(!dates.length)return'<div class="cy-empty">暂无情感数据</div>';
+  const maxAbs=Math.max.apply(null,dates.map(d=>Math.abs(sentiment[d].avg_sentiment||0)).concat([0.3]));
+  const trend=getSentTrend(sentiment);
+  let h='<div style="margin-bottom:10px;display:flex;align-items:center;gap:8px;"><span style="font-weight:600;font-size:14px;color:var(--cy-txt)">三日新闻情感趋势</span>';
+  if(trend.label)h+=`<span class="cy-trend-tag ${trend.cls}">${trend.label}</span>`;
+  h+=`</div><div class="cy-sent-row">`;
+  dates.forEach(d=>{
+    const s=sentiment[d];const val=s.avg_sentiment||0;
+    const fill=val>=0?'#dc2626':'#059669';const pct=Math.min(100,Math.abs(val)/maxAbs*100);
+    const emoji=val>0.3?'🟢':val>0.1?'🟡':val>-0.1?'⚪':val>-0.3?'🟠':'🔴';
+    h+=`<div class="cy-sent-card">
+      <div class="sent-date">${esc(d.slice(4,6)+'/'+d.slice(6))}</div>
+      <div class="sent-val" style="color:${val>=0?'var(--cy-red)':'var(--cy-grn)'}">${val>=0?'+':''}${val.toFixed(3)}</div>
+      <div class="sent-bar"><div class="sent-bar-fill" style="width:${pct}%;background:${fill};"></div></div>
+      <div class="sent-art">${emoji} ${s.articles||0}篇</div>
+    </div>`;
+  });
+  h+=`</div>`;
+  return h;
+}
+function renderSectorRotation(phase){
+  const rot=SECTOR_ROTATION[phase]||SECTOR_ROTATION["震荡"]||SECTOR_ROTATION["分歧"];
+  let h='<h3 style="margin:20px 0 10px;font-size:15px;color:var(--cy-txt);display:flex;align-items:center;gap:8px;"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--cy-blue)"><path d="M17.5 19H9a7 7 0 116.7-4.3L21 8"/><path d="M21 3v5h-5"/></svg>行业轮动建议（基于「${esc(phase)}」阶段）</h3>';
+  h+=`<div class="cy-sectors">`;
+  if(rot.overweight&&rot.overweight.length){
+    rot.overweight.forEach(s=>{h+=`<div class="cy-sec-card overweight"><div class="sec-h"><span class="sec-name">${esc(s)}</span><span class="sec-badge ow">超配</span></div><div class="sec-desc">当前阶段受益方向，建议增配</div></div>`;});
+  }
+  if(rot.neutral&&rot.neutral.length){
+    rot.neutral.forEach(s=>{h+=`<div class="cy-sec-card neutral"><div class="sec-h"><span class="sec-name">${esc(s)}</span><span class="sec-badge nt">标配</span></div><div class="sec-desc">维持原有配置不变</div></div>`;});
+  }
+  if(rot.underweight&&rot.underweight.length){
+    rot.underweight.forEach(s=>{h+=`<div class="cy-sec-card underweight"><div class="sec-h"><span class="sec-name">${esc(s)}</span><span class="sec-badge uw">低配</span></div><div class="sec-desc">当前阶段风险较高，建议减配</div></div>`;});
+  }
+  h+=`</div>`;
+  return h;
+}
+function renderWatchlistTable(actions){
+  if(!actions||!actions.length)return'<div class="cy-empty">暂无观察池数据</div>';
+  let h=`<h3 style="margin:20px 0 10px;font-size:15px;color:var(--cy-txt);display:flex;align-items:center;gap:8px;"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--cy-blue)"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg>观察池仓位建议</h3>`;
+  h+=`<div class="cy-table-wrap"><table><thead><tr><th>标的</th><th>行业</th><th>仓位建议</th><th>新闻命中</th><th>最新价</th><th>涨跌幅</th></tr></thead><tbody>`;
+  actions.forEach(a=>{
+    const chg=a.change_pct||0;const chgCls=chg>0?'cy-chg-up':chg<0?'cy-chg-dn':'';
+    const posStyle=a.position.indexOf("减")>=0?'color:var(--cy-grn);':a.position.indexOf("超配")>=0?'color:var(--cy-purple);':a.position.indexOf("加")>=0?'color:var(--cy-red);':'';
+    const fire=a.news_hits>=5?'🔥':a.news_hits>=3?'⭐':'';
+    h+=`<tr><td style="font-weight:600;">${esc(a.name)} <span style="font-size:11px;color:var(--cy-sub);">${esc(a.code||'')}</span></td><td>${esc(a.industry||'')}</td><td class="cy-pos" style="${posStyle}">${esc(a.position)}</td><td>${fire} ${a.news_hits||0}</td><td>${a.price?a.price.toFixed(2):'-'}</td><td class="${chgCls}">${chg!==0?(chg>0?'+':'')+chg.toFixed(1)+'%':'-'}</td></tr>`;
+  });
+  h+=`</tbody></table></div>`;
+  return h;
+}
+function renderCyclePanel(data){
+  const m=data.market||{};const sent=data.sentiment||{};
+  const phase=data.phase||"震荡";const advice=data.advice||"灵活应对";
+  const phaseIdx=CYCLE_STAGES.indexOf(phase);
+  const trend=getSentTrend(sent);
+  let h='';
+
+  /* Hero */
+  h+=`<div class="cy-hero"><div class="cy-tag">景 气 周 期 轮 动 · 规 则 引 擎</div>`;
+  h+=`<h2>当前阶段：${esc(phase)}</h2>`;
+  h+=`<div class="cy-hero-sub">仓位建议：<b>${esc(advice)}</b> · 数据源：${esc(m.source||'seed')} · 更新于 ${esc((data.timestamp||'').slice(0,16)||'--')}</div>`;
+  h+=`<div class="cy-phase-indicator">`;
+  CYCLE_STAGES.forEach((s,i)=>{
+    const active=i===phaseIdx?' active':'';const past=i<phaseIdx?' past':'';
+    h+=`<div class="cy-phase-dot${active}${past}"><span class="ps">${i+1} ${esc(s)}</span>${esc(CYCLE_STAGE_DESC[s]||'').slice(0,16)}</div>`;
+  });
+  h+=`</div></div>`;
+
+  /* Market KPI */
+  h+=`<div class="card"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:17px;height:17px;color:var(--primary)"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg>大盘定位</h3>`;
+  h+=`<div class="cy-kpi-row">`;
+  const idxChg=m.index_change||0;const s50Chg=m.sci50_change||0;
+  h+=`<div class="cy-kpi"><div class="k">上证指数</div><div class="v">${(m.index||0).toFixed(0)}</div><div class="s" style="color:${idxChg>=0?'var(--cy-red)':'var(--cy-grn)'}">${idxChg>=0?'+':''}${idxChg.toFixed(2)}%</div></div>`;
+  h+=`<div class="cy-kpi"><div class="k">科创50</div><div class="v">${(m.sci50||0).toFixed(0)}</div><div class="s" style="color:${s50Chg>=0?'var(--cy-red)':'var(--cy-grn)'}">${s50Chg>=0?'+':''}${s50Chg.toFixed(2)}%</div></div>`;
+  h+=`<div class="cy-kpi"><div class="k">全市场成交额</div><div class="v">${(m.turnover||0).toFixed(0)}<span style="font-size:13px;opacity:.55"> 亿</span></div><div class="s">${m.turnover>30000?'放量':m.turnover>20000?'温和':'缩量'}</div></div>`;
+  h+=`<div class="cy-kpi hl"><div class="k">周期阶段</div><div class="v" style="color:var(--cy-blue);">${esc(phase)}</div><div class="s">${esc(advice)}</div></div>`;
+  h+=`</div></div>`;
+
+  /* Sentiment */
+  h+=`<div class="card">${renderSentimentRow(sent)}</div>`;
+
+  /* Sector Rotation */
+  h+=`<div class="card">${renderSectorRotation(phase)}</div>`;
+
+  /* Watchlist */
+  h+=`<div class="card">${renderWatchlistTable(data.actions)}</div>`;
+
+  /* Risk */
+  h+=`<div class="card"><h3 style="color:var(--cy-red);display:flex;align-items:center;gap:8px;"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4m0 4h.01M10.3 3.9L1.8 18a2 2 0 001.7 3h17a2 2 0 001.7-3L13.7 3.9a2 2 0 00-3.4 0z"/></svg>风险提示</h3><ul class="cy-risk-list">`;
+  if(phase==="高潮"||phase==="分歧")h+=`<li>⚠️ <b>${esc(phase)}阶段</b>——警惕分化，做好止盈准备，不追高板</li>`;
+  if(phase==="退潮"||phase==="冰点")h+=`<li>🚨 <b>${esc(phase)}阶段</b>——降低仓位，等待修复信号，不抄底</li>`;
+  if(s50Chg<-3)h+=`<li>🚨 科创50跌超3%——关注是否触发系统性风险</li>`;
+  if((m.turnover||0)<20000)h+=`<li>⚠️ 成交额偏低（<20000亿）——流动性不足，注意滑点风险</li>`;
+  if(trend.cls==="cy-trend-dn")h+=`<li>🔴 新闻情感三连降——市场信心持续走弱，降低风险敞口</li>`;
+  if(trend.cls==="cy-trend-up")h+=`<li>🟢 新闻情感三连升——情绪修复中，但注意均值回归风险</li>`;
+  h+=`<li>⚡ 本策略由规则引擎自动生成，仅供参考，不构成投资建议</li>`;
+  h+=`</ul></div>`;
+
+  /* Disclaimer */
+  h+=`<div class="cy-disclaimer"><b>免责声明：</b>景气轮动策略基于公开市场行情数据与新闻情感分析自动生成。所有周期判定、行业配置、仓位建议均为基于历史统计规律的主观分析框架输出。市场有风险，投资需谨慎。本报告不构成任何形式的投资买卖建议。</div>`;
+
+  return h;
+}
+async function renderCycle(){
+  const box=$("#cyContent");if(!box)return;
+  box.innerHTML='<div class="cy-empty">加载中…</div>';
+  CY_CACHE=await loadCycleData();
+  box.innerHTML=renderCyclePanel(CY_CACHE);
+}
+if($("#btnCyRefresh"))$("#btnCyRefresh").onclick=()=>{CY_CACHE=null;renderCycle();toast("已刷新");};
+
+/* ---------- renderAll patch: trigger cycle on tab switch ---------- */
 
 function renderAll(){
   renderToday();renderTradeStats();renderTrades();renderReviews();renderAiList();maybeBanner();

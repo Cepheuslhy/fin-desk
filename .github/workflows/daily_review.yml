@@ -43,14 +43,23 @@ jobs:
           python _auto_daily_review.py
         continue-on-error: true
 
+      - name: 复制日报到 Pages 根目录
+        run: |
+          SRC="pytrader/custom_strategies/customer_skill/strategies/daily_report.json"
+          if [ -f "$SRC" ]; then
+            cp "$SRC" ./daily_report.json
+            echo "Copied daily_report.json to repo root"
+          fi
+
       - name: 提交日报到仓库
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
-          # 添加日报文件
+          # 添加日报文件 (策略目录 + Pages 根目录)
           git add pytrader/custom_strategies/customer_skill/strategies/daily_report.md || true
           git add pytrader/custom_strategies/customer_skill/strategies/daily_report.json || true
+          git add daily_report.json || true
           
           # 检查是否有变更
           if git diff --staged --quiet; then
