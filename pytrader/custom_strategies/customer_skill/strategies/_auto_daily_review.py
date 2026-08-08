@@ -11,8 +11,10 @@
 import sys
 import os
 import io
+import re
 import json
 import time
+import hashlib
 from pathlib import Path
 from datetime import datetime, timedelta
 from typing import Dict, List, Optional, Tuple
@@ -103,8 +105,23 @@ KEYWORDS_BY_SYMBOL = {
 }
 
 
-def get_three_day_sentiment() -> Tuple[Dict, Dict[str, List[float]]]:
-    """合并最近三天新闻情感（读取 fin-desk 已有的华尔街见闻新闻）"""
+def _content_hash(text: str) -> Optional[str]:
+    """内容指纹：归一化后取 md5 前缀；过短文本不可靠返回 None"""
+    s = (text or "").lower()
+    s = re.sub(r"\s+", "", s)
+    s = re.sub(r"[^\w\u4e00-\u9fff]", "", s)
+    if len(s) < 8:
+        return None
+    return hashlib.md5(s.encode("utf-8")).hexdigest()[:16]
+
+
+def get_three_day_sentiment() -> Tuple[Dict, Dict, Dict]:
+    """
+    合并最近三天新闻情感（读取 fin-desk 已有的华尔街见闻新闻）。
+
+    去重规则：跨三日全局去重，同一条新闻（相同 id 或相同内容指纹）只计入评估一次，
+    保证「评估使用的新闻不重复」。返回 (daily_sent, stock_hits, news_stats)。
+    """
     today = datetime.now()
     dates = [(today - timedelta(days=i)).strftime("%Y-%m-%d") for i in range(3)]
     dates.sort()
@@ -112,10 +129,18 @@ def get_three_day_sentiment() -> Tuple[Dict, Dict[str, List[float]]]:
     daily_sent = {}
     stock_hits = {code: [] for code in WATCHLIST}
     
+    # 全局去重集合：跨三天只计一次
+    seen_ids: set = set()
+    seen_hashes: set = set()
+    raw_total = 0          # 三日原始新闻条数
+    dedup_total = 0        # 去重后用于评估的条数
+    per_day: Dict[str, int] = {}  # 每日去重后条数
+    
     for d in dates:
         news_file = NEWS_DIR / f"{d}.json"
         if not news_file.exists():
             daily_sent[d] = {"avg_sentiment": 0, "articles": 0}
+            per_day[d] = 0
             continue
         
         try:
@@ -124,14 +149,30 @@ def get_three_day_sentiment() -> Tuple[Dict, Dict[str, List[float]]]:
             items = data.get("items", [])
         except Exception:
             daily_sent[d] = {"avg_sentiment": 0, "articles": 0}
+            per_day[d] = 0
             continue
         
         sent_total = 0
         sent_count = 0
+        day_unique = 0
         
         for item in items:
-            # 新闻内容 + 频道标签作为上下文
+            raw_total += 1
+            iid = item.get("i") or item.get("id")
             content = (item.get("c", "") or "")[:500]
+            h = _content_hash(content)
+            
+            # ── 跨日去重：已出现过则跳过 ──
+            if (iid and iid in seen_ids) or (h and h in seen_hashes):
+                continue
+            if iid:
+                seen_ids.add(iid)
+            if h:
+                seen_hashes.add(h)
+            dedup_total += 1
+            day_unique += 1
+            
+            # 新闻内容 + 频道标签作为上下文
             channel = item.get("ch", "") or ""
             text = content + channel
             
@@ -154,9 +195,16 @@ def get_three_day_sentiment() -> Tuple[Dict, Dict[str, List[float]]]:
                     })
         
         avg = sent_total / max(sent_count, 1)
-        daily_sent[d] = {"avg_sentiment": round(avg, 3), "articles": len(items)}
+        daily_sent[d] = {"avg_sentiment": round(avg, 3), "articles": day_unique}
+        per_day[d] = day_unique
     
-    return daily_sent, stock_hits
+    news_stats = {
+        "raw_total": raw_total,
+        "dedup_total": dedup_total,
+        "duplicates_removed": raw_total - dedup_total,
+        "per_day": per_day,
+    }
+    return daily_sent, stock_hits, news_stats
 
 
 def get_sentiment_trend(daily_sent: Dict) -> str:
@@ -295,7 +343,8 @@ def generate_actions(market: Dict, sentiment: Dict,
 # ═══════════════════════════════════════════════
 def generate_report(market: Dict, sentiment: Dict,
                     stock_hits: Dict, actions: List[Dict],
-                    phase: str, advice: str) -> str:
+                    phase: str, advice: str,
+                    news_stats: Dict = None) -> str:
     """生成完整日报 Markdown"""
     dates = sorted(sentiment.keys())
     trend = get_sentiment_trend(sentiment)
@@ -332,6 +381,11 @@ def generate_report(market: Dict, sentiment: Dict,
     lines.append(f"")
     lines.append(f"**趋势**: {trend}")
     lines.append(f"")
+    if news_stats:
+        lines.append(f"> 📊 **评估使用新闻**: 去重后 **{news_stats['dedup_total']}** 条"
+                     f"（原始 {news_stats['raw_total']} 条，已去除重复 {news_stats['duplicates_removed']} 条）。"
+                     f"新闻来源与「新闻快讯」共用同一去重新闻池。")
+        lines.append(f"")
     lines.append(f"| 日期 | 情感均值 | 文章数 |")
     lines.append(f"|------|:---:|:---:|")
     for d in dates:
@@ -406,9 +460,11 @@ def main():
     
     # Step 2: 新闻情感
     print("\n[2/4] 分析三日新闻情感...")
-    sentiment, stock_hits = get_three_day_sentiment()
+    sentiment, stock_hits, news_stats = get_three_day_sentiment()
     for d, s in sorted(sentiment.items()):
         print(f"  {d}: {s['avg_sentiment']:+.3f} ({s['articles']}篇)")
+    print(f"  新闻去重: 原始 {news_stats['raw_total']} → 评估 {news_stats['dedup_total']} "
+          f"(去除 {news_stats['duplicates_removed']} 条重复)")
     
     # Step 3: 周期定位
     print("\n[3/4] 周期定位...")
@@ -422,7 +478,7 @@ def main():
         print(f"  {a['name']:<8} → {a['position']}")
     
     # Step 5: 输出报告
-    report = generate_report(market, sentiment, stock_hits, actions, phase, advice)
+    report = generate_report(market, sentiment, stock_hits, actions, phase, advice, news_stats)
     
     # 写入文件
     OUTPUT_MD.write_text(report, encoding="utf-8")
@@ -433,6 +489,7 @@ def main():
         "timestamp": datetime.now().isoformat(),
         "market": market,
         "sentiment": {d: s for d, s in sorted(sentiment.items())},
+        "news_stats": news_stats,
         "phase": phase, "advice": advice,
         "actions": actions,
     }

@@ -7,10 +7,13 @@
 
 import json
 import os
+import re
 import ssl
 import sys
+import hashlib
 import urllib.request
 from datetime import date, datetime, timedelta, timezone
+from typing import Optional
 
 # ── 配置 ──────────────────────────────────────────────
 TZ = timezone(timedelta(hours=8))
@@ -85,6 +88,51 @@ def fetch_channel(channel: str) -> list[dict]:
     except Exception as e:
         print(f"  {channel}: ERROR — {e}")
         return []
+
+def norm_text(s: str) -> str:
+    """归一化文本：去空白、去标点，仅保留字母数字与中文，用于内容去重"""
+    s = (s or "").lower()
+    s = re.sub(r"\s+", "", s)
+    s = re.sub(r"[^\w\u4e00-\u9fff]", "", s)
+    return s
+
+def content_hash(s: str) -> Optional[str]:
+    """内容指纹：过短文本不可靠，返回 None；否则返回 md5 前缀"""
+    n = norm_text(s)
+    if len(n) < 8:
+        return None
+    return hashlib.md5(n.encode("utf-8")).hexdigest()[:16]
+
+def load_recent_ids_exclude_today(date_str: str, days: int = 2) -> tuple[set, set]:
+    """
+    加载今天之前最近 days 天的所有新闻 id + 内容哈希。
+    用于跨日去重：若某条新闻已在前几天出现过，则今日不再重复存储。
+    返回 (id_set, hash_set)。
+    """
+    ids: set = set()
+    hashes: set = set()
+    try:
+        base = date.fromisoformat(date_str)
+    except ValueError:
+        return ids, hashes
+    for delta in range(1, days + 1):
+        d = (base - timedelta(days=delta)).isoformat()
+        fp = os.path.join(NEWS_DIR, f"{d}.json")
+        if not os.path.exists(fp):
+            continue
+        try:
+            with open(fp, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            for it in data.get("items", []):
+                iid = it.get("i") or it.get("id")
+                if iid:
+                    ids.add(iid)
+                h = content_hash(it.get("c", ""))
+                if h:
+                    hashes.add(h)
+        except Exception:
+            continue
+    return ids, hashes
 
 def scrape_all() -> list[dict]:
     """并行抓取全部 9 个频道，合并去重"""
@@ -295,8 +343,22 @@ def main():
 
     # 加载已有数据，计算新增
     existing_ids, existing_items = load_existing(date_str)
-    new_items = [item for item in conv_items if item["i"] not in existing_ids]
-    print(f"\n[2] 合并: 存量 {len(existing_ids)} + 新增 {len(new_items)}")
+    # 跨日去重：排除前 2 天已存在的新闻（id 或内容哈希），保证 news/ 无重复
+    recent_ids, recent_hashes = load_recent_ids_exclude_today(date_str, days=2)
+    dup_cross_day = 0
+    def _is_duplicate(item: dict) -> bool:
+        nonlocal dup_cross_day
+        if item["i"] in existing_ids or item["i"] in recent_ids:
+            dup_cross_day += 1
+            return True
+        h = content_hash(item.get("c", ""))
+        if h and h in recent_hashes:
+            dup_cross_day += 1
+            return True
+        return False
+    new_items = [item for item in conv_items if not _is_duplicate(item)]
+    print(f"\n[2] 合并: 存量 {len(existing_ids)} + 新增 {len(new_items)}"
+          f" | 跨日去重 {dup_cross_day} 条")
 
     # 合并（新条目在前）
     all_items = new_items + existing_items

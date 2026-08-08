@@ -1435,6 +1435,8 @@ async function renderNews(){
   $$("#newsFilter .news-chip").forEach(c=>c.onclick=()=>{NEWS_CUR_DATE=c.dataset.d;$("#newsSearch").value='';renderNews();});
   const d=await loadNewsDay(NEWS_CUR_DATE);const kw=($("#newsSearch").value||'').trim().toLowerCase();
   let items=d.items||[];if(kw)items=items.filter(x=>x.c.toLowerCase().includes(kw));
+  // 防御性去重：同一条新闻（id/链接/内容）当日仅展示一次
+  const seenNews=new Set();items=items.filter(x=>{const k=x.i||x.u||(x.c||'');if(seenNews.has(k))return false;seenNews.add(k);return true;});
   $("#newsStats").textContent=`${esc(d.date)} · ${items.length} 条${kw?' （筛选"'+esc(kw)+'"）':''}`;
   if(!items.length){box.innerHTML='<div class="news-empty">暂无新闻。</div>';return;}
   box.innerHTML=items.map(x=>{
@@ -1581,6 +1583,11 @@ function renderCyclePanel(data){
     : `<span style="color:var(--cy-gold);font-weight:600;">⚠️ 未校验（${esc((v.note||'网络不可达').replace('网络校验源(东方财富)不可达，','网络不可达，'))}）</span>`;
   h+=`<div class="cy-hero-sub">仓位建议：<b>${esc(advice)}</b> · 数据源：${esc(m.source||'seed')} · 更新于 ${esc((data.timestamp||'').slice(0,16)||'--')}</div>`;
   h+=`<div class="cy-hero-sub" style="margin-top:4px;">${vBadge}</div>`;
+  // 新闻去重统计：评估使用的新闻已跨三日全局去重，且与「新闻快讯」共用同一新闻池
+  const ns=data.news_stats||{};
+  if(ns.dedup_total){
+    h+=`<div class="cy-hero-sub" style="margin-top:4px;">📰 评估使用去重后 <b>${ns.dedup_total}</b> 条新闻（原始 ${ns.raw_total} 条，去除重复 ${ns.duplicates_removed} 条）· 与「新闻快讯」共用同一按日期去重新闻池</div>`;
+  }
   h+=`<div class="cy-phase-indicator">`;
   CYCLE_STAGES.forEach((s,i)=>{
     const active=i===phaseIdx?' active':'';const past=i<phaseIdx?' past':'';
