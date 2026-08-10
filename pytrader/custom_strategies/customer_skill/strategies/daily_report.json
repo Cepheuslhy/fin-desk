@@ -1,103 +1,103 @@
 {
-  "timestamp": "2026-08-10T06:01:08.011141",
+  "timestamp": "2026-08-10T10:48:18.427864",
   "market": {
-    "index": 3946.25,
+    "index": 3966.59,
     "index_change": 0.0,
-    "sci50": 1707.58,
+    "sci50": 1737.77,
     "sci50_change": 0.0,
     "turnover": 26000.0,
     "stocks": {
       "sh688017": {
         "name": "绿的谐波",
-        "current": 331.68,
-        "change_pct": -4.62,
+        "current": 333.89,
+        "change_pct": -3.99,
         "open": 350.0,
         "high": 351.0,
         "low": 330.9,
-        "volume": 7794253.0,
-        "amount": 262513.0
+        "volume": 9390677.0,
+        "amount": 315836.0
       },
       "sz300502": {
         "name": "新易盛",
-        "current": 391.09,
-        "change_pct": -7.09,
+        "current": 399.6,
+        "change_pct": -5.07,
         "open": 420.06,
         "high": 424.24,
         "low": 388.28,
-        "volume": 581522.0,
-        "amount": 2324259.0
+        "volume": 668240.0,
+        "amount": 2669071.0
       },
       "sh688981": {
         "name": "中芯国际",
-        "current": 124.9,
-        "change_pct": -2.8,
+        "current": 126.25,
+        "change_pct": -1.75,
         "open": 128.49,
         "high": 128.66,
         "low": 124.11,
-        "volume": 35665600.0,
-        "amount": 448075.0
+        "volume": 42765367.0,
+        "amount": 537458.0
       },
       "sz002460": {
         "name": "赣锋锂业",
-        "current": 53.69,
-        "change_pct": 1.65,
+        "current": 54.13,
+        "change_pct": 2.48,
         "open": 53.5,
         "high": 55.18,
         "low": 53.13,
-        "volume": 470528.0,
-        "amount": 255220.0
+        "volume": 545744.0,
+        "amount": 295878.0
       },
       "sz000960": {
         "name": "锡业股份",
-        "current": 40.29,
-        "change_pct": -0.12,
+        "current": 40.5,
+        "change_pct": 0.4,
         "open": 40.3,
         "high": 40.95,
         "low": 39.56,
-        "volume": 550467.0,
-        "amount": 220697.0
+        "volume": 675729.0,
+        "amount": 271418.0
       },
       "sh601881": {
         "name": "中国银河",
-        "current": 12.42,
-        "change_pct": 0.08,
+        "current": 12.41,
+        "change_pct": 0.0,
         "open": 12.41,
         "high": 12.47,
         "low": 12.4,
-        "volume": 154294.0,
-        "amount": 19175.0
+        "volume": 209119.0,
+        "amount": 25976.0
       },
       "sh518880": {
         "name": "黄金ETF华安",
-        "current": 8.978,
-        "change_pct": 0.97,
+        "current": 9.005,
+        "change_pct": 1.27,
         "open": 8.94,
-        "high": 8.996,
+        "high": 9.005,
         "low": 8.908,
-        "volume": 4812558.0,
-        "amount": 430389.0
+        "volume": 6699550.0,
+        "amount": 599979.0
       },
       "sh588000": {
         "name": "科创50ETF华夏",
-        "current": 1.802,
-        "change_pct": -2.07,
+        "current": 1.835,
+        "change_pct": -0.27,
         "open": 1.84,
         "high": 1.851,
         "low": 1.799,
-        "volume": 28544239.0,
-        "amount": 519358.0
+        "volume": 34364399.0,
+        "amount": 625506.0
       }
     },
     "source": "tencent",
     "validation": {
       "validated": true,
       "web_source": "eastmoney",
-      "web_index": 3946.25,
+      "web_index": 3966.59,
       "web_index_change": 0.0,
-      "web_sci50": 1707.58,
+      "web_sci50": 1737.77,
       "web_turnover": 26000.0,
       "web_turnover_source": "cache",
-      "index_diff_pct": 0.02,
+      "index_diff_pct": 0.0,
       "turnover_diff_pct": 0.0,
       "note": "已与东方财富公开行情交叉校验一致(成交额:最近交易日缓存)"
     }
@@ -112,18 +112,18 @@
       "articles": 78
     },
     "2026-08-10": {
-      "avg_sentiment": 0.619,
-      "articles": 155
+      "avg_sentiment": 0.528,
+      "articles": 285
     }
   },
   "news_stats": {
-    "raw_total": 824,
-    "dedup_total": 798,
-    "duplicates_removed": 26,
+    "raw_total": 957,
+    "dedup_total": 928,
+    "duplicates_removed": 29,
     "per_day": {
       "2026-08-08": 565,
       "2026-08-09": 78,
-      "2026-08-10": 155
+      "2026-08-10": 285
     }
   },
   "phase": "震荡",
@@ -134,9 +134,9 @@
       "name": "绿的谐波",
       "industry": "机器人",
       "position": "超配120%",
-      "news_hits": 12,
-      "price": 331.68,
-      "change_pct": -4.62
+      "news_hits": 13,
+      "price": 333.89,
+      "change_pct": -3.99
     },
     {
       "code": "sz300502",
@@ -144,8 +144,8 @@
       "industry": "光模块",
       "position": "维持85%",
       "news_hits": 3,
-      "price": 391.09,
-      "change_pct": -7.09
+      "price": 399.6,
+      "change_pct": -5.07
     },
     {
       "code": "sh688981",
@@ -153,8 +153,8 @@
       "industry": "半导体",
       "position": "加至85%",
       "news_hits": 12,
-      "price": 124.9,
-      "change_pct": -2.8
+      "price": 126.25,
+      "change_pct": -1.75
     },
     {
       "code": "sz002460",
@@ -162,8 +162,8 @@
       "industry": "锂矿",
       "position": "满仓",
       "news_hits": 11,
-      "price": 53.69,
-      "change_pct": 1.65
+      "price": 54.13,
+      "change_pct": 2.48
     },
     {
       "code": "sz000960",
@@ -171,8 +171,8 @@
       "industry": "锡",
       "position": "满仓",
       "news_hits": 1,
-      "price": 40.29,
-      "change_pct": -0.12
+      "price": 40.5,
+      "change_pct": 0.4
     },
     {
       "code": "sh601881",
@@ -180,8 +180,8 @@
       "industry": "券商",
       "position": "维持70%",
       "news_hits": 0,
-      "price": 12.42,
-      "change_pct": 0.08
+      "price": 12.41,
+      "change_pct": 0.0
     },
     {
       "code": "sh518880",
@@ -189,17 +189,17 @@
       "industry": "黄金",
       "position": "维持20%",
       "news_hits": 1,
-      "price": 8.978,
-      "change_pct": 0.97
+      "price": 9.005,
+      "change_pct": 1.27
     },
     {
       "code": "sh588000",
       "name": "科创50ETF",
       "industry": "科技",
       "position": "加至80%",
-      "news_hits": 30,
-      "price": 1.802,
-      "change_pct": -2.07
+      "news_hits": 31,
+      "price": 1.835,
+      "change_pct": -0.27
     }
   ]
 }
