@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-11T10:30:08.403265",
+  "timestamp": "2026-08-11T11:33:22.907284",
   "market": {
     "index": 3934.09,
     "index_change": 0.0,
@@ -112,18 +112,18 @@
       "articles": 459
     },
     "2026-08-11": {
-      "avg_sentiment": 0.426,
-      "articles": 363
+      "avg_sentiment": 0.444,
+      "articles": 447
     }
   },
   "news_stats": {
-    "raw_total": 944,
-    "dedup_total": 900,
-    "duplicates_removed": 44,
+    "raw_total": 1037,
+    "dedup_total": 984,
+    "duplicates_removed": 53,
     "per_day": {
       "2026-08-09": 78,
       "2026-08-10": 459,
-      "2026-08-11": 363
+      "2026-08-11": 447
     }
   },
   "phase": "震荡",
@@ -134,7 +134,7 @@
       "name": "绿的谐波",
       "industry": "机器人",
       "position": "超配120%",
-      "news_hits": 6,
+      "news_hits": 7,
       "price": 365.0,
       "change_pct": 9.32
     },
@@ -143,7 +143,7 @@
       "name": "新易盛",
       "industry": "光模块",
       "position": "维持85%",
-      "news_hits": 3,
+      "news_hits": 5,
       "price": 415.3,
       "change_pct": 3.93
     },
@@ -152,7 +152,7 @@
       "name": "中芯国际",
       "industry": "半导体",
       "position": "加至85%",
-      "news_hits": 14,
+      "news_hits": 16,
       "price": 125.41,
       "change_pct": -0.67
     },
@@ -197,7 +197,7 @@
       "name": "科创50ETF",
       "industry": "科技",
       "position": "加至80%",
-      "news_hits": 34,
+      "news_hits": 38,
       "price": 1.806,
       "change_pct": -1.58
     }
