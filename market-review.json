@@ -1,6 +1,675 @@
 {
-  "updatedAt": "2026-08-12T18:45:29+08:00",
+  "updatedAt": "2026-08-13T18:47:58+08:00",
   "reviews": [
+    {
+      "date": "2026-08-13",
+      "weekday": "星期四",
+      "isTradingDay": true,
+      "conclusion": "<b>08/13 收盘：</b>数据已自动生成（基础版）。AI 深度分析待接入。",
+      "digest": "8/13 收盘：涨停 0 家，封板率 0%。AI 深度分析待接入。",
+      "emotionStage": "数据驱动（待分析）",
+      "position": "待分析",
+      "summary": {
+        "emotion": "数据驱动",
+        "emotionSub": "基础数据已生成",
+        "position": "待分析",
+        "positionSub": "AI 分析待接入",
+        "mainLine": "待分析",
+        "mainLineSub": "—",
+        "subLine": "—",
+        "subLineSub": "—"
+      },
+      "concl_so": {
+        "s1": [
+          "基础数据已生成，深度分析待 AI 接入。"
+        ],
+        "s2": [],
+        "s3": [],
+        "s4": ""
+      },
+      "indices": [
+        {
+          "name": "上证指数",
+          "close": "3926.96",
+          "chg": "-0.50%",
+          "chgPts": "-19.63",
+          "ampl": "-19.72%",
+          "amount": "11642",
+          "ma4108.964": "-",
+          "ma4108.964Dev": "-",
+          "ma4158.694": "-",
+          "ma4158.694Dev": "-",
+          "ma4147.2675": "-",
+          "ma4147.2675Dev": "-",
+          "ma4112.5830000000005": "-",
+          "ma4112.5830000000005Dev": "-",
+          "ma4059.775833333333": "-",
+          "ma4059.775833333333Dev": "-",
+          "maPills": [
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            }
+          ]
+        },
+        {
+          "name": "深证成指",
+          "close": "14289.44",
+          "chg": "-0.87%",
+          "chgPts": "-124.32",
+          "ampl": "-124.99%",
+          "amount": "13867",
+          "ma15102.86": "-",
+          "ma15102.86Dev": "-",
+          "ma15453.395999999999": "-",
+          "ma15453.395999999999Dev": "-",
+          "ma15541.25": "-",
+          "ma15541.25Dev": "-",
+          "ma15497.283": "-",
+          "ma15497.283Dev": "-",
+          "ma15366.6515": "-",
+          "ma15366.6515Dev": "-",
+          "maPills": [
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            }
+          ]
+        },
+        {
+          "name": "创业板指",
+          "close": "3586.04",
+          "chg": "-0.45%",
+          "chgPts": "-16.14",
+          "ampl": "-16.04%",
+          "amount": "6652",
+          "ma3677.596": "-",
+          "ma3677.596Dev": "-",
+          "ma3791.935": "-",
+          "ma3791.935Dev": "-",
+          "ma3871.147": "-",
+          "ma3871.147Dev": "-",
+          "ma3913.0303333333336": "-",
+          "ma3913.0303333333336Dev": "-",
+          "ma3935.8956666666663": "-",
+          "ma3935.8956666666663Dev": "-",
+          "maPills": [
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            }
+          ]
+        },
+        {
+          "name": "科创50",
+          "close": "1717.75",
+          "chg": "-1.11%",
+          "chgPts": "-19.07",
+          "ampl": "-19.24%",
+          "amount": "1257",
+          "ma1543.712": "-",
+          "ma1543.712Dev": "-",
+          "ma1624.853": "-",
+          "ma1624.853Dev": "-",
+          "ma1706.0565": "-",
+          "ma1706.0565Dev": "-",
+          "ma1703.8473333333334": "-",
+          "ma1703.8473333333334Dev": "-",
+          "ma1818.8348333333333": "-",
+          "ma1818.8348333333333Dev": "-",
+          "maPills": [
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            }
+          ]
+        },
+        {
+          "name": "沪深300",
+          "close": "4663.95",
+          "chg": "-0.57%",
+          "chgPts": "-26.58",
+          "ampl": "-26.97%",
+          "amount": "6907",
+          "ma4804.782": "-",
+          "ma4804.782Dev": "-",
+          "ma4869.456": "-",
+          "ma4869.456Dev": "-",
+          "ma4870.5835": "-",
+          "ma4870.5835Dev": "-",
+          "ma4863.378": "-",
+          "ma4863.378Dev": "-",
+          "ma4845.267666666667": "-",
+          "ma4845.267666666667Dev": "-",
+          "maPills": [
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            }
+          ]
+        },
+        {
+          "name": "中证1000",
+          "close": "7715.89",
+          "chg": "-1.00%",
+          "chgPts": "-77.16",
+          "ampl": "-77.83%",
+          "amount": "5648",
+          "ma8373.0": "-",
+          "ma8373.0Dev": "-",
+          "ma8596.478": "-",
+          "ma8596.478Dev": "-",
+          "ma8650.007": "-",
+          "ma8650.007Dev": "-",
+          "ma8552.298": "-",
+          "ma8552.298Dev": "-",
+          "ma8386.199833333334": "-",
+          "ma8386.199833333334Dev": "-",
+          "maPills": [
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            }
+          ]
+        },
+        {
+          "name": "国证2000",
+          "close": "10036.35",
+          "chg": "-1.07%",
+          "chgPts": "-107.39",
+          "ampl": "-108.73%",
+          "amount": "7558",
+          "ma10981.1": "-",
+          "ma10981.1Dev": "-",
+          "ma11303.221": "-",
+          "ma11303.221Dev": "-",
+          "ma11384.533": "-",
+          "ma11384.533Dev": "-",
+          "ma11222.931333333334": "-",
+          "ma11222.931333333334Dev": "-",
+          "ma10923.027666666667": "-",
+          "ma10923.027666666667Dev": "-",
+          "maPills": [
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            }
+          ]
+        },
+        {
+          "name": "上证50",
+          "close": "2928.12",
+          "chg": "-0.35%",
+          "chgPts": "-10.25",
+          "ampl": "-10.27%",
+          "amount": "1902",
+          "ma2973.782": "-",
+          "ma2973.782Dev": "-",
+          "ma3003.412": "-",
+          "ma3003.412Dev": "-",
+          "ma2977.6155": "-",
+          "ma2977.6155Dev": "-",
+          "ma2946.5926666666664": "-",
+          "ma2946.5926666666664Dev": "-",
+          "ma2943.3936666666664": "-",
+          "ma2943.3936666666664Dev": "-",
+          "maPills": [
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            }
+          ]
+        },
+        {
+          "name": "红利指数",
+          "close": "3187.46",
+          "chg": "-0.78%",
+          "chgPts": "-24.86",
+          "ampl": "-24.9%",
+          "amount": "344",
+          "ma3320.71": "-",
+          "ma3320.71Dev": "-",
+          "ma3285.7599999999998": "-",
+          "ma3285.7599999999998Dev": "-",
+          "ma3233.923": "-",
+          "ma3233.923Dev": "-",
+          "ma3243.601666666667": "-",
+          "ma3243.601666666667Dev": "-",
+          "ma3150.1213333333335": "-",
+          "ma3150.1213333333335Dev": "-",
+          "maPills": [
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            }
+          ]
+        },
+        {
+          "name": "中证500",
+          "close": "7968.38",
+          "chg": "-0.96%",
+          "chgPts": "-76.50",
+          "ampl": "-76.93%",
+          "amount": "4970",
+          "ma8356.676": "-",
+          "ma8356.676Dev": "-",
+          "ma8571.831": "-",
+          "ma8571.831Dev": "-",
+          "ma8582.679": "-",
+          "ma8582.679Dev": "-",
+          "ma8478.184333333333": "-",
+          "ma8478.184333333333Dev": "-",
+          "ma8441.680333333334": "-",
+          "ma8441.680333333334Dev": "-",
+          "maPills": [
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            }
+          ]
+        },
+        {
+          "name": "上证180",
+          "close": "9853.84",
+          "chg": "-0.84%",
+          "chgPts": "-82.77",
+          "ampl": "-83.25%",
+          "amount": "3575",
+          "ma10143.446": "-",
+          "ma10143.446Dev": "-",
+          "ma10279.854000000001": "-",
+          "ma10279.854000000001Dev": "-",
+          "ma10249.225999999999": "-",
+          "ma10249.225999999999Dev": "-",
+          "ma10161.229666666668": "-",
+          "ma10161.229666666668Dev": "-",
+          "ma10089.377833333334": "-",
+          "ma10089.377833333334Dev": "-",
+          "maPills": [
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            }
+          ]
+        }
+      ],
+      "volume": {
+        "turnover": "25509",
+        "ratio5": "—",
+        "ratio10": "—",
+        "up": 0,
+        "down": 0,
+        "flat": 0,
+        "ratio": "0.00",
+        "mainNet": "—",
+        "inCount": 0,
+        "outCount": 0,
+        "limitUp": 0,
+        "limitDown": 0,
+        "blast": 0,
+        "sealRate": "0%",
+        "up5pct": 0,
+        "down5pct": 0,
+        "prevLimitUp": [
+          0
+        ]
+      },
+      "sectors": [
+        {
+          "rank": 1,
+          "name": "诊断服务",
+          "chg": "+5.66%",
+          "amount": "0",
+          "share": "0.0%",
+          "mainNet": "+1.0",
+          "limitUp": -53452352.0,
+          "up5": "-",
+          "upCnt": 5,
+          "downCnt": 0,
+          "leader": "—",
+          "leaderChg": "—",
+          "fundLabel": "—",
+          "fundPill": "p-gray"
+        },
+        {
+          "rank": 2,
+          "name": "医疗研发外包",
+          "chg": "+5.39%",
+          "amount": "0",
+          "share": "0.0%",
+          "mainNet": "+10.5",
+          "limitUp": -1030392320.0,
+          "up5": "-",
+          "upCnt": 24,
+          "downCnt": 5,
+          "leader": "—",
+          "leaderChg": "—",
+          "fundLabel": "—",
+          "fundPill": "p-gray"
+        },
+        {
+          "rank": 3,
+          "name": "医疗服务",
+          "chg": "+3.90%",
+          "amount": "0",
+          "share": "0.0%",
+          "mainNet": "+11.0",
+          "limitUp": -1009878528.0,
+          "up5": "-",
+          "upCnt": 41,
+          "downCnt": 12,
+          "leader": "—",
+          "leaderChg": "—",
+          "fundLabel": "—",
+          "fundPill": "p-gray"
+        },
+        {
+          "rank": 4,
+          "name": "其他数字媒体",
+          "chg": "+3.81%",
+          "amount": "0",
+          "share": "0.0%",
+          "mainNet": "+2.6",
+          "limitUp": -65428464.0,
+          "up5": "-",
+          "upCnt": 1,
+          "downCnt": 1,
+          "leader": "—",
+          "leaderChg": "—",
+          "fundLabel": "—",
+          "fundPill": "p-gray"
+        },
+        {
+          "rank": 5,
+          "name": "其他生物制品",
+          "chg": "+2.78%",
+          "amount": "0",
+          "share": "0.0%",
+          "mainNet": "+2.7",
+          "limitUp": -299539712.0,
+          "up5": "-",
+          "upCnt": 34,
+          "downCnt": 5,
+          "leader": "—",
+          "leaderChg": "—",
+          "fundLabel": "—",
+          "fundPill": "p-gray"
+        },
+        {
+          "rank": 6,
+          "name": "卫浴电器",
+          "chg": "+2.54%",
+          "amount": "0",
+          "share": "0.0%",
+          "mainNet": "+0.4",
+          "limitUp": -21935895.0,
+          "up5": "-",
+          "upCnt": 1,
+          "downCnt": 2,
+          "leader": "—",
+          "leaderChg": "—",
+          "fundLabel": "—",
+          "fundPill": "p-gray"
+        },
+        {
+          "rank": 7,
+          "name": "生物制品",
+          "chg": "+2.14%",
+          "amount": "0",
+          "share": "0.0%",
+          "mainNet": "+3.2",
+          "limitUp": -407246336.0,
+          "up5": "-",
+          "upCnt": 51,
+          "downCnt": 6,
+          "leader": "—",
+          "leaderChg": "—",
+          "fundLabel": "—",
+          "fundPill": "p-gray"
+        },
+        {
+          "rank": 8,
+          "name": "中药Ⅲ",
+          "chg": "+1.66%",
+          "amount": "0",
+          "share": "0.0%",
+          "mainNet": "+7.4",
+          "limitUp": -826528512.0,
+          "up5": "-",
+          "upCnt": 50,
+          "downCnt": 16,
+          "leader": "—",
+          "leaderChg": "—",
+          "fundLabel": "—",
+          "fundPill": "p-gray"
+        },
+        {
+          "rank": 9,
+          "name": "中药Ⅱ",
+          "chg": "+1.66%",
+          "amount": "0",
+          "share": "0.0%",
+          "mainNet": "+7.4",
+          "limitUp": -826528512.0,
+          "up5": "-",
+          "upCnt": 50,
+          "downCnt": 16,
+          "leader": "—",
+          "leaderChg": "—",
+          "fundLabel": "—",
+          "fundPill": "p-gray"
+        },
+        {
+          "rank": 10,
+          "name": "医院",
+          "chg": "+1.63%",
+          "amount": "0",
+          "share": "0.0%",
+          "mainNet": "-0.7",
+          "limitUp": 80035216.0,
+          "up5": "-",
+          "upCnt": 10,
+          "downCnt": 5,
+          "leader": "—",
+          "leaderChg": "—",
+          "fundLabel": "—",
+          "fundPill": "p-gray"
+        }
+      ],
+      "centers": [],
+      "tiers": [],
+      "boardLadder": [],
+      "cycle": {
+        "current": 0,
+        "stages": []
+      },
+      "scenarios": [],
+      "watch": [],
+      "risks": [],
+      "turnover": {
+        "top50": "—",
+        "top100": "—",
+        "top300": "—",
+        "top500": "—"
+      },
+      "disclaimer": "本报告由 AI 系统基于公开市场数据自动生成，数据于 2026年8月13日 15:00 收盘后通过东方财富公开接口实时抓取。基础数据版，AI 深度分析待接入。不构成任何形式的投资建议。"
+    },
     {
       "date": "2026-08-12",
       "weekday": "星期三",
