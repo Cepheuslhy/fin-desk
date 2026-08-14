@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-14T10:42:53.678356",
+  "timestamp": "2026-08-14T14:33:24.984214",
   "market": {
     "index": 3927.18,
     "index_change": 0.01,
@@ -112,18 +112,18 @@
       "articles": 463
     },
     "2026-08-14": {
-      "avg_sentiment": 0.43,
-      "articles": 392
+      "avg_sentiment": 0.366,
+      "articles": 485
     }
   },
   "news_stats": {
-    "raw_total": 1421,
-    "dedup_total": 1358,
-    "duplicates_removed": 63,
+    "raw_total": 1517,
+    "dedup_total": 1451,
+    "duplicates_removed": 66,
     "per_day": {
       "2026-08-12": 503,
       "2026-08-13": 463,
-      "2026-08-14": 392
+      "2026-08-14": 485
     }
   },
   "phase": "震荡",
@@ -143,7 +143,7 @@
       "name": "新易盛",
       "industry": "光模块",
       "position": "减至60%",
-      "news_hits": 6,
+      "news_hits": 8,
       "price": 448.08,
       "change_pct": 4.23
     },
@@ -152,7 +152,7 @@
       "name": "中芯国际",
       "industry": "半导体",
       "position": "减至60%",
-      "news_hits": 34,
+      "news_hits": 36,
       "price": 132.87,
       "change_pct": 2.65
     },
@@ -197,7 +197,7 @@
       "name": "科创50ETF",
       "industry": "科技",
       "position": "加至80%",
-      "news_hits": 70,
+      "news_hits": 78,
       "price": 1.814,
       "change_pct": 0.11
     }
