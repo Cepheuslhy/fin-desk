@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-17T13:56:34.849569",
+  "timestamp": "2026-08-17T15:56:11.360640",
   "market": {
     "index": 3982.65,
     "index_change": 0.0,
@@ -112,18 +112,18 @@
       "articles": 159
     },
     "2026-08-17": {
-      "avg_sentiment": 0.378,
-      "articles": 530
+      "avg_sentiment": 0.399,
+      "articles": 578
     }
   },
   "news_stats": {
-    "raw_total": 962,
-    "dedup_total": 930,
+    "raw_total": 1010,
+    "dedup_total": 978,
     "duplicates_removed": 32,
     "per_day": {
       "2026-08-15": 241,
       "2026-08-16": 159,
-      "2026-08-17": 530
+      "2026-08-17": 578
     }
   },
   "phase": "震荡",
@@ -142,8 +142,8 @@
       "code": "sz300502",
       "name": "新易盛",
       "industry": "光模块",
-      "position": "维持85%",
-      "news_hits": 3,
+      "position": "加至85%",
+      "news_hits": 4,
       "price": 466.68,
       "change_pct": 4.15
     },
