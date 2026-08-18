@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-18T11:00:44.302224",
+  "timestamp": "2026-08-18T11:57:31.821174",
   "market": {
     "index": 3990.3,
     "index_change": 0.0,
@@ -113,17 +113,17 @@
     },
     "2026-08-18": {
       "avg_sentiment": 0.282,
-      "articles": 442
+      "articles": 459
     }
   },
   "news_stats": {
-    "raw_total": 1237,
-    "dedup_total": 1179,
+    "raw_total": 1254,
+    "dedup_total": 1196,
     "duplicates_removed": 58,
     "per_day": {
       "2026-08-16": 159,
       "2026-08-17": 578,
-      "2026-08-18": 442
+      "2026-08-18": 459
     }
   },
   "phase": "分歧",
@@ -197,7 +197,7 @@
       "name": "科创50ETF",
       "industry": "科技",
       "position": "加至80%",
-      "news_hits": 46,
+      "news_hits": 47,
       "price": 1.888,
       "change_pct": 0.0
     }
