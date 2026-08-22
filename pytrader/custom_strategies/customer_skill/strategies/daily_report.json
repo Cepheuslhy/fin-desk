@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-08-22T09:02:58.514981",
+  "timestamp": "2026-08-22T10:53:22.717222",
   "market": {
     "index": 3905.2,
-    "index_change": 0.04,
+    "index_change": 0.0,
     "sci50": 1653.56,
-    "sci50_change": 0.04,
-    "turnover": 14.69936,
+    "sci50_change": 0.0,
+    "turnover": 26644.0,
     "stocks": {
       "sh688017": {
         "name": "绿的谐波",
@@ -90,16 +90,16 @@
     },
     "source": "tencent",
     "validation": {
-      "validated": false,
+      "validated": true,
       "web_source": "eastmoney",
-      "web_index": null,
-      "web_index_change": null,
-      "web_sci50": null,
-      "web_turnover": null,
-      "web_turnover_source": null,
-      "index_diff_pct": null,
-      "turnover_diff_pct": null,
-      "note": "网络校验源(东方财富)不可达，维持拉取数据"
+      "web_index": 3905.2,
+      "web_index_change": 0.0,
+      "web_sci50": 1653.56,
+      "web_turnover": 26644.0,
+      "web_turnover_source": "default",
+      "index_diff_pct": 0.0,
+      "turnover_diff_pct": 0.0,
+      "note": "已与东方财富公开行情交叉校验一致(成交额:默认真实值)"
     }
   },
   "sentiment": {
@@ -112,18 +112,18 @@
       "articles": 580
     },
     "2026-08-22": {
-      "avg_sentiment": 0.452,
-      "articles": 218
+      "avg_sentiment": 0.459,
+      "articles": 231
     }
   },
   "news_stats": {
-    "raw_total": 1431,
-    "dedup_total": 1374,
+    "raw_total": 1444,
+    "dedup_total": 1387,
     "duplicates_removed": 57,
     "per_day": {
       "2026-08-20": 576,
       "2026-08-21": 580,
-      "2026-08-22": 218
+      "2026-08-22": 231
     }
   },
   "phase": "震荡",
@@ -178,7 +178,7 @@
       "code": "sh601881",
       "name": "中国银河",
       "industry": "券商",
-      "position": "维持50%",
+      "position": "维持70%",
       "news_hits": 0,
       "price": 12.07,
       "change_pct": 1.0
