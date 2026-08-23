@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-22T15:47:08.797001",
+  "timestamp": "2026-08-23T03:38:11.213660",
   "market": {
     "index": 3905.2,
     "index_change": 0.04,
@@ -103,10 +103,6 @@
     }
   },
   "sentiment": {
-    "2026-08-20": {
-      "avg_sentiment": 0.366,
-      "articles": 576
-    },
     "2026-08-21": {
       "avg_sentiment": 0.252,
       "articles": 580
@@ -114,16 +110,20 @@
     "2026-08-22": {
       "avg_sentiment": 0.488,
       "articles": 268
+    },
+    "2026-08-23": {
+      "avg_sentiment": 0.467,
+      "articles": 84
     }
   },
   "news_stats": {
-    "raw_total": 1481,
-    "dedup_total": 1424,
-    "duplicates_removed": 57,
+    "raw_total": 960,
+    "dedup_total": 932,
+    "duplicates_removed": 28,
     "per_day": {
-      "2026-08-20": 576,
       "2026-08-21": 580,
-      "2026-08-22": 268
+      "2026-08-22": 268,
+      "2026-08-23": 84
     }
   },
   "phase": "震荡",
@@ -134,7 +134,7 @@
       "name": "绿的谐波",
       "industry": "机器人",
       "position": "超配120%",
-      "news_hits": 13,
+      "news_hits": 6,
       "price": 314.35,
       "change_pct": 1.4
     },
@@ -143,7 +143,7 @@
       "name": "新易盛",
       "industry": "光模块",
       "position": "维持85%",
-      "news_hits": 2,
+      "news_hits": 4,
       "price": 442.0,
       "change_pct": 6.76
     },
@@ -151,8 +151,8 @@
       "code": "sh688981",
       "name": "中芯国际",
       "industry": "半导体",
-      "position": "加至85%",
-      "news_hits": 15,
+      "position": "维持85%",
+      "news_hits": 12,
       "price": 124.8,
       "change_pct": -0.56
     },
@@ -161,7 +161,7 @@
       "name": "赣锋锂业",
       "industry": "锂矿",
       "position": "满仓",
-      "news_hits": 11,
+      "news_hits": 10,
       "price": 54.12,
       "change_pct": 5.56
     },
@@ -196,8 +196,8 @@
       "code": "sh588000",
       "name": "科创50ETF",
       "industry": "科技",
-      "position": "加至80%",
-      "news_hits": 53,
+      "position": "维持80%",
+      "news_hits": 29,
       "price": 1.745,
       "change_pct": 0.06
     }
