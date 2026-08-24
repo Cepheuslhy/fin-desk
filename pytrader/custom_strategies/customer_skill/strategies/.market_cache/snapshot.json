@@ -1,0 +1,93 @@
+{
+  "index": 3882.01,
+  "index_name": "上证指数",
+  "index_change": -0.59,
+  "sci50": 1602.34,
+  "sci50_name": "科创50",
+  "sci50_change": -3.1,
+  "turnover": 0,
+  "stocks": {
+    "sh688017": {
+      "name": "绿的谐波",
+      "current": 295.15,
+      "change_pct": -6.11,
+      "open": 310.0,
+      "high": 310.09,
+      "low": 290.07,
+      "volume": 8821439.0,
+      "amount": 262164.0
+    },
+    "sz300502": {
+      "name": "新易盛",
+      "current": 412.0,
+      "change_pct": -6.79,
+      "open": 445.01,
+      "high": 450.0,
+      "low": 400.0,
+      "volume": 494600.0,
+      "amount": 2057460.0
+    },
+    "sh688981": {
+      "name": "中芯国际",
+      "current": 120.58,
+      "change_pct": -3.38,
+      "open": 124.5,
+      "high": 124.78,
+      "low": 118.3,
+      "volume": 47671749.0,
+      "amount": 576941.0
+    },
+    "sz002460": {
+      "name": "赣锋锂业",
+      "current": 55.63,
+      "change_pct": 2.79,
+      "open": 54.99,
+      "high": 56.89,
+      "low": 54.99,
+      "volume": 647635.0,
+      "amount": 362382.0
+    },
+    "sz000960": {
+      "name": "锡业股份",
+      "current": 36.03,
+      "change_pct": -2.88,
+      "open": 37.39,
+      "high": 37.5,
+      "low": 35.24,
+      "volume": 561304.0,
+      "amount": 202461.0
+    },
+    "sh601881": {
+      "name": "中国银河",
+      "current": 12.03,
+      "change_pct": -0.33,
+      "open": 12.05,
+      "high": 12.11,
+      "low": 11.96,
+      "volume": 159787.0,
+      "amount": 19229.0
+    },
+    "sh518880": {
+      "name": "黄金ETF华安",
+      "current": 9.564,
+      "change_pct": 1.87,
+      "open": 9.488,
+      "high": 9.582,
+      "low": 9.48,
+      "volume": 9136328.0,
+      "amount": 871776.0
+    },
+    "sh588000": {
+      "name": "科创50ETF华夏",
+      "current": 1.691,
+      "change_pct": -3.09,
+      "open": 1.741,
+      "high": 1.743,
+      "low": 1.662,
+      "volume": 41050774.0,
+      "amount": 696275.0
+    }
+  },
+  "source": "tencent",
+  "timestamp": "2026-08-24T10:58:19.551048"
+}
