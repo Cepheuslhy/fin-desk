@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-24T10:08:05.073662",
+  "timestamp": "2026-08-24T10:58:33.235735",
   "market": {
     "index": 3882.01,
     "index_change": -0.59,
@@ -112,29 +112,29 @@
       "articles": 147
     },
     "2026-08-24": {
-      "avg_sentiment": 0.189,
-      "articles": 325
+      "avg_sentiment": 0.073,
+      "articles": 475
     }
   },
   "news_stats": {
-    "raw_total": 760,
-    "dedup_total": 740,
-    "duplicates_removed": 20,
+    "raw_total": 917,
+    "dedup_total": 890,
+    "duplicates_removed": 27,
     "per_day": {
       "2026-08-22": 268,
       "2026-08-23": 147,
-      "2026-08-24": 325
+      "2026-08-24": 475
     }
   },
-  "phase": "震荡",
-  "advice": "3-5成仓位，灵活应对",
+  "phase": "冰点/退潮",
+  "advice": "0-2成仓位，等待修复",
   "actions": [
     {
       "code": "sh688017",
       "name": "绿的谐波",
       "industry": "机器人",
       "position": "满仓",
-      "news_hits": 10,
+      "news_hits": 11,
       "price": 295.15,
       "change_pct": -6.11
     },
@@ -152,7 +152,7 @@
       "name": "中芯国际",
       "industry": "半导体",
       "position": "减至60%",
-      "news_hits": 25,
+      "news_hits": 27,
       "price": 120.58,
       "change_pct": -3.38
     },
@@ -197,7 +197,7 @@
       "name": "科创50ETF",
       "industry": "科技",
       "position": "减至50%",
-      "news_hits": 31,
+      "news_hits": 32,
       "price": 1.691,
       "change_pct": -3.09
     }
