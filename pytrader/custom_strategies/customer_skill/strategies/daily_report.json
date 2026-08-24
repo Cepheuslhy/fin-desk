@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-24T14:26:43.893977",
+  "timestamp": "2026-08-24T16:20:24.332953",
   "market": {
     "index": 3882.01,
     "index_change": 0.0,
@@ -112,18 +112,18 @@
       "articles": 147
     },
     "2026-08-24": {
-      "avg_sentiment": 0.103,
-      "articles": 595
+      "avg_sentiment": 0.121,
+      "articles": 640
     }
   },
   "news_stats": {
-    "raw_total": 1045,
-    "dedup_total": 1010,
+    "raw_total": 1090,
+    "dedup_total": 1055,
     "duplicates_removed": 35,
     "per_day": {
       "2026-08-22": 268,
       "2026-08-23": 147,
-      "2026-08-24": 595
+      "2026-08-24": 640
     }
   },
   "phase": "震荡",
@@ -152,7 +152,7 @@
       "name": "中芯国际",
       "industry": "半导体",
       "position": "减至60%",
-      "news_hits": 30,
+      "news_hits": 31,
       "price": 120.58,
       "change_pct": -3.38
     },
