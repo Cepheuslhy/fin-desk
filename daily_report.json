@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-25T09:20:45.424249",
+  "timestamp": "2026-08-25T10:17:10.616688",
   "market": {
     "index": 3889.44,
     "index_change": 0.19,
@@ -112,18 +112,18 @@
       "articles": 640
     },
     "2026-08-25": {
-      "avg_sentiment": 0.429,
-      "articles": 369
+      "avg_sentiment": 0.337,
+      "articles": 469
     }
   },
   "news_stats": {
-    "raw_total": 1213,
-    "dedup_total": 1156,
-    "duplicates_removed": 57,
+    "raw_total": 1319,
+    "dedup_total": 1256,
+    "duplicates_removed": 63,
     "per_day": {
       "2026-08-23": 147,
       "2026-08-24": 640,
-      "2026-08-25": 369
+      "2026-08-25": 469
     }
   },
   "phase": "震荡",
@@ -161,7 +161,7 @@
       "name": "赣锋锂业",
       "industry": "锂矿",
       "position": "满仓",
-      "news_hits": 16,
+      "news_hits": 17,
       "price": 53.05,
       "change_pct": -4.64
     },
@@ -197,7 +197,7 @@
       "name": "科创50ETF",
       "industry": "科技",
       "position": "加至80%",
-      "news_hits": 48,
+      "news_hits": 49,
       "price": 1.693,
       "change_pct": 0.12
     }

@@ -1,0 +1,93 @@
+{
+  "index": 3889.44,
+  "index_name": "上证指数",
+  "index_change": 0.19,
+  "sci50": 1604.59,
+  "sci50_name": "科创50",
+  "sci50_change": 0.14,
+  "turnover": 0,
+  "stocks": {
+    "sh688017": {
+      "name": "绿的谐波",
+      "current": 301.76,
+      "change_pct": 2.24,
+      "open": 292.5,
+      "high": 305.66,
+      "low": 290.58,
+      "volume": 6506036.0,
+      "amount": 194384.0
+    },
+    "sz300502": {
+      "name": "新易盛",
+      "current": 400.87,
+      "change_pct": -2.7,
+      "open": 405.0,
+      "high": 413.02,
+      "low": 395.0,
+      "volume": 350271.0,
+      "amount": 1413237.0
+    },
+    "sh688981": {
+      "name": "中芯国际",
+      "current": 120.0,
+      "change_pct": -0.48,
+      "open": 118.58,
+      "high": 121.64,
+      "low": 117.88,
+      "volume": 31064342.0,
+      "amount": 371870.0
+    },
+    "sz002460": {
+      "name": "赣锋锂业",
+      "current": 53.05,
+      "change_pct": -4.64,
+      "open": 54.6,
+      "high": 55.77,
+      "low": 52.92,
+      "volume": 459700.0,
+      "amount": 247497.0
+    },
+    "sz000960": {
+      "name": "锡业股份",
+      "current": 34.9,
+      "change_pct": -3.14,
+      "open": 35.46,
+      "high": 35.98,
+      "low": 34.22,
+      "volume": 503200.0,
+      "amount": 175129.0
+    },
+    "sh601881": {
+      "name": "中国银河",
+      "current": 12.04,
+      "change_pct": 0.08,
+      "open": 12.02,
+      "high": 12.08,
+      "low": 11.98,
+      "volume": 135308.0,
+      "amount": 16262.0
+    },
+    "sh518880": {
+      "name": "黄金ETF华安",
+      "current": 9.533,
+      "change_pct": -0.32,
+      "open": 9.607,
+      "high": 9.62,
+      "low": 9.497,
+      "volume": 9249732.0,
+      "amount": 883708.0
+    },
+    "sh588000": {
+      "name": "科创50ETF华夏",
+      "current": 1.693,
+      "change_pct": 0.12,
+      "open": 1.666,
+      "high": 1.714,
+      "low": 1.651,
+      "volume": 33963236.0,
+      "amount": 572094.0
+    }
+  },
+  "source": "tencent",
+  "timestamp": "2026-08-25T10:17:06.609044"
+}
