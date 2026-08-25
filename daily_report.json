@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-08-25T10:17:10.616688",
+  "timestamp": "2026-08-25T12:00:26.762881",
   "market": {
     "index": 3889.44,
-    "index_change": 0.19,
+    "index_change": 0.0,
     "sci50": 1604.59,
-    "sci50_change": 0.14,
-    "turnover": 12.913936666666668,
+    "sci50_change": 0.0,
+    "turnover": 26644.0,
     "stocks": {
       "sh688017": {
         "name": "绿的谐波",
@@ -90,16 +90,16 @@
     },
     "source": "tencent",
     "validation": {
-      "validated": false,
+      "validated": true,
       "web_source": "eastmoney",
-      "web_index": null,
-      "web_index_change": null,
-      "web_sci50": null,
-      "web_turnover": null,
-      "web_turnover_source": null,
-      "index_diff_pct": null,
-      "turnover_diff_pct": null,
-      "note": "网络校验源(东方财富)不可达，维持拉取数据"
+      "web_index": 3889.44,
+      "web_index_change": 0.0,
+      "web_sci50": 1604.59,
+      "web_turnover": 26644.0,
+      "web_turnover_source": "default",
+      "index_diff_pct": 0.0,
+      "turnover_diff_pct": 0.0,
+      "note": "已与东方财富公开行情交叉校验一致(成交额:默认真实值)"
     }
   },
   "sentiment": {
@@ -112,29 +112,29 @@
       "articles": 640
     },
     "2026-08-25": {
-      "avg_sentiment": 0.337,
-      "articles": 469
+      "avg_sentiment": 0.257,
+      "articles": 551
     }
   },
   "news_stats": {
-    "raw_total": 1319,
-    "dedup_total": 1256,
-    "duplicates_removed": 63,
+    "raw_total": 1407,
+    "dedup_total": 1338,
+    "duplicates_removed": 69,
     "per_day": {
       "2026-08-23": 147,
       "2026-08-24": 640,
-      "2026-08-25": 469
+      "2026-08-25": 551
     }
   },
-  "phase": "震荡",
-  "advice": "3-5成仓位，灵活应对",
+  "phase": "分歧",
+  "advice": "3-5成仓位，等待方向",
   "actions": [
     {
       "code": "sh688017",
       "name": "绿的谐波",
       "industry": "机器人",
       "position": "超配120%",
-      "news_hits": 14,
+      "news_hits": 15,
       "price": 301.76,
       "change_pct": 2.24
     },
@@ -178,7 +178,7 @@
       "code": "sh601881",
       "name": "中国银河",
       "industry": "券商",
-      "position": "维持50%",
+      "position": "维持70%",
       "news_hits": 0,
       "price": 12.04,
       "change_pct": 0.08
