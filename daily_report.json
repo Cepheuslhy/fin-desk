@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-25T14:29:25.926448",
+  "timestamp": "2026-08-25T17:05:02.380278",
   "market": {
     "index": 3889.44,
     "index_change": 0.0,
@@ -112,18 +112,18 @@
       "articles": 640
     },
     "2026-08-25": {
-      "avg_sentiment": 0.237,
-      "articles": 634
+      "avg_sentiment": 0.256,
+      "articles": 692
     }
   },
   "news_stats": {
-    "raw_total": 1497,
-    "dedup_total": 1421,
+    "raw_total": 1555,
+    "dedup_total": 1479,
     "duplicates_removed": 76,
     "per_day": {
       "2026-08-23": 147,
       "2026-08-24": 640,
-      "2026-08-25": 634
+      "2026-08-25": 692
     }
   },
   "phase": "分歧",
@@ -133,7 +133,7 @@
       "code": "sh688017",
       "name": "绿的谐波",
       "industry": "机器人",
-      "position": "满仓",
+      "position": "超配120%",
       "news_hits": 16,
       "price": 301.76,
       "change_pct": 2.24
@@ -197,7 +197,7 @@
       "name": "科创50ETF",
       "industry": "科技",
       "position": "加至80%",
-      "news_hits": 57,
+      "news_hits": 59,
       "price": 1.693,
       "change_pct": 0.12
     }
