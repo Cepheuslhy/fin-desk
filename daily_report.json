@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-26T11:15:52.690877",
+  "timestamp": "2026-08-26T14:26:40.188450",
   "market": {
     "index": 3912.52,
     "index_change": 0.0,
@@ -112,18 +112,18 @@
       "articles": 692
     },
     "2026-08-26": {
-      "avg_sentiment": 0.197,
-      "articles": 435
+      "avg_sentiment": 0.192,
+      "articles": 558
     }
   },
   "news_stats": {
-    "raw_total": 1867,
-    "dedup_total": 1767,
-    "duplicates_removed": 100,
+    "raw_total": 1995,
+    "dedup_total": 1890,
+    "duplicates_removed": 105,
     "per_day": {
       "2026-08-24": 640,
       "2026-08-25": 692,
-      "2026-08-26": 435
+      "2026-08-26": 558
     }
   },
   "phase": "分歧",
@@ -134,7 +134,7 @@
       "name": "绿的谐波",
       "industry": "机器人",
       "position": "满仓",
-      "news_hits": 12,
+      "news_hits": 13,
       "price": 292.87,
       "change_pct": -2.95
     },
@@ -161,7 +161,7 @@
       "name": "赣锋锂业",
       "industry": "锂矿",
       "position": "满仓",
-      "news_hits": 27,
+      "news_hits": 28,
       "price": 53.5,
       "change_pct": 0.85
     },
