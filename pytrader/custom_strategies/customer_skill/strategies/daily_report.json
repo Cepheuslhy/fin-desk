@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-30T13:05:08.017046",
+  "timestamp": "2026-08-30T14:05:22.499593",
   "market": {
     "index": 3952.18,
     "index_change": -0.11,
@@ -113,17 +113,17 @@
     },
     "2026-08-30": {
       "avg_sentiment": 0.169,
-      "articles": 81
+      "articles": 87
     }
   },
   "news_stats": {
-    "raw_total": 1032,
-    "dedup_total": 1019,
+    "raw_total": 1038,
+    "dedup_total": 1025,
     "duplicates_removed": 13,
     "per_day": {
       "2026-08-28": 791,
       "2026-08-29": 147,
-      "2026-08-30": 81
+      "2026-08-30": 87
     }
   },
   "phase": "震荡",
