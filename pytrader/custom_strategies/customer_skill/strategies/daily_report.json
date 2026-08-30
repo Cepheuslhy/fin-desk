@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-08-30T07:05:14.632089",
+  "timestamp": "2026-08-30T08:05:15.319644",
   "market": {
     "index": 3952.18,
-    "index_change": 0.0,
+    "index_change": -0.11,
     "sci50": 1662.15,
-    "sci50_change": 0.0,
-    "turnover": 26644.0,
+    "sci50_change": -1.85,
+    "turnover": 12.22179,
     "stocks": {
       "sh688017": {
         "name": "绿的谐波",
@@ -90,16 +90,16 @@
     },
     "source": "tencent",
     "validation": {
-      "validated": true,
+      "validated": false,
       "web_source": "eastmoney",
-      "web_index": 3952.18,
-      "web_index_change": 0.0,
-      "web_sci50": 1662.15,
-      "web_turnover": 26644.0,
-      "web_turnover_source": "default",
-      "index_diff_pct": 0.0,
-      "turnover_diff_pct": 0.0,
-      "note": "已与东方财富公开行情交叉校验一致(成交额:默认真实值)"
+      "web_index": null,
+      "web_index_change": null,
+      "web_sci50": null,
+      "web_turnover": null,
+      "web_turnover_source": null,
+      "index_diff_pct": null,
+      "turnover_diff_pct": null,
+      "note": "网络校验源(东方财富)不可达，维持拉取数据"
     }
   },
   "sentiment": {
@@ -112,18 +112,18 @@
       "articles": 147
     },
     "2026-08-30": {
-      "avg_sentiment": 0.7,
-      "articles": 28
+      "avg_sentiment": -0.012,
+      "articles": 40
     }
   },
   "news_stats": {
-    "raw_total": 978,
-    "dedup_total": 966,
-    "duplicates_removed": 12,
+    "raw_total": 991,
+    "dedup_total": 978,
+    "duplicates_removed": 13,
     "per_day": {
       "2026-08-28": 791,
       "2026-08-29": 147,
-      "2026-08-30": 28
+      "2026-08-30": 40
     }
   },
   "phase": "震荡",
@@ -133,7 +133,7 @@
       "code": "sh688017",
       "name": "绿的谐波",
       "industry": "机器人",
-      "position": "超配120%",
+      "position": "满仓",
       "news_hits": 4,
       "price": 292.0,
       "change_pct": -2.44
@@ -142,7 +142,7 @@
       "code": "sz300502",
       "name": "新易盛",
       "industry": "光模块",
-      "position": "维持85%",
+      "position": "减至60%",
       "news_hits": 7,
       "price": 399.0,
       "change_pct": -2.47
@@ -151,7 +151,7 @@
       "code": "sh688981",
       "name": "中芯国际",
       "industry": "半导体",
-      "position": "维持85%",
+      "position": "减至60%",
       "news_hits": 13,
       "price": 125.88,
       "change_pct": -0.36
@@ -178,7 +178,7 @@
       "code": "sh601881",
       "name": "中国银河",
       "industry": "券商",
-      "position": "维持70%",
+      "position": "维持50%",
       "news_hits": 1,
       "price": 12.31,
       "change_pct": 0.0
@@ -187,7 +187,7 @@
       "code": "sh518880",
       "name": "黄金ETF",
       "industry": "黄金",
-      "position": "维持20%",
+      "position": "维持15%",
       "news_hits": 1,
       "price": 9.475,
       "change_pct": 0.31
