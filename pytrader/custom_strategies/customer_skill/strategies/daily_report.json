@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-31T07:34:20.367844",
+  "timestamp": "2026-08-31T08:05:51.893000",
   "market": {
     "index": 3986.3,
     "index_change": 0.0,
@@ -112,18 +112,18 @@
       "articles": 90
     },
     "2026-08-31": {
-      "avg_sentiment": 0.468,
-      "articles": 442
+      "avg_sentiment": 0.471,
+      "articles": 478
     }
   },
   "news_stats": {
-    "raw_total": 691,
-    "dedup_total": 679,
-    "duplicates_removed": 12,
+    "raw_total": 729,
+    "dedup_total": 715,
+    "duplicates_removed": 14,
     "per_day": {
       "2026-08-29": 147,
       "2026-08-30": 90,
-      "2026-08-31": 442
+      "2026-08-31": 478
     }
   },
   "phase": "震荡",
@@ -178,8 +178,8 @@
       "code": "sh601881",
       "name": "中国银河",
       "industry": "券商",
-      "position": "维持70%",
-      "news_hits": 2,
+      "position": "加至70%",
+      "news_hits": 4,
       "price": 12.36,
       "change_pct": 0.41
     },
@@ -197,7 +197,7 @@
       "name": "科创50ETF",
       "industry": "科技",
       "position": "满仓",
-      "news_hits": 17,
+      "news_hits": 18,
       "price": 1.777,
       "change_pct": 1.2
     }
