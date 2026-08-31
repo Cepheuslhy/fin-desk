@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-31T14:05:30.835885",
+  "timestamp": "2026-08-31T15:05:34.733966",
   "market": {
     "index": 3986.3,
     "index_change": 0.0,
@@ -112,18 +112,18 @@
       "articles": 90
     },
     "2026-08-31": {
-      "avg_sentiment": 0.423,
-      "articles": 692
+      "avg_sentiment": 0.414,
+      "articles": 726
     }
   },
   "news_stats": {
-    "raw_total": 961,
-    "dedup_total": 929,
+    "raw_total": 995,
+    "dedup_total": 963,
     "duplicates_removed": 32,
     "per_day": {
       "2026-08-29": 147,
       "2026-08-30": 90,
-      "2026-08-31": 692
+      "2026-08-31": 726
     }
   },
   "phase": "震荡",
@@ -143,7 +143,7 @@
       "name": "新易盛",
       "industry": "光模块",
       "position": "满仓",
-      "news_hits": 1,
+      "news_hits": 2,
       "price": 401.87,
       "change_pct": 0.72
     },
@@ -161,7 +161,7 @@
       "name": "赣锋锂业",
       "industry": "锂矿",
       "position": "满仓",
-      "news_hits": 3,
+      "news_hits": 4,
       "price": 53.89,
       "change_pct": -2.02
     },
