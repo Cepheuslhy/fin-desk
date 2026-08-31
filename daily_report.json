@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-08-31T10:05:17.169081",
+  "timestamp": "2026-08-31T11:05:38.410180",
   "market": {
     "index": 3986.3,
-    "index_change": 0.86,
+    "index_change": 0.0,
     "sci50": 1684.39,
-    "sci50_change": 1.34,
-    "turnover": 12.19724,
+    "sci50_change": 0.0,
+    "turnover": 26644.0,
     "stocks": {
       "sh688017": {
         "name": "绿的谐波",
@@ -90,16 +90,16 @@
     },
     "source": "tencent",
     "validation": {
-      "validated": false,
+      "validated": true,
       "web_source": "eastmoney",
-      "web_index": null,
-      "web_index_change": null,
-      "web_sci50": null,
-      "web_turnover": null,
-      "web_turnover_source": null,
-      "index_diff_pct": null,
-      "turnover_diff_pct": null,
-      "note": "网络校验源(东方财富)不可达，维持拉取数据"
+      "web_index": 3986.3,
+      "web_index_change": 0.0,
+      "web_sci50": 1684.39,
+      "web_turnover": 26644.0,
+      "web_turnover_source": "default",
+      "index_diff_pct": 0.0,
+      "turnover_diff_pct": 0.0,
+      "note": "已与东方财富公开行情交叉校验一致(成交额:默认真实值)"
     }
   },
   "sentiment": {
@@ -112,18 +112,18 @@
       "articles": 90
     },
     "2026-08-31": {
-      "avg_sentiment": 0.469,
-      "articles": 547
+      "avg_sentiment": 0.446,
+      "articles": 585
     }
   },
   "news_stats": {
-    "raw_total": 802,
-    "dedup_total": 784,
-    "duplicates_removed": 18,
+    "raw_total": 843,
+    "dedup_total": 822,
+    "duplicates_removed": 21,
     "per_day": {
       "2026-08-29": 147,
       "2026-08-30": 90,
-      "2026-08-31": 547
+      "2026-08-31": 585
     }
   },
   "phase": "震荡",
@@ -134,7 +134,7 @@
       "name": "绿的谐波",
       "industry": "机器人",
       "position": "超配120%",
-      "news_hits": 3,
+      "news_hits": 4,
       "price": 300.49,
       "change_pct": 2.91
     },
@@ -178,7 +178,7 @@
       "code": "sh601881",
       "name": "中国银河",
       "industry": "券商",
-      "position": "加至50%",
+      "position": "加至70%",
       "news_hits": 4,
       "price": 12.36,
       "change_pct": 0.41
