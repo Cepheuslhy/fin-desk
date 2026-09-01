@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-01T14:09:52.507532",
+  "timestamp": "2026-09-01T15:08:34.268603",
   "market": {
     "index": 3979.89,
     "index_change": 0.0,
@@ -112,18 +112,18 @@
       "articles": 726
     },
     "2026-09-01": {
-      "avg_sentiment": 0.594,
-      "articles": 612
+      "avg_sentiment": 0.57,
+      "articles": 643
     }
   },
   "news_stats": {
-    "raw_total": 1489,
-    "dedup_total": 1428,
+    "raw_total": 1520,
+    "dedup_total": 1459,
     "duplicates_removed": 61,
     "per_day": {
       "2026-08-30": 90,
       "2026-08-31": 726,
-      "2026-09-01": 612
+      "2026-09-01": 643
     }
   },
   "phase": "震荡",
@@ -188,7 +188,7 @@
       "name": "黄金ETF",
       "industry": "黄金",
       "position": "加至25%",
-      "news_hits": 1,
+      "news_hits": 2,
       "price": 9.118,
       "change_pct": -0.19
     },
