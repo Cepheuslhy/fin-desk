@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-09-01T07:38:43.720254",
+  "timestamp": "2026-09-01T08:10:47.872219",
   "market": {
     "index": 3979.89,
-    "index_change": 0.0,
+    "index_change": -0.16,
     "sci50": 1647.53,
-    "sci50_change": 0.0,
-    "turnover": 26644.0,
+    "sci50_change": -2.19,
+    "turnover": 10.533353333333332,
     "stocks": {
       "sh688017": {
         "name": "绿的谐波",
@@ -90,16 +90,16 @@
     },
     "source": "tencent",
     "validation": {
-      "validated": true,
+      "validated": false,
       "web_source": "eastmoney",
-      "web_index": 3979.89,
-      "web_index_change": 0.0,
-      "web_sci50": 1647.53,
-      "web_turnover": 26644.0,
-      "web_turnover_source": "default",
-      "index_diff_pct": 0.0,
-      "turnover_diff_pct": 0.0,
-      "note": "已与东方财富公开行情交叉校验一致(成交额:默认真实值)"
+      "web_index": null,
+      "web_index_change": null,
+      "web_sci50": null,
+      "web_turnover": null,
+      "web_turnover_source": null,
+      "index_diff_pct": null,
+      "turnover_diff_pct": null,
+      "note": "网络校验源(东方财富)不可达，维持拉取数据"
     }
   },
   "sentiment": {
@@ -112,18 +112,18 @@
       "articles": 726
     },
     "2026-09-01": {
-      "avg_sentiment": 0.617,
-      "articles": 380
+      "avg_sentiment": 0.622,
+      "articles": 425
     }
   },
   "news_stats": {
-    "raw_total": 1244,
-    "dedup_total": 1196,
-    "duplicates_removed": 48,
+    "raw_total": 1290,
+    "dedup_total": 1241,
+    "duplicates_removed": 49,
     "per_day": {
       "2026-08-30": 90,
       "2026-08-31": 726,
-      "2026-09-01": 380
+      "2026-09-01": 425
     }
   },
   "phase": "震荡",
@@ -143,7 +143,7 @@
       "name": "新易盛",
       "industry": "光模块",
       "position": "满仓",
-      "news_hits": 2,
+      "news_hits": 3,
       "price": 402.81,
       "change_pct": 0.23
     },
@@ -178,7 +178,7 @@
       "code": "sh601881",
       "name": "中国银河",
       "industry": "券商",
-      "position": "维持70%",
+      "position": "维持50%",
       "news_hits": 4,
       "price": 12.47,
       "change_pct": 0.89
