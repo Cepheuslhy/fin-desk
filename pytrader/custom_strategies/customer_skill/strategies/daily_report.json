@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-08-31T15:05:34.733966",
+  "timestamp": "2026-09-01T01:09:09.185623",
   "market": {
-    "index": 3986.3,
+    "index": 3986.1,
     "index_change": 0.0,
     "sci50": 1684.39,
     "sci50_change": 0.0,
@@ -92,21 +92,17 @@
     "validation": {
       "validated": true,
       "web_source": "eastmoney",
-      "web_index": 3986.3,
+      "web_index": 3986.1,
       "web_index_change": 0.0,
       "web_sci50": 1684.39,
       "web_turnover": 26644.0,
       "web_turnover_source": "default",
-      "index_diff_pct": 0.0,
+      "index_diff_pct": 0.01,
       "turnover_diff_pct": 0.0,
       "note": "已与东方财富公开行情交叉校验一致(成交额:默认真实值)"
     }
   },
   "sentiment": {
-    "2026-08-29": {
-      "avg_sentiment": 0.018,
-      "articles": 147
-    },
     "2026-08-30": {
       "avg_sentiment": 0.265,
       "articles": 90
@@ -114,16 +110,20 @@
     "2026-08-31": {
       "avg_sentiment": 0.414,
       "articles": 726
+    },
+    "2026-09-01": {
+      "avg_sentiment": 0.458,
+      "articles": 182
     }
   },
   "news_stats": {
-    "raw_total": 995,
-    "dedup_total": 963,
-    "duplicates_removed": 32,
+    "raw_total": 1031,
+    "dedup_total": 998,
+    "duplicates_removed": 33,
     "per_day": {
-      "2026-08-29": 147,
       "2026-08-30": 90,
-      "2026-08-31": 726
+      "2026-08-31": 726,
+      "2026-09-01": 182
     }
   },
   "phase": "震荡",
@@ -152,7 +152,7 @@
       "name": "中芯国际",
       "industry": "半导体",
       "position": "满仓",
-      "news_hits": 12,
+      "news_hits": 9,
       "price": 128.7,
       "change_pct": 2.24
     },
@@ -161,7 +161,7 @@
       "name": "赣锋锂业",
       "industry": "锂矿",
       "position": "满仓",
-      "news_hits": 4,
+      "news_hits": 5,
       "price": 53.89,
       "change_pct": -2.02
     },
@@ -170,7 +170,7 @@
       "name": "锡业股份",
       "industry": "锡",
       "position": "满仓",
-      "news_hits": 1,
+      "news_hits": 2,
       "price": 36.19,
       "change_pct": -0.22
     },
@@ -178,7 +178,7 @@
       "code": "sh601881",
       "name": "中国银河",
       "industry": "券商",
-      "position": "加至70%",
+      "position": "维持70%",
       "news_hits": 4,
       "price": 12.36,
       "change_pct": 0.41
@@ -197,7 +197,7 @@
       "name": "科创50ETF",
       "industry": "科技",
       "position": "满仓",
-      "news_hits": 24,
+      "news_hits": 29,
       "price": 1.777,
       "change_pct": 1.2
     }
