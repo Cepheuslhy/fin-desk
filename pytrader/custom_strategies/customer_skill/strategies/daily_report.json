@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-09-02T08:10:44.239594",
+  "timestamp": "2026-09-02T09:09:42.153117",
   "market": {
     "index": 3941.39,
-    "index_change": 0.0,
+    "index_change": -0.97,
     "sci50": 1617.6,
-    "sci50_change": 0.0,
-    "turnover": 26644.0,
+    "sci50_change": -1.82,
+    "turnover": 11.615136666666668,
     "stocks": {
       "sh688017": {
         "name": "绿的谐波",
@@ -90,16 +90,16 @@
     },
     "source": "tencent",
     "validation": {
-      "validated": true,
+      "validated": false,
       "web_source": "eastmoney",
-      "web_index": 3941.39,
-      "web_index_change": 0.0,
-      "web_sci50": 1617.6,
-      "web_turnover": 26644.0,
-      "web_turnover_source": "default",
-      "index_diff_pct": 0.0,
-      "turnover_diff_pct": 0.0,
-      "note": "已与东方财富公开行情交叉校验一致(成交额:默认真实值)"
+      "web_index": null,
+      "web_index_change": null,
+      "web_sci50": null,
+      "web_turnover": null,
+      "web_turnover_source": null,
+      "index_diff_pct": null,
+      "turnover_diff_pct": null,
+      "note": "网络校验源(东方财富)不可达，维持拉取数据"
     }
   },
   "sentiment": {
@@ -112,18 +112,18 @@
       "articles": 643
     },
     "2026-09-02": {
-      "avg_sentiment": 0.465,
-      "articles": 392
+      "avg_sentiment": 0.469,
+      "articles": 419
     }
   },
   "news_stats": {
-    "raw_total": 1845,
-    "dedup_total": 1761,
-    "duplicates_removed": 84,
+    "raw_total": 1875,
+    "dedup_total": 1788,
+    "duplicates_removed": 87,
     "per_day": {
       "2026-08-31": 726,
       "2026-09-01": 643,
-      "2026-09-02": 392
+      "2026-09-02": 419
     }
   },
   "phase": "震荡",
@@ -134,7 +134,7 @@
       "name": "绿的谐波",
       "industry": "机器人",
       "position": "超配120%",
-      "news_hits": 4,
+      "news_hits": 5,
       "price": 285.0,
       "change_pct": -1.73
     },
@@ -178,7 +178,7 @@
       "code": "sh601881",
       "name": "中国银河",
       "industry": "券商",
-      "position": "维持70%",
+      "position": "维持50%",
       "news_hits": 4,
       "price": 12.34,
       "change_pct": -1.04
