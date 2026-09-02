@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-02T14:10:16.787464",
+  "timestamp": "2026-09-02T15:14:50.635974",
   "market": {
     "index": 3941.39,
     "index_change": 0.0,
@@ -112,18 +112,18 @@
       "articles": 643
     },
     "2026-09-02": {
-      "avg_sentiment": 0.492,
-      "articles": 577
+      "avg_sentiment": 0.499,
+      "articles": 614
     }
   },
   "news_stats": {
-    "raw_total": 2039,
-    "dedup_total": 1946,
+    "raw_total": 2076,
+    "dedup_total": 1983,
     "duplicates_removed": 93,
     "per_day": {
       "2026-08-31": 726,
       "2026-09-01": 643,
-      "2026-09-02": 577
+      "2026-09-02": 614
     }
   },
   "phase": "震荡",
@@ -161,7 +161,7 @@
       "name": "赣锋锂业",
       "industry": "锂矿",
       "position": "满仓",
-      "news_hits": 9,
+      "news_hits": 10,
       "price": 50.23,
       "change_pct": -4.38
     },
