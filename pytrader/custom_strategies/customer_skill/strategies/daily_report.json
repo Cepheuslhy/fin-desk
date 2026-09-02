@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-09-01T15:08:34.268603",
+  "timestamp": "2026-09-02T01:08:22.941152",
   "market": {
-    "index": 3979.89,
+    "index": 3979.87,
     "index_change": 0.0,
-    "sci50": 1647.53,
+    "sci50": 1647.44,
     "sci50_change": 0.0,
     "turnover": 26644.0,
     "stocks": {
@@ -92,9 +92,9 @@
     "validation": {
       "validated": true,
       "web_source": "eastmoney",
-      "web_index": 3979.89,
+      "web_index": 3979.87,
       "web_index_change": 0.0,
-      "web_sci50": 1647.53,
+      "web_sci50": 1647.44,
       "web_turnover": 26644.0,
       "web_turnover_source": "default",
       "index_diff_pct": 0.0,
@@ -103,10 +103,6 @@
     }
   },
   "sentiment": {
-    "2026-08-30": {
-      "avg_sentiment": 0.265,
-      "articles": 90
-    },
     "2026-08-31": {
       "avg_sentiment": 0.414,
       "articles": 726
@@ -114,16 +110,20 @@
     "2026-09-01": {
       "avg_sentiment": 0.57,
       "articles": 643
+    },
+    "2026-09-02": {
+      "avg_sentiment": 0.732,
+      "articles": 201
     }
   },
   "news_stats": {
-    "raw_total": 1520,
-    "dedup_total": 1459,
-    "duplicates_removed": 61,
+    "raw_total": 1633,
+    "dedup_total": 1570,
+    "duplicates_removed": 63,
     "per_day": {
-      "2026-08-30": 90,
       "2026-08-31": 726,
-      "2026-09-01": 643
+      "2026-09-01": 643,
+      "2026-09-02": 201
     }
   },
   "phase": "震荡",
@@ -134,7 +134,7 @@
       "name": "绿的谐波",
       "industry": "机器人",
       "position": "超配120%",
-      "news_hits": 5,
+      "news_hits": 4,
       "price": 290.02,
       "change_pct": -3.48
     },
@@ -143,7 +143,7 @@
       "name": "新易盛",
       "industry": "光模块",
       "position": "满仓",
-      "news_hits": 3,
+      "news_hits": 4,
       "price": 402.81,
       "change_pct": 0.23
     },
@@ -197,7 +197,7 @@
       "name": "科创50ETF",
       "industry": "科技",
       "position": "满仓",
-      "news_hits": 45,
+      "news_hits": 50,
       "price": 1.74,
       "change_pct": -2.08
     }
