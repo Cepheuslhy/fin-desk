@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-09-02T15:14:50.635974",
+  "timestamp": "2026-09-03T01:08:42.653155",
   "market": {
-    "index": 3941.39,
+    "index": 3941.38,
     "index_change": 0.0,
     "sci50": 1617.6,
     "sci50_change": 0.0,
@@ -92,7 +92,7 @@
     "validation": {
       "validated": true,
       "web_source": "eastmoney",
-      "web_index": 3941.39,
+      "web_index": 3941.38,
       "web_index_change": 0.0,
       "web_sci50": 1617.6,
       "web_turnover": 26644.0,
@@ -103,10 +103,6 @@
     }
   },
   "sentiment": {
-    "2026-08-31": {
-      "avg_sentiment": 0.414,
-      "articles": 726
-    },
     "2026-09-01": {
       "avg_sentiment": 0.57,
       "articles": 643
@@ -114,16 +110,20 @@
     "2026-09-02": {
       "avg_sentiment": 0.499,
       "articles": 614
+    },
+    "2026-09-03": {
+      "avg_sentiment": 0.614,
+      "articles": 176
     }
   },
   "news_stats": {
-    "raw_total": 2076,
-    "dedup_total": 1983,
-    "duplicates_removed": 93,
+    "raw_total": 1499,
+    "dedup_total": 1433,
+    "duplicates_removed": 66,
     "per_day": {
-      "2026-08-31": 726,
       "2026-09-01": 643,
-      "2026-09-02": 614
+      "2026-09-02": 614,
+      "2026-09-03": 176
     }
   },
   "phase": "震荡",
@@ -134,7 +134,7 @@
       "name": "绿的谐波",
       "industry": "机器人",
       "position": "超配120%",
-      "news_hits": 6,
+      "news_hits": 3,
       "price": 285.0,
       "change_pct": -1.73
     },
@@ -143,7 +143,7 @@
       "name": "新易盛",
       "industry": "光模块",
       "position": "维持85%",
-      "news_hits": 4,
+      "news_hits": 2,
       "price": 386.7,
       "change_pct": -4.0
     },
@@ -151,8 +151,8 @@
       "code": "sh688981",
       "name": "中芯国际",
       "industry": "半导体",
-      "position": "加至85%",
-      "news_hits": 24,
+      "position": "维持85%",
+      "news_hits": 19,
       "price": 122.55,
       "change_pct": -2.82
     },
@@ -161,7 +161,7 @@
       "name": "赣锋锂业",
       "industry": "锂矿",
       "position": "满仓",
-      "news_hits": 10,
+      "news_hits": 7,
       "price": 50.23,
       "change_pct": -4.38
     },
@@ -170,7 +170,7 @@
       "name": "锡业股份",
       "industry": "锡",
       "position": "满仓",
-      "news_hits": 2,
+      "news_hits": 1,
       "price": 34.3,
       "change_pct": -3.3
     },
@@ -179,7 +179,7 @@
       "name": "中国银河",
       "industry": "券商",
       "position": "维持70%",
-      "news_hits": 4,
+      "news_hits": 0,
       "price": 12.34,
       "change_pct": -1.04
     },
@@ -197,7 +197,7 @@
       "name": "科创50ETF",
       "industry": "科技",
       "position": "加至80%",
-      "news_hits": 59,
+      "news_hits": 51,
       "price": 1.708,
       "change_pct": -1.84
     }
