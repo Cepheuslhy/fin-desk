@@ -1,100 +1,100 @@
 {
-  "timestamp": "2026-09-03T02:13:38.838243",
+  "timestamp": "2026-09-03T05:25:19.625751",
   "market": {
-    "index": 3959.41,
+    "index": 3933.18,
     "index_change": 0.0,
-    "sci50": 1610.57,
+    "sci50": 1599.34,
     "sci50_change": 0.0,
     "turnover": 26644.0,
     "stocks": {
       "sh688017": {
         "name": "绿的谐波",
-        "current": 287.5,
-        "change_pct": 0.88,
+        "current": 284.8,
+        "change_pct": -0.07,
         "open": 294.0,
         "high": 298.58,
-        "low": 287.49,
-        "volume": 2794775.0,
-        "amount": 82085.0
+        "low": 284.56,
+        "volume": 3895584.0,
+        "amount": 113763.0
       },
       "sz300502": {
         "name": "新易盛",
-        "current": 387.66,
-        "change_pct": 0.25,
+        "current": 381.48,
+        "change_pct": -1.35,
         "open": 392.11,
         "high": 397.79,
-        "low": 386.46,
-        "volume": 124298.0,
-        "amount": 487151.0
+        "low": 381.0,
+        "volume": 196509.0,
+        "amount": 765563.0
       },
       "sh688981": {
         "name": "中芯国际",
-        "current": 124.04,
-        "change_pct": 1.22,
+        "current": 122.99,
+        "change_pct": 0.36,
         "open": 123.77,
         "high": 124.86,
-        "low": 123.27,
-        "volume": 8785479.0,
-        "amount": 109071.0
+        "low": 122.9,
+        "volume": 14690130.0,
+        "amount": 182153.0
       },
       "sz002460": {
         "name": "赣锋锂业",
-        "current": 50.9,
-        "change_pct": 1.33,
+        "current": 50.54,
+        "change_pct": 0.62,
         "open": 51.18,
         "high": 51.46,
-        "low": 50.7,
-        "volume": 116719.0,
-        "amount": 59697.0
+        "low": 50.51,
+        "volume": 187630.0,
+        "amount": 95850.0
       },
       "sz000960": {
         "name": "锡业股份",
-        "current": 34.49,
-        "change_pct": 0.55,
+        "current": 34.31,
+        "change_pct": 0.03,
         "open": 34.69,
         "high": 34.88,
-        "low": 34.4,
-        "volume": 84035.0,
-        "amount": 29104.0
+        "low": 34.27,
+        "volume": 159578.0,
+        "amount": 55170.0
       },
       "sh601881": {
         "name": "中国银河",
-        "current": 12.47,
-        "change_pct": 1.05,
+        "current": 12.37,
+        "change_pct": 0.24,
         "open": 12.35,
-        "high": 12.5,
+        "high": 12.51,
         "low": 12.33,
-        "volume": 106777.0,
-        "amount": 13277.0
+        "volume": 207959.0,
+        "amount": 25883.0
       },
       "sh518880": {
         "name": "黄金ETF华安",
-        "current": 9.081,
-        "change_pct": 2.01,
+        "current": 9.105,
+        "change_pct": 2.28,
         "open": 9.045,
-        "high": 9.087,
+        "high": 9.135,
         "low": 9.045,
-        "volume": 1692759.0,
-        "amount": 153532.0
+        "volume": 3807523.0,
+        "amount": 346036.0
       },
       "sh588000": {
         "name": "科创50ETF华夏",
-        "current": 1.702,
-        "change_pct": -0.35,
+        "current": 1.689,
+        "change_pct": -1.11,
         "open": 1.723,
         "high": 1.727,
-        "low": 1.701,
-        "volume": 8743368.0,
-        "amount": 149737.0
+        "low": 1.689,
+        "volume": 18852473.0,
+        "amount": 321759.0
       }
     },
     "source": "tencent",
     "validation": {
       "validated": true,
       "web_source": "eastmoney",
-      "web_index": 3959.41,
+      "web_index": 3933.18,
       "web_index_change": 0.0,
-      "web_sci50": 1610.57,
+      "web_sci50": 1599.34,
       "web_turnover": 26644.0,
       "web_turnover_source": "default",
       "index_diff_pct": 0.0,
@@ -112,18 +112,18 @@
       "articles": 614
     },
     "2026-09-03": {
-      "avg_sentiment": 0.659,
-      "articles": 215
+      "avg_sentiment": 0.639,
+      "articles": 282
     }
   },
   "news_stats": {
-    "raw_total": 1539,
-    "dedup_total": 1472,
-    "duplicates_removed": 67,
+    "raw_total": 1612,
+    "dedup_total": 1539,
+    "duplicates_removed": 73,
     "per_day": {
       "2026-09-01": 643,
       "2026-09-02": 614,
-      "2026-09-03": 215
+      "2026-09-03": 282
     }
   },
   "phase": "震荡",
@@ -135,8 +135,8 @@
       "industry": "机器人",
       "position": "超配120%",
       "news_hits": 3,
-      "price": 287.5,
-      "change_pct": 0.88
+      "price": 284.8,
+      "change_pct": -0.07
     },
     {
       "code": "sz300502",
@@ -144,8 +144,8 @@
       "industry": "光模块",
       "position": "维持85%",
       "news_hits": 2,
-      "price": 387.66,
-      "change_pct": 0.25
+      "price": 381.48,
+      "change_pct": -1.35
     },
     {
       "code": "sh688981",
@@ -153,17 +153,17 @@
       "industry": "半导体",
       "position": "维持85%",
       "news_hits": 19,
-      "price": 124.04,
-      "change_pct": 1.22
+      "price": 122.99,
+      "change_pct": 0.36
     },
     {
       "code": "sz002460",
       "name": "赣锋锂业",
       "industry": "锂矿",
       "position": "满仓",
-      "news_hits": 7,
-      "price": 50.9,
-      "change_pct": 1.33
+      "news_hits": 9,
+      "price": 50.54,
+      "change_pct": 0.62
     },
     {
       "code": "sz000960",
@@ -171,8 +171,8 @@
       "industry": "锡",
       "position": "满仓",
       "news_hits": 1,
-      "price": 34.49,
-      "change_pct": 0.55
+      "price": 34.31,
+      "change_pct": 0.03
     },
     {
       "code": "sh601881",
@@ -180,8 +180,8 @@
       "industry": "券商",
       "position": "维持70%",
       "news_hits": 0,
-      "price": 12.47,
-      "change_pct": 1.05
+      "price": 12.37,
+      "change_pct": 0.24
     },
     {
       "code": "sh518880",
@@ -189,17 +189,17 @@
       "industry": "黄金",
       "position": "维持20%",
       "news_hits": 2,
-      "price": 9.081,
-      "change_pct": 2.01
+      "price": 9.105,
+      "change_pct": 2.28
     },
     {
       "code": "sh588000",
       "name": "科创50ETF",
       "industry": "科技",
       "position": "加至80%",
-      "news_hits": 51,
-      "price": 1.702,
-      "change_pct": -0.35
+      "news_hits": 52,
+      "price": 1.689,
+      "change_pct": -1.11
     }
   ]
 }
