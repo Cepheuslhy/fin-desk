@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-03T14:10:02.432337",
+  "timestamp": "2026-09-03T15:09:24.696048",
   "market": {
     "index": 3942.09,
     "index_change": 0.02,
@@ -112,18 +112,18 @@
       "articles": 614
     },
     "2026-09-03": {
-      "avg_sentiment": 0.571,
-      "articles": 600
+      "avg_sentiment": 0.544,
+      "articles": 634
     }
   },
   "news_stats": {
-    "raw_total": 1945,
-    "dedup_total": 1857,
-    "duplicates_removed": 88,
+    "raw_total": 1980,
+    "dedup_total": 1891,
+    "duplicates_removed": 89,
     "per_day": {
       "2026-09-01": 643,
       "2026-09-02": 614,
-      "2026-09-03": 600
+      "2026-09-03": 634
     }
   },
   "phase": "震荡",
@@ -134,7 +134,7 @@
       "name": "绿的谐波",
       "industry": "机器人",
       "position": "超配120%",
-      "news_hits": 4,
+      "news_hits": 5,
       "price": 290.41,
       "change_pct": 1.9
     },
@@ -152,7 +152,7 @@
       "name": "中芯国际",
       "industry": "半导体",
       "position": "加至85%",
-      "news_hits": 22,
+      "news_hits": 23,
       "price": 123.87,
       "change_pct": 1.08
     },
@@ -197,7 +197,7 @@
       "name": "科创50ETF",
       "industry": "科技",
       "position": "加至80%",
-      "news_hits": 59,
+      "news_hits": 60,
       "price": 1.703,
       "change_pct": -0.29
     }
