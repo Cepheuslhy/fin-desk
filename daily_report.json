@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-09-03T15:09:24.696048",
+  "timestamp": "2026-09-04T01:07:46.752724",
   "market": {
-    "index": 3942.09,
-    "index_change": 0.02,
+    "index": 3942.01,
+    "index_change": 0.0,
     "sci50": 1611.17,
-    "sci50_change": -0.4,
-    "turnover": 9.226356666666666,
+    "sci50_change": 0.0,
+    "turnover": 26644.0,
     "stocks": {
       "sh688017": {
         "name": "绿的谐波",
@@ -90,23 +90,19 @@
     },
     "source": "tencent",
     "validation": {
-      "validated": false,
+      "validated": true,
       "web_source": "eastmoney",
-      "web_index": null,
-      "web_index_change": null,
-      "web_sci50": null,
-      "web_turnover": null,
-      "web_turnover_source": null,
-      "index_diff_pct": null,
-      "turnover_diff_pct": null,
-      "note": "网络校验源(东方财富)不可达，维持拉取数据"
+      "web_index": 3942.01,
+      "web_index_change": 0.0,
+      "web_sci50": 1611.17,
+      "web_turnover": 26644.0,
+      "web_turnover_source": "default",
+      "index_diff_pct": 0.0,
+      "turnover_diff_pct": 0.0,
+      "note": "已与东方财富公开行情交叉校验一致(成交额:默认真实值)"
     }
   },
   "sentiment": {
-    "2026-09-01": {
-      "avg_sentiment": 0.57,
-      "articles": 643
-    },
     "2026-09-02": {
       "avg_sentiment": 0.499,
       "articles": 614
@@ -114,16 +110,20 @@
     "2026-09-03": {
       "avg_sentiment": 0.544,
       "articles": 634
+    },
+    "2026-09-04": {
+      "avg_sentiment": 0.324,
+      "articles": 167
     }
   },
   "news_stats": {
-    "raw_total": 1980,
-    "dedup_total": 1891,
-    "duplicates_removed": 89,
+    "raw_total": 1479,
+    "dedup_total": 1415,
+    "duplicates_removed": 64,
     "per_day": {
-      "2026-09-01": 643,
       "2026-09-02": 614,
-      "2026-09-03": 634
+      "2026-09-03": 634,
+      "2026-09-04": 167
     }
   },
   "phase": "震荡",
@@ -134,7 +134,7 @@
       "name": "绿的谐波",
       "industry": "机器人",
       "position": "超配120%",
-      "news_hits": 5,
+      "news_hits": 4,
       "price": 290.41,
       "change_pct": 1.9
     },
@@ -143,7 +143,7 @@
       "name": "新易盛",
       "industry": "光模块",
       "position": "维持85%",
-      "news_hits": 2,
+      "news_hits": 3,
       "price": 384.76,
       "change_pct": -0.5
     },
@@ -151,8 +151,8 @@
       "code": "sh688981",
       "name": "中芯国际",
       "industry": "半导体",
-      "position": "加至85%",
-      "news_hits": 23,
+      "position": "维持85%",
+      "news_hits": 10,
       "price": 123.87,
       "change_pct": 1.08
     },
@@ -161,7 +161,7 @@
       "name": "赣锋锂业",
       "industry": "锂矿",
       "position": "满仓",
-      "news_hits": 17,
+      "news_hits": 13,
       "price": 50.52,
       "change_pct": 0.58
     },
@@ -178,7 +178,7 @@
       "code": "sh601881",
       "name": "中国银河",
       "industry": "券商",
-      "position": "维持50%",
+      "position": "维持70%",
       "news_hits": 0,
       "price": 12.38,
       "change_pct": 0.32
@@ -188,7 +188,7 @@
       "name": "黄金ETF",
       "industry": "黄金",
       "position": "维持20%",
-      "news_hits": 2,
+      "news_hits": 1,
       "price": 9.105,
       "change_pct": 2.28
     },
@@ -197,7 +197,7 @@
       "name": "科创50ETF",
       "industry": "科技",
       "position": "加至80%",
-      "news_hits": 60,
+      "news_hits": 45,
       "price": 1.703,
       "change_pct": -0.29
     }
