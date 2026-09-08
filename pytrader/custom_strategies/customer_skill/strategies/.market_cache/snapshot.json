@@ -1,93 +1,93 @@
 {
-  "index": 3940.9,
+  "index": 3940.55,
   "index_name": "上证指数",
-  "index_change": 0.21,
-  "sci50": 1600.6,
+  "index_change": 0.2,
+  "sci50": 1591.0,
   "sci50_name": "科创50",
-  "sci50_change": -0.92,
+  "sci50_change": -1.52,
   "turnover": 0,
   "stocks": {
     "sh688017": {
       "name": "绿的谐波",
-      "current": 293.0,
-      "change_pct": -0.66,
+      "current": 292.54,
+      "change_pct": -0.82,
       "open": 295.3,
       "high": 300.86,
-      "low": 292.15,
-      "volume": 4183136.0,
-      "amount": 123893.0
+      "low": 290.28,
+      "volume": 5255717.0,
+      "amount": 155227.0
     },
     "sz300502": {
       "name": "新易盛",
-      "current": 418.99,
-      "change_pct": 0.43,
+      "current": 416.4,
+      "change_pct": -0.19,
       "open": 419.33,
       "high": 431.34,
       "low": 413.86,
-      "volume": 291766.0,
-      "amount": 1234050.0
+      "volume": 369420.0,
+      "amount": 1557506.0
     },
     "sh688981": {
       "name": "中芯国际",
-      "current": 122.32,
-      "change_pct": -1.45,
+      "current": 121.52,
+      "change_pct": -2.09,
       "open": 124.25,
       "high": 124.44,
-      "low": 121.63,
-      "volume": 19849391.0,
-      "amount": 243470.0
+      "low": 121.5,
+      "volume": 27764164.0,
+      "amount": 339894.0
     },
     "sz002460": {
       "name": "赣锋锂业",
-      "current": 49.14,
-      "change_pct": 0.57,
+      "current": 49.09,
+      "change_pct": 0.47,
       "open": 49.15,
       "high": 49.59,
-      "low": 48.9,
-      "volume": 150900.0,
-      "amount": 74325.0
+      "low": 48.8,
+      "volume": 215881.0,
+      "amount": 106168.0
     },
     "sz000960": {
       "name": "锡业股份",
-      "current": 34.65,
-      "change_pct": 1.97,
+      "current": 34.34,
+      "change_pct": 1.06,
       "open": 34.22,
       "high": 34.95,
       "low": 33.97,
-      "volume": 262727.0,
-      "amount": 90886.0
+      "volume": 325695.0,
+      "amount": 112563.0
     },
     "sh601881": {
       "name": "中国银河",
-      "current": 12.26,
-      "change_pct": -0.16,
+      "current": 12.25,
+      "change_pct": -0.24,
       "open": 12.28,
       "high": 12.36,
-      "low": 12.26,
-      "volume": 98566.0,
-      "amount": 12120.0
+      "low": 12.22,
+      "volume": 167800.0,
+      "amount": 20598.0
     },
     "sh518880": {
       "name": "黄金ETF华安",
-      "current": 9.089,
-      "change_pct": 0.72,
+      "current": 9.047,
+      "change_pct": 0.25,
       "open": 9.102,
       "high": 9.123,
-      "low": 9.08,
-      "volume": 2686398.0,
-      "amount": 244524.0
+      "low": 9.039,
+      "volume": 4143978.0,
+      "amount": 376620.0
     },
     "sh588000": {
       "name": "科创50ETF华夏",
-      "current": 1.691,
-      "change_pct": -0.82,
+      "current": 1.681,
+      "change_pct": -1.41,
       "open": 1.701,
       "high": 1.716,
-      "low": 1.678,
-      "volume": 21578424.0,
-      "amount": 366112.0
+      "low": 1.674,
+      "volume": 29660050.0,
+      "amount": 502049.0
     }
   },
   "source": "tencent",
-  "timestamp": "2026-09-08T05:35:42.609910"
+  "timestamp": "2026-09-08T10:33:43.695182"
 }
