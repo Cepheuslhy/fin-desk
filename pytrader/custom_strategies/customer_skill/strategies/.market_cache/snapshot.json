@@ -1,0 +1,93 @@
+{
+  "index": 3951.51,
+  "index_name": "上证指数",
+  "index_change": 0.28,
+  "sci50": 1580.06,
+  "sci50_name": "科创50",
+  "sci50_change": -0.69,
+  "turnover": 0,
+  "stocks": {
+    "sh688017": {
+      "name": "绿的谐波",
+      "current": 290.5,
+      "change_pct": -0.7,
+      "open": 294.6,
+      "high": 295.6,
+      "low": 287.39,
+      "volume": 3728818.0,
+      "amount": 108395.0
+    },
+    "sz300502": {
+      "name": "新易盛",
+      "current": 414.8,
+      "change_pct": -0.38,
+      "open": 435.0,
+      "high": 435.65,
+      "low": 411.57,
+      "volume": 285202.0,
+      "amount": 1202495.0
+    },
+    "sh688981": {
+      "name": "中芯国际",
+      "current": 120.51,
+      "change_pct": -0.83,
+      "open": 122.12,
+      "high": 122.96,
+      "low": 120.06,
+      "volume": 21857641.0,
+      "amount": 264657.0
+    },
+    "sz002460": {
+      "name": "赣锋锂业",
+      "current": 49.11,
+      "change_pct": 0.04,
+      "open": 48.85,
+      "high": 49.3,
+      "low": 48.57,
+      "volume": 210364.0,
+      "amount": 103011.0
+    },
+    "sz000960": {
+      "name": "锡业股份",
+      "current": 34.92,
+      "change_pct": 1.69,
+      "open": 34.28,
+      "high": 35.28,
+      "low": 34.24,
+      "volume": 290195.0,
+      "amount": 101026.0
+    },
+    "sh601881": {
+      "name": "中国银河",
+      "current": 12.17,
+      "change_pct": -0.65,
+      "open": 12.23,
+      "high": 12.23,
+      "low": 12.13,
+      "volume": 186318.0,
+      "amount": 22676.0
+    },
+    "sh518880": {
+      "name": "黄金ETF华安",
+      "current": 9.041,
+      "change_pct": -0.07,
+      "open": 8.97,
+      "high": 9.052,
+      "low": 8.97,
+      "volume": 4486997.0,
+      "amount": 404297.0
+    },
+    "sh588000": {
+      "name": "科创50ETF华夏",
+      "current": 1.671,
+      "change_pct": -0.59,
+      "open": 1.69,
+      "high": 1.699,
+      "low": 1.661,
+      "volume": 23363402.0,
+      "amount": 391939.0
+    }
+  },
+  "source": "tencent",
+  "timestamp": "2026-09-09T15:00:36.453207"
+}
