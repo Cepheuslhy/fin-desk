@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-11T12:17:51.353242",
+  "timestamp": "2026-09-11T14:50:18.283038",
   "market": {
     "index": 3888.11,
     "index_change": 0.0,
@@ -112,18 +112,18 @@
       "articles": 632
     },
     "2026-09-11": {
-      "avg_sentiment": 0.464,
-      "articles": 406
+      "avg_sentiment": 0.393,
+      "articles": 540
     }
   },
   "news_stats": {
-    "raw_total": 1623,
-    "dedup_total": 1535,
-    "duplicates_removed": 88,
+    "raw_total": 1763,
+    "dedup_total": 1669,
+    "duplicates_removed": 94,
     "per_day": {
       "2026-09-09": 497,
       "2026-09-10": 632,
-      "2026-09-11": 406
+      "2026-09-11": 540
     }
   },
   "phase": "震荡",
@@ -152,7 +152,7 @@
       "name": "中芯国际",
       "industry": "半导体",
       "position": "加至85%",
-      "news_hits": 22,
+      "news_hits": 24,
       "price": 117.41,
       "change_pct": -1.49
     },
@@ -170,7 +170,7 @@
       "name": "锡业股份",
       "industry": "锡",
       "position": "满仓",
-      "news_hits": 3,
+      "news_hits": 4,
       "price": 33.37,
       "change_pct": -4.93
     },
@@ -179,7 +179,7 @@
       "name": "中国银河",
       "industry": "券商",
       "position": "维持70%",
-      "news_hits": 3,
+      "news_hits": 4,
       "price": 11.91,
       "change_pct": -2.93
     },
@@ -188,7 +188,7 @@
       "name": "黄金ETF",
       "industry": "黄金",
       "position": "维持20%",
-      "news_hits": 3,
+      "news_hits": 4,
       "price": 8.943,
       "change_pct": -1.54
     },
@@ -197,7 +197,7 @@
       "name": "科创50ETF",
       "industry": "科技",
       "position": "加至80%",
-      "news_hits": 49,
+      "news_hits": 53,
       "price": 1.639,
       "change_pct": -1.21
     }
