@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-09-12T05:23:56.490262",
+  "timestamp": "2026-09-12T10:04:42.780833",
   "market": {
     "index": 3888.11,
-    "index_change": 0.0,
+    "index_change": -1.18,
     "sci50": 1553.39,
-    "sci50_change": 0.0,
-    "turnover": 26644.0,
+    "sci50_change": -1.01,
+    "turnover": 13.370863333333332,
     "stocks": {
       "sh688017": {
         "name": "绿的谐波",
@@ -90,16 +90,16 @@
     },
     "source": "tencent",
     "validation": {
-      "validated": true,
+      "validated": false,
       "web_source": "eastmoney",
-      "web_index": 3888.11,
-      "web_index_change": 0.0,
-      "web_sci50": 1553.39,
-      "web_turnover": 26644.0,
-      "web_turnover_source": "default",
-      "index_diff_pct": 0.0,
-      "turnover_diff_pct": 0.0,
-      "note": "已与东方财富公开行情交叉校验一致(成交额:默认真实值)"
+      "web_index": null,
+      "web_index_change": null,
+      "web_sci50": null,
+      "web_turnover": null,
+      "web_turnover_source": null,
+      "index_diff_pct": null,
+      "turnover_diff_pct": null,
+      "note": "网络校验源(东方财富)不可达，维持拉取数据"
     }
   },
   "sentiment": {
@@ -112,18 +112,18 @@
       "articles": 597
     },
     "2026-09-12": {
-      "avg_sentiment": 0.443,
-      "articles": 160
+      "avg_sentiment": 0.434,
+      "articles": 207
     }
   },
   "news_stats": {
-    "raw_total": 1451,
-    "dedup_total": 1389,
+    "raw_total": 1498,
+    "dedup_total": 1436,
     "duplicates_removed": 62,
     "per_day": {
       "2026-09-10": 632,
       "2026-09-11": 597,
-      "2026-09-12": 160
+      "2026-09-12": 207
     }
   },
   "phase": "震荡",
@@ -134,7 +134,7 @@
       "name": "绿的谐波",
       "industry": "机器人",
       "position": "超配120%",
-      "news_hits": 2,
+      "news_hits": 3,
       "price": 280.66,
       "change_pct": -1.55
     },
@@ -143,7 +143,7 @@
       "name": "新易盛",
       "industry": "光模块",
       "position": "维持85%",
-      "news_hits": 5,
+      "news_hits": 6,
       "price": 423.0,
       "change_pct": 2.94
     },
@@ -178,7 +178,7 @@
       "code": "sh601881",
       "name": "中国银河",
       "industry": "券商",
-      "position": "维持70%",
+      "position": "维持50%",
       "news_hits": 3,
       "price": 11.91,
       "change_pct": -2.93
@@ -197,7 +197,7 @@
       "name": "科创50ETF",
       "industry": "科技",
       "position": "加至80%",
-      "news_hits": 40,
+      "news_hits": 43,
       "price": 1.639,
       "change_pct": -1.21
     }
