@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-13T05:39:27.354966",
+  "timestamp": "2026-09-13T11:04:59.345853",
   "market": {
     "index": 3888.11,
     "index_change": 0.0,
@@ -113,17 +113,17 @@
     },
     "2026-09-13": {
       "avg_sentiment": 0.559,
-      "articles": 117
+      "articles": 135
     }
   },
   "news_stats": {
-    "raw_total": 984,
-    "dedup_total": 955,
+    "raw_total": 1002,
+    "dedup_total": 973,
     "duplicates_removed": 29,
     "per_day": {
       "2026-09-11": 597,
       "2026-09-12": 241,
-      "2026-09-13": 117
+      "2026-09-13": 135
     }
   },
   "phase": "震荡",
@@ -143,7 +143,7 @@
       "name": "新易盛",
       "industry": "光模块",
       "position": "满仓",
-      "news_hits": 4,
+      "news_hits": 5,
       "price": 423.0,
       "change_pct": 2.94
     },
