@@ -1,6 +1,675 @@
 {
-  "updatedAt": "2026-09-16T20:46:24+08:00",
+  "updatedAt": "2026-09-17T20:43:46+08:00",
   "reviews": [
+    {
+      "date": "2026-09-17",
+      "weekday": "星期四",
+      "isTradingDay": true,
+      "conclusion": "<b>09/17 收盘：</b>数据已自动生成（基础版）。AI 深度分析待接入。",
+      "digest": "9/17 收盘：涨停 0 家，封板率 0%。AI 深度分析待接入。",
+      "emotionStage": "数据驱动（待分析）",
+      "position": "待分析",
+      "summary": {
+        "emotion": "数据驱动",
+        "emotionSub": "基础数据已生成",
+        "position": "待分析",
+        "positionSub": "AI 分析待接入",
+        "mainLine": "待分析",
+        "mainLineSub": "—",
+        "subLine": "—",
+        "subLineSub": "—"
+      },
+      "concl_so": {
+        "s1": [
+          "基础数据已生成，深度分析待 AI 接入。"
+        ],
+        "s2": [],
+        "s3": [],
+        "s4": ""
+      },
+      "indices": [
+        {
+          "name": "上证指数",
+          "close": "3875.60",
+          "chg": "-0.41%",
+          "chgPts": "-15.89",
+          "ampl": "-16.0%",
+          "amount": "8688",
+          "ma4009.624": "-",
+          "ma4009.624Dev": "-",
+          "ma4036.308": "-",
+          "ma4036.308Dev": "-",
+          "ma4064.5455": "-",
+          "ma4064.5455Dev": "-",
+          "ma4036.285666666667": "-",
+          "ma4036.285666666667Dev": "-",
+          "ma3959.624166666667": "-",
+          "ma3959.624166666667Dev": "-",
+          "maPills": [
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            }
+          ]
+        },
+        {
+          "name": "深证成指",
+          "close": "13409.91",
+          "chg": "-0.33%",
+          "chgPts": "-44.25",
+          "ampl": "-44.83%",
+          "amount": "9544",
+          "ma15204.054": "-",
+          "ma15204.054Dev": "-",
+          "ma15292.297": "-",
+          "ma15292.297Dev": "-",
+          "ma15649.720000000001": "-",
+          "ma15649.720000000001Dev": "-",
+          "ma15444.490666666667": "-",
+          "ma15444.490666666667Dev": "-",
+          "ma14721.754666666668": "-",
+          "ma14721.754666666668Dev": "-",
+          "maPills": [
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            }
+          ]
+        },
+        {
+          "name": "创业板指",
+          "close": "3298.31",
+          "chg": "-0.40%",
+          "chgPts": "-13.19",
+          "ampl": "-13.16%",
+          "amount": "4466",
+          "ma3935.03": "-",
+          "ma3935.03Dev": "-",
+          "ma3962.0269999999996": "-",
+          "ma3962.0269999999996Dev": "-",
+          "ma4103.963": "-",
+          "ma4103.963Dev": "-",
+          "ma4024.601": "-",
+          "ma4024.601Dev": "-",
+          "ma3763.135": "-",
+          "ma3763.135Dev": "-",
+          "maPills": [
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            }
+          ]
+        },
+        {
+          "name": "科创50",
+          "close": "1606.29",
+          "chg": "-0.61%",
+          "chgPts": "-9.80",
+          "ampl": "-9.9%",
+          "amount": "854",
+          "ma1663.658": "-",
+          "ma1663.658Dev": "-",
+          "ma1699.152": "-",
+          "ma1699.152Dev": "-",
+          "ma1866.5205": "-",
+          "ma1866.5205Dev": "-",
+          "ma1911.5313333333334": "-",
+          "ma1911.5313333333334Dev": "-",
+          "ma1808.9803333333334": "-",
+          "ma1808.9803333333334Dev": "-",
+          "maPills": [
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            }
+          ]
+        },
+        {
+          "name": "沪深300",
+          "close": "4460.16",
+          "chg": "-0.45%",
+          "chgPts": "-20.07",
+          "ampl": "-20.11%",
+          "amount": "4483",
+          "ma4797.142": "-",
+          "ma4797.142Dev": "-",
+          "ma4819.277": "-",
+          "ma4819.277Dev": "-",
+          "ma4881.1195": "-",
+          "ma4881.1195Dev": "-",
+          "ma4849.618": "-",
+          "ma4849.618Dev": "-",
+          "ma4743.296833333333": "-",
+          "ma4743.296833333333Dev": "-",
+          "maPills": [
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            }
+          ]
+        },
+        {
+          "name": "中证1000",
+          "close": "7548.82",
+          "chg": "-0.51%",
+          "chgPts": "-38.50",
+          "ampl": "-38.61%",
+          "amount": "3885",
+          "ma8271.946": "-",
+          "ma8271.946Dev": "-",
+          "ma8359.408": "-",
+          "ma8359.408Dev": "-",
+          "ma8552.064": "-",
+          "ma8552.064Dev": "-",
+          "ma8407.176": "-",
+          "ma8407.176Dev": "-",
+          "ma7916.309166666667": "-",
+          "ma7916.309166666667Dev": "-",
+          "maPills": [
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            }
+          ]
+        },
+        {
+          "name": "国证2000",
+          "close": "9893.94",
+          "chg": "-0.31%",
+          "chgPts": "-30.67",
+          "ampl": "-30.49%",
+          "amount": "5729",
+          "ma10778.244": "-",
+          "ma10778.244Dev": "-",
+          "ma10867.456": "-",
+          "ma10867.456Dev": "-",
+          "ma11083.756": "-",
+          "ma11083.756Dev": "-",
+          "ma10885.913": "-",
+          "ma10885.913Dev": "-",
+          "ma10254.212666666666": "-",
+          "ma10254.212666666666Dev": "-",
+          "maPills": [
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            }
+          ]
+        },
+        {
+          "name": "上证50",
+          "close": "2844.23",
+          "chg": "-0.74%",
+          "chgPts": "-21.05",
+          "ampl": "-21.07%",
+          "amount": "1145",
+          "ma2855.058": "-",
+          "ma2855.058Dev": "-",
+          "ma2879.912": "-",
+          "ma2879.912Dev": "-",
+          "ma2918.688": "-",
+          "ma2918.688Dev": "-",
+          "ma2926.566": "-",
+          "ma2926.566Dev": "-",
+          "ma2924.246": "-",
+          "ma2924.246Dev": "-",
+          "maPills": [
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            }
+          ]
+        },
+        {
+          "name": "红利指数",
+          "close": "3259.04",
+          "chg": "-0.57%",
+          "chgPts": "-18.58",
+          "ampl": "-18.84%",
+          "amount": "293",
+          "ma3280.3779999999997": "-",
+          "ma3280.3779999999997Dev": "-",
+          "ma3243.6040000000003": "-",
+          "ma3243.6040000000003Dev": "-",
+          "ma3106.318": "-",
+          "ma3106.318Dev": "-",
+          "ma3078.472": "-",
+          "ma3078.472Dev": "-",
+          "ma3147.9408333333336": "-",
+          "ma3147.9408333333336Dev": "-",
+          "maPills": [
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            }
+          ]
+        },
+        {
+          "name": "中证500",
+          "close": "7654.98",
+          "chg": "-0.37%",
+          "chgPts": "-28.32",
+          "ampl": "-28.49%",
+          "amount": "3194",
+          "ma8162.273999999999": "-",
+          "ma8162.273999999999Dev": "-",
+          "ma8249.517": "-",
+          "ma8249.517Dev": "-",
+          "ma8539.2865": "-",
+          "ma8539.2865Dev": "-",
+          "ma8491.833666666667": "-",
+          "ma8491.833666666667Dev": "-",
+          "ma8127.159666666667": "-",
+          "ma8127.159666666667Dev": "-",
+          "maPills": [
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            }
+          ]
+        },
+        {
+          "name": "上证180",
+          "close": "9536.55",
+          "chg": "-0.50%",
+          "chgPts": "-47.68",
+          "ampl": "-48.38%",
+          "amount": "2398",
+          "ma9863.03": "-",
+          "ma9863.03Dev": "-",
+          "ma9925.739": "-",
+          "ma9925.739Dev": "-",
+          "ma10054.740000000002": "-",
+          "ma10054.740000000002Dev": "-",
+          "ma10031.082666666665": "-",
+          "ma10031.082666666665Dev": "-",
+          "ma9919.5225": "-",
+          "ma9919.5225Dev": "-",
+          "maPills": [
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            },
+            {
+              "label": "—",
+              "cls": "p-gray"
+            }
+          ]
+        }
+      ],
+      "volume": {
+        "turnover": "18232",
+        "ratio5": "—",
+        "ratio10": "—",
+        "up": 0,
+        "down": 0,
+        "flat": 0,
+        "ratio": "0.00",
+        "mainNet": "—",
+        "inCount": 0,
+        "outCount": 0,
+        "limitUp": 0,
+        "limitDown": 0,
+        "blast": 0,
+        "sealRate": "0%",
+        "up5pct": 0,
+        "down5pct": 0,
+        "prevLimitUp": [
+          0
+        ]
+      },
+      "sectors": [
+        {
+          "rank": 1,
+          "name": "种子",
+          "chg": "+7.86%",
+          "amount": "0",
+          "share": "0.0%",
+          "mainNet": "+1.9",
+          "limitUp": -240655936.0,
+          "up5": "-",
+          "upCnt": 10,
+          "downCnt": 0,
+          "leader": "—",
+          "leaderChg": "—",
+          "fundLabel": "—",
+          "fundPill": "p-gray"
+        },
+        {
+          "rank": 2,
+          "name": "视频媒体",
+          "chg": "+6.58%",
+          "amount": "0",
+          "share": "0.0%",
+          "mainNet": "+0.2",
+          "limitUp": -150822240.0,
+          "up5": "-",
+          "upCnt": 1,
+          "downCnt": 0,
+          "leader": "—",
+          "leaderChg": "—",
+          "fundLabel": "—",
+          "fundPill": "p-gray"
+        },
+        {
+          "rank": 3,
+          "name": "房产租赁经纪",
+          "chg": "+5.28%",
+          "amount": "0",
+          "share": "0.0%",
+          "mainNet": "+0.9",
+          "limitUp": -74846720.0,
+          "up5": "-",
+          "upCnt": 2,
+          "downCnt": 1,
+          "leader": "—",
+          "leaderChg": "—",
+          "fundLabel": "—",
+          "fundPill": "p-gray"
+        },
+        {
+          "rank": 4,
+          "name": "其他养殖",
+          "chg": "+5.13%",
+          "amount": "0",
+          "share": "0.0%",
+          "mainNet": "+0.4",
+          "limitUp": -79164784.0,
+          "up5": "-",
+          "upCnt": 3,
+          "downCnt": 0,
+          "leader": "—",
+          "leaderChg": "—",
+          "fundLabel": "—",
+          "fundPill": "p-gray"
+        },
+        {
+          "rank": 5,
+          "name": "种植业",
+          "chg": "+5.06%",
+          "amount": "0",
+          "share": "0.0%",
+          "mainNet": "+1.1",
+          "limitUp": -331608576.0,
+          "up5": "-",
+          "upCnt": 21,
+          "downCnt": 0,
+          "leader": "—",
+          "leaderChg": "—",
+          "fundLabel": "—",
+          "fundPill": "p-gray"
+        },
+        {
+          "rank": 6,
+          "name": "汽车经销商",
+          "chg": "+3.96%",
+          "amount": "0",
+          "share": "0.0%",
+          "mainNet": "+0.4",
+          "limitUp": -42261379.0,
+          "up5": "-",
+          "upCnt": 6,
+          "downCnt": 0,
+          "leader": "—",
+          "leaderChg": "—",
+          "fundLabel": "—",
+          "fundPill": "p-gray"
+        },
+        {
+          "rank": 7,
+          "name": "跨境电商",
+          "chg": "+3.47%",
+          "amount": "0",
+          "share": "0.0%",
+          "mainNet": "+2.8",
+          "limitUp": -170545232.0,
+          "up5": "-",
+          "upCnt": 7,
+          "downCnt": 1,
+          "leader": "—",
+          "leaderChg": "—",
+          "fundLabel": "—",
+          "fundPill": "p-gray"
+        },
+        {
+          "rank": 8,
+          "name": "快递",
+          "chg": "+3.32%",
+          "amount": "0",
+          "share": "0.0%",
+          "mainNet": "+0.5",
+          "limitUp": -112372576.0,
+          "up5": "-",
+          "upCnt": 4,
+          "downCnt": 0,
+          "leader": "—",
+          "leaderChg": "—",
+          "fundLabel": "—",
+          "fundPill": "p-gray"
+        },
+        {
+          "rank": 9,
+          "name": "房地产综合服务",
+          "chg": "+3.26%",
+          "amount": "0",
+          "share": "0.0%",
+          "mainNet": "+0.0",
+          "limitUp": -2380378.0,
+          "up5": "-",
+          "upCnt": 1,
+          "downCnt": 0,
+          "leader": "—",
+          "leaderChg": "—",
+          "fundLabel": "—",
+          "fundPill": "p-gray"
+        },
+        {
+          "rank": 10,
+          "name": "印染",
+          "chg": "+3.13%",
+          "amount": "0",
+          "share": "0.0%",
+          "mainNet": "+0.3",
+          "limitUp": -24545085.0,
+          "up5": "-",
+          "upCnt": 3,
+          "downCnt": 1,
+          "leader": "—",
+          "leaderChg": "—",
+          "fundLabel": "—",
+          "fundPill": "p-gray"
+        }
+      ],
+      "centers": [],
+      "tiers": [],
+      "boardLadder": [],
+      "cycle": {
+        "current": 0,
+        "stages": []
+      },
+      "scenarios": [],
+      "watch": [],
+      "risks": [],
+      "turnover": {
+        "top50": "—",
+        "top100": "—",
+        "top300": "—",
+        "top500": "—"
+      },
+      "disclaimer": "本报告由 AI 系统基于公开市场数据自动生成，数据于 2026年9月17日 15:00 收盘后通过东方财富公开接口实时抓取。基础数据版，AI 深度分析待接入。不构成任何形式的投资建议。"
+    },
     {
       "date": "2026-09-16",
       "weekday": "星期三",
