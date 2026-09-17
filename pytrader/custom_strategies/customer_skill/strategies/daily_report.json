@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-17T12:40:57.652951",
+  "timestamp": "2026-09-17T15:27:15.603297",
   "market": {
     "index": 3875.6,
     "index_change": 0.0,
@@ -112,29 +112,29 @@
       "articles": 592
     },
     "2026-09-17": {
-      "avg_sentiment": 0.158,
-      "articles": 335
+      "avg_sentiment": 0.15,
+      "articles": 439
     }
   },
   "news_stats": {
-    "raw_total": 1591,
-    "dedup_total": 1545,
+    "raw_total": 1695,
+    "dedup_total": 1649,
     "duplicates_removed": 46,
     "per_day": {
       "2026-09-15": 618,
       "2026-09-16": 592,
-      "2026-09-17": 335
+      "2026-09-17": 439
     }
   },
-  "phase": "分歧",
-  "advice": "3-5成仓位，等待方向",
+  "phase": "震荡",
+  "advice": "3-5成仓位，灵活应对",
   "actions": [
     {
       "code": "sh688017",
       "name": "绿的谐波",
       "industry": "机器人",
       "position": "满仓",
-      "news_hits": 1,
+      "news_hits": 2,
       "price": 290.63,
       "change_pct": 0.94
     },
@@ -152,7 +152,7 @@
       "name": "中芯国际",
       "industry": "半导体",
       "position": "减至60%",
-      "news_hits": 24,
+      "news_hits": 25,
       "price": 118.62,
       "change_pct": -1.89
     },
@@ -161,7 +161,7 @@
       "name": "赣锋锂业",
       "industry": "锂矿",
       "position": "满仓",
-      "news_hits": 12,
+      "news_hits": 13,
       "price": 45.91,
       "change_pct": 0.46
     },
@@ -188,7 +188,7 @@
       "name": "黄金ETF",
       "industry": "黄金",
       "position": "维持15%",
-      "news_hits": 4,
+      "news_hits": 5,
       "price": 8.856,
       "change_pct": -0.55
     },
@@ -197,7 +197,7 @@
       "name": "科创50ETF",
       "industry": "科技",
       "position": "加至80%",
-      "news_hits": 60,
+      "news_hits": 65,
       "price": 1.696,
       "change_pct": -0.7
     }
