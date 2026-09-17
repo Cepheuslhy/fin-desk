@@ -1,0 +1,93 @@
+{
+  "index": 3875.6,
+  "index_name": "上证指数",
+  "index_change": -0.41,
+  "sci50": 1606.29,
+  "sci50_name": "科创50",
+  "sci50_change": -0.61,
+  "turnover": 0,
+  "stocks": {
+    "sh688017": {
+      "name": "绿的谐波",
+      "current": 290.63,
+      "change_pct": 0.94,
+      "open": 287.93,
+      "high": 295.98,
+      "low": 286.33,
+      "volume": 5809465.0,
+      "amount": 169508.0
+    },
+    "sz300502": {
+      "name": "新易盛",
+      "current": 424.34,
+      "change_pct": 0.15,
+      "open": 421.0,
+      "high": 438.0,
+      "low": 420.14,
+      "volume": 351803.0,
+      "amount": 1508599.0
+    },
+    "sh688981": {
+      "name": "中芯国际",
+      "current": 118.62,
+      "change_pct": -1.89,
+      "open": 119.5,
+      "high": 120.77,
+      "low": 117.9,
+      "volume": 24508600.0,
+      "amount": 291938.0
+    },
+    "sz002460": {
+      "name": "赣锋锂业",
+      "current": 45.91,
+      "change_pct": 0.46,
+      "open": 45.7,
+      "high": 46.16,
+      "low": 45.18,
+      "volume": 243952.0,
+      "amount": 111528.0
+    },
+    "sz000960": {
+      "name": "锡业股份",
+      "current": 33.03,
+      "change_pct": -2.05,
+      "open": 33.46,
+      "high": 33.96,
+      "low": 32.7,
+      "volume": 225135.0,
+      "amount": 74754.0
+    },
+    "sh601881": {
+      "name": "中国银河",
+      "current": 11.95,
+      "change_pct": -1.48,
+      "open": 12.08,
+      "high": 12.12,
+      "low": 11.94,
+      "volume": 203280.0,
+      "amount": 24404.0
+    },
+    "sh518880": {
+      "name": "黄金ETF华安",
+      "current": 8.856,
+      "change_pct": -0.55,
+      "open": 8.86,
+      "high": 8.888,
+      "low": 8.787,
+      "volume": 5727482.0,
+      "amount": 506261.0
+    },
+    "sh588000": {
+      "name": "科创50ETF华夏",
+      "current": 1.696,
+      "change_pct": -0.7,
+      "open": 1.698,
+      "high": 1.722,
+      "low": 1.687,
+      "volume": 32804810.0,
+      "amount": 559015.0
+    }
+  },
+  "source": "tencent",
+  "timestamp": "2026-09-17T15:27:07.284400"
+}
