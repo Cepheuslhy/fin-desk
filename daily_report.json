@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-19T17:45:19.488499",
+  "timestamp": "2026-09-20T05:42:09.771443",
   "market": {
     "index": 3911.87,
     "index_change": 0.0,
@@ -103,10 +103,6 @@
     }
   },
   "sentiment": {
-    "2026-09-17": {
-      "avg_sentiment": 0.15,
-      "articles": 439
-    },
     "2026-09-18": {
       "avg_sentiment": 0.367,
       "articles": 480
@@ -114,26 +110,30 @@
     "2026-09-19": {
       "avg_sentiment": 0.479,
       "articles": 250
+    },
+    "2026-09-20": {
+      "avg_sentiment": 0.206,
+      "articles": 107
     }
   },
   "news_stats": {
-    "raw_total": 1172,
-    "dedup_total": 1169,
+    "raw_total": 840,
+    "dedup_total": 837,
     "duplicates_removed": 3,
     "per_day": {
-      "2026-09-17": 439,
       "2026-09-18": 480,
-      "2026-09-19": 250
+      "2026-09-19": 250,
+      "2026-09-20": 107
     }
   },
-  "phase": "震荡",
-  "advice": "3-5成仓位，灵活应对",
+  "phase": "分歧",
+  "advice": "3-5成仓位，等待方向",
   "actions": [
     {
       "code": "sh688017",
       "name": "绿的谐波",
       "industry": "机器人",
-      "position": "超配120%",
+      "position": "满仓",
       "news_hits": 1,
       "price": 294.22,
       "change_pct": 1.24
@@ -142,8 +142,8 @@
       "code": "sz300502",
       "name": "新易盛",
       "industry": "光模块",
-      "position": "满仓",
-      "news_hits": 1,
+      "position": "维持85%",
+      "news_hits": 0,
       "price": 445.0,
       "change_pct": 4.87
     },
@@ -151,8 +151,8 @@
       "code": "sh688981",
       "name": "中芯国际",
       "industry": "半导体",
-      "position": "满仓",
-      "news_hits": 8,
+      "position": "维持85%",
+      "news_hits": 5,
       "price": 122.0,
       "change_pct": 2.85
     },
@@ -187,8 +187,8 @@
       "code": "sh518880",
       "name": "黄金ETF",
       "industry": "黄金",
-      "position": "加至25%",
-      "news_hits": 4,
+      "position": "维持20%",
+      "news_hits": 3,
       "price": 9.009,
       "change_pct": 1.73
     },
@@ -196,8 +196,8 @@
       "code": "sh588000",
       "name": "科创50ETF",
       "industry": "科技",
-      "position": "满仓",
-      "news_hits": 32,
+      "position": "维持80%",
+      "news_hits": 21,
       "price": 1.744,
       "change_pct": 2.83
     }
