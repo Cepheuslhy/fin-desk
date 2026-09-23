@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-23T12:52:33.920353",
+  "timestamp": "2026-09-23T15:16:59.363212",
   "market": {
     "index": 3936.52,
     "index_change": 0.0,
@@ -112,18 +112,18 @@
       "articles": 575
     },
     "2026-09-23": {
-      "avg_sentiment": 0.389,
-      "articles": 436
+      "avg_sentiment": 0.397,
+      "articles": 600
     }
   },
   "news_stats": {
-    "raw_total": 1672,
-    "dedup_total": 1632,
-    "duplicates_removed": 40,
+    "raw_total": 1844,
+    "dedup_total": 1796,
+    "duplicates_removed": 48,
     "per_day": {
       "2026-09-21": 621,
       "2026-09-22": 575,
-      "2026-09-23": 436
+      "2026-09-23": 600
     }
   },
   "phase": "震荡",
@@ -143,7 +143,7 @@
       "name": "新易盛",
       "industry": "光模块",
       "position": "维持85%",
-      "news_hits": 3,
+      "news_hits": 4,
       "price": 451.2,
       "change_pct": -0.84
     },
@@ -151,8 +151,8 @@
       "code": "sh688981",
       "name": "中芯国际",
       "industry": "半导体",
-      "position": "维持85%",
-      "news_hits": 18,
+      "position": "加至85%",
+      "news_hits": 19,
       "price": 121.39,
       "change_pct": -0.83
     },
