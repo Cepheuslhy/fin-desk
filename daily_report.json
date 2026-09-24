@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-09-24T11:06:02.202432",
+  "timestamp": "2026-09-24T12:49:25.051783",
   "market": {
     "index": 3888.37,
-    "index_change": 0.0,
+    "index_change": -1.22,
     "sci50": 1621.87,
-    "sci50_change": 0.0,
-    "turnover": 26644.0,
+    "sci50_change": -2.35,
+    "turnover": 8.825316666666666,
     "stocks": {
       "sh688017": {
         "name": "绿的谐波",
@@ -90,16 +90,16 @@
     },
     "source": "tencent",
     "validation": {
-      "validated": true,
+      "validated": false,
       "web_source": "eastmoney",
-      "web_index": 3888.37,
-      "web_index_change": 0.0,
-      "web_sci50": 1621.87,
-      "web_turnover": 26644.0,
-      "web_turnover_source": "default",
-      "index_diff_pct": 0.0,
-      "turnover_diff_pct": 0.0,
-      "note": "已与东方财富公开行情交叉校验一致(成交额:默认真实值)"
+      "web_index": null,
+      "web_index_change": null,
+      "web_sci50": null,
+      "web_turnover": null,
+      "web_turnover_source": null,
+      "index_diff_pct": null,
+      "turnover_diff_pct": null,
+      "note": "网络校验源(东方财富)不可达，维持拉取数据"
     }
   },
   "sentiment": {
@@ -126,8 +126,8 @@
       "2026-09-24": 517
     }
   },
-  "phase": "分歧",
-  "advice": "3-5成仓位，等待方向",
+  "phase": "震荡",
+  "advice": "3-5成仓位，灵活应对",
   "actions": [
     {
       "code": "sh688017",
@@ -178,7 +178,7 @@
       "code": "sh601881",
       "name": "中国银河",
       "industry": "券商",
-      "position": "维持70%",
+      "position": "维持50%",
       "news_hits": 1,
       "price": 11.86,
       "change_pct": -1.9
