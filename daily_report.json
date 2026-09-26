@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-26T05:50:37.680049",
+  "timestamp": "2026-09-26T10:48:17.146252",
   "market": {
     "index": 3888.37,
     "index_change": -1.22,
@@ -112,18 +112,18 @@
       "articles": 290
     },
     "2026-09-26": {
-      "avg_sentiment": 0.223,
-      "articles": 156
+      "avg_sentiment": 0.263,
+      "articles": 172
     }
   },
   "news_stats": {
-    "raw_total": 1127,
-    "dedup_total": 1100,
+    "raw_total": 1143,
+    "dedup_total": 1116,
     "duplicates_removed": 27,
     "per_day": {
       "2026-09-24": 654,
       "2026-09-25": 290,
-      "2026-09-26": 156
+      "2026-09-26": 172
     }
   },
   "phase": "震荡",
@@ -133,7 +133,7 @@
       "code": "sh688017",
       "name": "绿的谐波",
       "industry": "机器人",
-      "position": "满仓",
+      "position": "超配120%",
       "news_hits": 5,
       "price": 284.34,
       "change_pct": -0.89
