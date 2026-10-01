@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-01T14:39:53.666438",
+  "timestamp": "2026-10-01T20:06:17.112980",
   "market": {
     "index": 3842.19,
     "index_change": 0.0,
@@ -112,22 +112,22 @@
       "articles": 624
     },
     "2026-10-01": {
-      "avg_sentiment": 0.37,
-      "articles": 253
+      "avg_sentiment": 0.293,
+      "articles": 350
     }
   },
   "news_stats": {
-    "raw_total": 1514,
-    "dedup_total": 1485,
+    "raw_total": 1611,
+    "dedup_total": 1582,
     "duplicates_removed": 29,
     "per_day": {
       "2026-09-29": 608,
       "2026-09-30": 624,
-      "2026-10-01": 253
+      "2026-10-01": 350
     }
   },
-  "phase": "震荡",
-  "advice": "3-5成仓位，灵活应对",
+  "phase": "分歧",
+  "advice": "3-5成仓位，等待方向",
   "actions": [
     {
       "code": "sh688017",
@@ -197,7 +197,7 @@
       "name": "科创50ETF",
       "industry": "科技",
       "position": "加至80%",
-      "news_hits": 46,
+      "news_hits": 48,
       "price": 1.616,
       "change_pct": -2.47
     }
