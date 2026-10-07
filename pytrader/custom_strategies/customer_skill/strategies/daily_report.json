@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-07T14:38:20.021127",
+  "timestamp": "2026-10-07T20:24:30.518712",
   "market": {
     "index": 3842.19,
     "index_change": 0.0,
@@ -112,18 +112,18 @@
       "articles": 483
     },
     "2026-10-07": {
-      "avg_sentiment": 0.281,
-      "articles": 266
+      "avg_sentiment": 0.297,
+      "articles": 400
     }
   },
   "news_stats": {
-    "raw_total": 1019,
-    "dedup_total": 1012,
+    "raw_total": 1153,
+    "dedup_total": 1146,
     "duplicates_removed": 7,
     "per_day": {
       "2026-10-05": 263,
       "2026-10-06": 483,
-      "2026-10-07": 266
+      "2026-10-07": 400
     }
   },
   "phase": "分歧",
@@ -188,7 +188,7 @@
       "name": "黄金ETF",
       "industry": "黄金",
       "position": "维持20%",
-      "news_hits": 4,
+      "news_hits": 5,
       "price": 8.633,
       "change_pct": 1.34
     },
@@ -197,7 +197,7 @@
       "name": "科创50ETF",
       "industry": "科技",
       "position": "加至80%",
-      "news_hits": 31,
+      "news_hits": 33,
       "price": 1.616,
       "change_pct": -2.47
     }
