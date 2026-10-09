@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-09T14:58:02.059026",
+  "timestamp": "2026-10-09T20:02:23.083953",
   "market": {
     "index": 3813.79,
     "index_change": 0.0,
@@ -112,18 +112,18 @@
       "articles": 666
     },
     "2026-10-09": {
-      "avg_sentiment": 0.317,
-      "articles": 404
+      "avg_sentiment": 0.33,
+      "articles": 530
     }
   },
   "news_stats": {
-    "raw_total": 1504,
-    "dedup_total": 1470,
-    "duplicates_removed": 34,
+    "raw_total": 1632,
+    "dedup_total": 1596,
+    "duplicates_removed": 36,
     "per_day": {
       "2026-10-07": 400,
       "2026-10-08": 666,
-      "2026-10-09": 404
+      "2026-10-09": 530
     }
   },
   "phase": "震荡",
@@ -151,8 +151,8 @@
       "code": "sh688981",
       "name": "中芯国际",
       "industry": "半导体",
-      "position": "维持85%",
-      "news_hits": 24,
+      "position": "加至85%",
+      "news_hits": 25,
       "price": 108.42,
       "change_pct": 1.25
     },
@@ -197,7 +197,7 @@
       "name": "科创50ETF",
       "industry": "科技",
       "position": "加至80%",
-      "news_hits": 65,
+      "news_hits": 66,
       "price": 1.541,
       "change_pct": 0.26
     }
