@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-09T14:28:58.586781",
+  "timestamp": "2026-10-09T14:58:02.059026",
   "market": {
     "index": 3813.79,
     "index_change": 0.0,
@@ -112,18 +112,18 @@
       "articles": 666
     },
     "2026-10-09": {
-      "avg_sentiment": 0.307,
-      "articles": 226
+      "avg_sentiment": 0.317,
+      "articles": 404
     }
   },
   "news_stats": {
-    "raw_total": 1319,
-    "dedup_total": 1292,
-    "duplicates_removed": 27,
+    "raw_total": 1504,
+    "dedup_total": 1470,
+    "duplicates_removed": 34,
     "per_day": {
       "2026-10-07": 400,
       "2026-10-08": 666,
-      "2026-10-09": 226
+      "2026-10-09": 404
     }
   },
   "phase": "震荡",
@@ -134,7 +134,7 @@
       "name": "绿的谐波",
       "industry": "机器人",
       "position": "超配120%",
-      "news_hits": 2,
+      "news_hits": 5,
       "price": 263.76,
       "change_pct": 3.08
     },
@@ -161,7 +161,7 @@
       "name": "赣锋锂业",
       "industry": "锂矿",
       "position": "满仓",
-      "news_hits": 7,
+      "news_hits": 9,
       "price": 45.47,
       "change_pct": 2.85
     },
@@ -197,7 +197,7 @@
       "name": "科创50ETF",
       "industry": "科技",
       "position": "加至80%",
-      "news_hits": 63,
+      "news_hits": 65,
       "price": 1.541,
       "change_pct": 0.26
     }
