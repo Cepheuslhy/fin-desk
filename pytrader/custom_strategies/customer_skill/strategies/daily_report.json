@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-13T15:11:45.368217",
+  "timestamp": "2026-10-13T15:33:35.204505",
   "market": {
     "index": 3800.86,
     "index_change": 0.0,
@@ -112,18 +112,18 @@
       "articles": 560
     },
     "2026-10-13": {
-      "avg_sentiment": 0.399,
-      "articles": 318
+      "avg_sentiment": 0.385,
+      "articles": 559
     }
   },
   "news_stats": {
-    "raw_total": 1181,
-    "dedup_total": 1145,
-    "duplicates_removed": 36,
+    "raw_total": 1428,
+    "dedup_total": 1386,
+    "duplicates_removed": 42,
     "per_day": {
       "2026-10-11": 267,
       "2026-10-12": 560,
-      "2026-10-13": 318
+      "2026-10-13": 559
     }
   },
   "phase": "震荡",
@@ -143,7 +143,7 @@
       "name": "新易盛",
       "industry": "光模块",
       "position": "满仓",
-      "news_hits": 10,
+      "news_hits": 13,
       "price": 351.3,
       "change_pct": 1.06
     },
@@ -152,7 +152,7 @@
       "name": "中芯国际",
       "industry": "半导体",
       "position": "满仓",
-      "news_hits": 16,
+      "news_hits": 19,
       "price": 106.0,
       "change_pct": -0.64
     },
@@ -161,7 +161,7 @@
       "name": "赣锋锂业",
       "industry": "锂矿",
       "position": "满仓",
-      "news_hits": 14,
+      "news_hits": 17,
       "price": 41.93,
       "change_pct": -4.01
     },
@@ -170,7 +170,7 @@
       "name": "锡业股份",
       "industry": "锡",
       "position": "满仓",
-      "news_hits": 0,
+      "news_hits": 1,
       "price": 28.58,
       "change_pct": 1.17
     },
@@ -188,7 +188,7 @@
       "name": "黄金ETF",
       "industry": "黄金",
       "position": "加至25%",
-      "news_hits": 3,
+      "news_hits": 5,
       "price": 8.599,
       "change_pct": 0.16
     },
@@ -197,7 +197,7 @@
       "name": "科创50ETF",
       "industry": "科技",
       "position": "满仓",
-      "news_hits": 44,
+      "news_hits": 52,
       "price": 1.507,
       "change_pct": 0.07
     }
