@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-15T12:45:15.937624",
+  "timestamp": "2026-10-15T15:29:41.481132",
   "market": {
     "index": 3707.48,
     "index_change": 0.0,
@@ -112,22 +112,22 @@
       "articles": 647
     },
     "2026-10-15": {
-      "avg_sentiment": 0.284,
-      "articles": 493
+      "avg_sentiment": 0.328,
+      "articles": 628
     }
   },
   "news_stats": {
-    "raw_total": 1772,
-    "dedup_total": 1699,
-    "duplicates_removed": 73,
+    "raw_total": 1909,
+    "dedup_total": 1834,
+    "duplicates_removed": 75,
     "per_day": {
       "2026-10-13": 559,
       "2026-10-14": 647,
-      "2026-10-15": 493
+      "2026-10-15": 628
     }
   },
-  "phase": "分歧",
-  "advice": "3-5成仓位，等待方向",
+  "phase": "震荡",
+  "advice": "3-5成仓位，灵活应对",
   "actions": [
     {
       "code": "sh688017",
@@ -142,8 +142,8 @@
       "code": "sz300502",
       "name": "新易盛",
       "industry": "光模块",
-      "position": "维持85%",
-      "news_hits": 9,
+      "position": "加至85%",
+      "news_hits": 11,
       "price": 306.01,
       "change_pct": -7.49
     },
@@ -152,7 +152,7 @@
       "name": "中芯国际",
       "industry": "半导体",
       "position": "加至85%",
-      "news_hits": 31,
+      "news_hits": 35,
       "price": 104.44,
       "change_pct": 1.84
     },
@@ -187,8 +187,8 @@
       "code": "sh518880",
       "name": "黄金ETF",
       "industry": "黄金",
-      "position": "维持20%",
-      "news_hits": 8,
+      "position": "加至20%",
+      "news_hits": 9,
       "price": 8.472,
       "change_pct": -0.34
     },
@@ -197,7 +197,7 @@
       "name": "科创50ETF",
       "industry": "科技",
       "position": "加至80%",
-      "news_hits": 76,
+      "news_hits": 83,
       "price": 1.438,
       "change_pct": -1.37
     }
