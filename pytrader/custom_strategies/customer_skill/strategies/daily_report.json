@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-17T10:07:58.311739",
+  "timestamp": "2026-10-17T14:03:39.490995",
   "market": {
     "index": 3716.28,
     "index_change": 0.0,
@@ -112,22 +112,22 @@
       "articles": 626
     },
     "2026-10-17": {
-      "avg_sentiment": 0.289,
-      "articles": 197
+      "avg_sentiment": 0.348,
+      "articles": 231
     }
   },
   "news_stats": {
-    "raw_total": 1506,
-    "dedup_total": 1451,
+    "raw_total": 1540,
+    "dedup_total": 1485,
     "duplicates_removed": 55,
     "per_day": {
       "2026-10-15": 628,
       "2026-10-16": 626,
-      "2026-10-17": 197
+      "2026-10-17": 231
     }
   },
-  "phase": "分歧",
-  "advice": "3-5成仓位，等待方向",
+  "phase": "震荡",
+  "advice": "3-5成仓位，灵活应对",
   "actions": [
     {
       "code": "sh688017",
