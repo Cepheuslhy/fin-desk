@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-17T17:45:42.777473",
+  "timestamp": "2026-10-18T05:24:58.133352",
   "market": {
     "index": 3716.28,
     "index_change": 0.24,
@@ -103,10 +103,6 @@
     }
   },
   "sentiment": {
-    "2026-10-15": {
-      "avg_sentiment": 0.328,
-      "articles": 628
-    },
     "2026-10-16": {
       "avg_sentiment": 0.269,
       "articles": 626
@@ -114,16 +110,20 @@
     "2026-10-17": {
       "avg_sentiment": 0.348,
       "articles": 232
+    },
+    "2026-10-18": {
+      "avg_sentiment": 0.333,
+      "articles": 94
     }
   },
   "news_stats": {
-    "raw_total": 1541,
-    "dedup_total": 1486,
-    "duplicates_removed": 55,
+    "raw_total": 981,
+    "dedup_total": 952,
+    "duplicates_removed": 29,
     "per_day": {
-      "2026-10-15": 628,
       "2026-10-16": 626,
-      "2026-10-17": 232
+      "2026-10-17": 232,
+      "2026-10-18": 94
     }
   },
   "phase": "震荡",
@@ -143,7 +143,7 @@
       "name": "新易盛",
       "industry": "光模块",
       "position": "维持85%",
-      "news_hits": 7,
+      "news_hits": 3,
       "price": 306.91,
       "change_pct": 0.29
     },
@@ -152,7 +152,7 @@
       "name": "中芯国际",
       "industry": "半导体",
       "position": "维持85%",
-      "news_hits": 25,
+      "news_hits": 10,
       "price": 102.66,
       "change_pct": -1.7
     },
@@ -161,7 +161,7 @@
       "name": "赣锋锂业",
       "industry": "锂矿",
       "position": "满仓",
-      "news_hits": 11,
+      "news_hits": 8,
       "price": 39.29,
       "change_pct": -1.8
     },
@@ -187,8 +187,8 @@
       "code": "sh518880",
       "name": "黄金ETF",
       "industry": "黄金",
-      "position": "加至20%",
-      "news_hits": 8,
+      "position": "维持20%",
+      "news_hits": 7,
       "price": 8.554,
       "change_pct": 0.97
     },
@@ -197,7 +197,7 @@
       "name": "科创50ETF",
       "industry": "科技",
       "position": "加至80%",
-      "news_hits": 69,
+      "news_hits": 38,
       "price": 1.43,
       "change_pct": -0.56
     }
