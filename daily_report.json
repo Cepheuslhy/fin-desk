@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-18T10:22:40.814175",
+  "timestamp": "2026-10-18T14:17:40.266411",
   "market": {
     "index": 3716.28,
     "index_change": 0.0,
@@ -112,22 +112,22 @@
       "articles": 232
     },
     "2026-10-18": {
-      "avg_sentiment": 0.272,
-      "articles": 118
+      "avg_sentiment": 0.339,
+      "articles": 145
     }
   },
   "news_stats": {
-    "raw_total": 1010,
-    "dedup_total": 976,
-    "duplicates_removed": 34,
+    "raw_total": 1038,
+    "dedup_total": 1003,
+    "duplicates_removed": 35,
     "per_day": {
       "2026-10-16": 626,
       "2026-10-17": 232,
-      "2026-10-18": 118
+      "2026-10-18": 145
     }
   },
-  "phase": "分歧",
-  "advice": "3-5成仓位，等待方向",
+  "phase": "震荡",
+  "advice": "3-5成仓位，灵活应对",
   "actions": [
     {
       "code": "sh688017",
@@ -152,7 +152,7 @@
       "name": "中芯国际",
       "industry": "半导体",
       "position": "维持85%",
-      "news_hits": 10,
+      "news_hits": 11,
       "price": 102.66,
       "change_pct": -1.7
     },
@@ -161,7 +161,7 @@
       "name": "赣锋锂业",
       "industry": "锂矿",
       "position": "满仓",
-      "news_hits": 8,
+      "news_hits": 9,
       "price": 39.29,
       "change_pct": -1.8
     },
@@ -197,7 +197,7 @@
       "name": "科创50ETF",
       "industry": "科技",
       "position": "加至80%",
-      "news_hits": 38,
+      "news_hits": 39,
       "price": 1.43,
       "change_pct": -0.56
     }
