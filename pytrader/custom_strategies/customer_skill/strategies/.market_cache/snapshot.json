@@ -1,0 +1,93 @@
+{
+  "index": 3730.92,
+  "index_name": "上证指数",
+  "index_change": 0.39,
+  "sci50": 1329.19,
+  "sci50_name": "科创50",
+  "sci50_change": -2.17,
+  "turnover": 0,
+  "stocks": {
+    "sh688017": {
+      "name": "绿的谐波",
+      "current": 250.5,
+      "change_pct": 5.81,
+      "open": 236.0,
+      "high": 254.99,
+      "low": 228.41,
+      "volume": 7059782.0,
+      "amount": 171641.0
+    },
+    "sz300502": {
+      "name": "新易盛",
+      "current": 308.0,
+      "change_pct": 0.36,
+      "open": 307.14,
+      "high": 312.16,
+      "low": 297.49,
+      "volume": 328679.0,
+      "amount": 1006430.0
+    },
+    "sh688981": {
+      "name": "中芯国际",
+      "current": 99.7,
+      "change_pct": -2.88,
+      "open": 100.87,
+      "high": 101.49,
+      "low": 97.71,
+      "volume": 31711334.0,
+      "amount": 315770.0
+    },
+    "sz002460": {
+      "name": "赣锋锂业",
+      "current": 38.23,
+      "change_pct": -2.7,
+      "open": 38.08,
+      "high": 38.74,
+      "low": 37.67,
+      "volume": 459443.0,
+      "amount": 175041.0
+    },
+    "sz000960": {
+      "name": "锡业股份",
+      "current": 25.43,
+      "change_pct": -0.86,
+      "open": 25.25,
+      "high": 25.68,
+      "low": 25.0,
+      "volume": 198664.0,
+      "amount": 50300.0
+    },
+    "sh601881": {
+      "name": "中国银河",
+      "current": 11.78,
+      "change_pct": -1.01,
+      "open": 11.78,
+      "high": 11.86,
+      "low": 11.75,
+      "volume": 167932.0,
+      "amount": 19840.0
+    },
+    "sh518880": {
+      "name": "黄金ETF华安",
+      "current": 8.553,
+      "change_pct": -0.01,
+      "open": 8.53,
+      "high": 8.564,
+      "low": 8.53,
+      "volume": 2851998.0,
+      "amount": 243804.0
+    },
+    "sh588000": {
+      "name": "科创50ETF华夏",
+      "current": 1.405,
+      "change_pct": -1.75,
+      "open": 1.422,
+      "high": 1.433,
+      "low": 1.398,
+      "volume": 53514469.0,
+      "amount": 756045.0
+    }
+  },
+  "source": "tencent",
+  "timestamp": "2026-10-19T18:59:31.092166"
+}
