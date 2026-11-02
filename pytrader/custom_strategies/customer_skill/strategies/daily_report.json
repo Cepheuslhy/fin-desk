@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-02T17:19:02.435986",
+  "timestamp": "2026-11-02T17:47:39.602134",
   "market": {
     "index": 3638.03,
     "index_change": 0.0,
@@ -112,18 +112,18 @@
       "articles": 131
     },
     "2026-11-02": {
-      "avg_sentiment": 0.389,
-      "articles": 294
+      "avg_sentiment": 0.344,
+      "articles": 566
     }
   },
   "news_stats": {
-    "raw_total": 594,
-    "dedup_total": 578,
-    "duplicates_removed": 16,
+    "raw_total": 869,
+    "dedup_total": 850,
+    "duplicates_removed": 19,
     "per_day": {
       "2026-10-31": 153,
       "2026-11-01": 131,
-      "2026-11-02": 294
+      "2026-11-02": 566
     }
   },
   "phase": "震荡",
@@ -134,7 +134,7 @@
       "name": "绿的谐波",
       "industry": "机器人",
       "position": "超配120%",
-      "news_hits": 4,
+      "news_hits": 5,
       "price": 268.8,
       "change_pct": 5.83
     },
@@ -142,7 +142,7 @@
       "code": "sz300502",
       "name": "新易盛",
       "industry": "光模块",
-      "position": "满仓",
+      "position": "维持85%",
       "news_hits": 2,
       "price": 191.48,
       "change_pct": -2.31
@@ -151,8 +151,8 @@
       "code": "sh688981",
       "name": "中芯国际",
       "industry": "半导体",
-      "position": "满仓",
-      "news_hits": 11,
+      "position": "加至85%",
+      "news_hits": 12,
       "price": 100.0,
       "change_pct": 3.32
     },
@@ -161,7 +161,7 @@
       "name": "赣锋锂业",
       "industry": "锂矿",
       "position": "满仓",
-      "news_hits": 3,
+      "news_hits": 4,
       "price": 35.58,
       "change_pct": 1.77
     },
@@ -178,8 +178,8 @@
       "code": "sh601881",
       "name": "中国银河",
       "industry": "券商",
-      "position": "维持70%",
-      "news_hits": 2,
+      "position": "加至70%",
+      "news_hits": 3,
       "price": 11.76,
       "change_pct": 5.85
     },
@@ -188,7 +188,7 @@
       "name": "黄金ETF",
       "industry": "黄金",
       "position": "加至25%",
-      "news_hits": 1,
+      "news_hits": 2,
       "price": 7.941,
       "change_pct": -2.14
     },
@@ -197,7 +197,7 @@
       "name": "科创50ETF",
       "industry": "科技",
       "position": "满仓",
-      "news_hits": 27,
+      "news_hits": 35,
       "price": 1.26,
       "change_pct": 2.61
     }
