@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-06T15:39:16.990687",
+  "timestamp": "2026-11-07T06:50:08.295937",
   "market": {
     "index": 3649.18,
     "index_change": 0.0,
@@ -103,10 +103,6 @@
     }
   },
   "sentiment": {
-    "2026-11-04": {
-      "avg_sentiment": 0.575,
-      "articles": 604
-    },
     "2026-11-05": {
       "avg_sentiment": 0.545,
       "articles": 341
@@ -114,16 +110,20 @@
     "2026-11-06": {
       "avg_sentiment": 0.092,
       "articles": 706
+    },
+    "2026-11-07": {
+      "avg_sentiment": 0.113,
+      "articles": 208
     }
   },
   "news_stats": {
-    "raw_total": 1701,
-    "dedup_total": 1651,
-    "duplicates_removed": 50,
+    "raw_total": 1292,
+    "dedup_total": 1255,
+    "duplicates_removed": 37,
     "per_day": {
-      "2026-11-04": 604,
       "2026-11-05": 341,
-      "2026-11-06": 706
+      "2026-11-06": 706,
+      "2026-11-07": 208
     }
   },
   "phase": "震荡",
@@ -134,7 +134,7 @@
       "name": "绿的谐波",
       "industry": "机器人",
       "position": "满仓",
-      "news_hits": 6,
+      "news_hits": 4,
       "price": 285.05,
       "change_pct": -2.88
     },
@@ -143,7 +143,7 @@
       "name": "新易盛",
       "industry": "光模块",
       "position": "减至60%",
-      "news_hits": 3,
+      "news_hits": 5,
       "price": 172.1,
       "change_pct": -7.28
     },
@@ -152,7 +152,7 @@
       "name": "中芯国际",
       "industry": "半导体",
       "position": "减至60%",
-      "news_hits": 38,
+      "news_hits": 26,
       "price": 110.9,
       "change_pct": 0.19
     },
@@ -161,7 +161,7 @@
       "name": "赣锋锂业",
       "industry": "锂矿",
       "position": "满仓",
-      "news_hits": 17,
+      "news_hits": 14,
       "price": 38.22,
       "change_pct": -2.82
     },
@@ -170,7 +170,7 @@
       "name": "锡业股份",
       "industry": "锡",
       "position": "满仓",
-      "news_hits": 0,
+      "news_hits": 1,
       "price": 23.28,
       "change_pct": -5.17
     },
@@ -179,7 +179,7 @@
       "name": "中国银河",
       "industry": "券商",
       "position": "维持70%",
-      "news_hits": 2,
+      "news_hits": 3,
       "price": 11.81,
       "change_pct": -0.84
     },
@@ -188,7 +188,7 @@
       "name": "黄金ETF",
       "industry": "黄金",
       "position": "维持15%",
-      "news_hits": 4,
+      "news_hits": 3,
       "price": 8.253,
       "change_pct": -1.98
     },
@@ -197,7 +197,7 @@
       "name": "科创50ETF",
       "industry": "科技",
       "position": "加至80%",
-      "news_hits": 87,
+      "news_hits": 72,
       "price": 1.326,
       "change_pct": -2.36
     }
