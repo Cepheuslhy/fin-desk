@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-08T14:03:55.594153",
+  "timestamp": "2026-11-08T19:19:56.042968",
   "market": {
     "index": 3649.18,
     "index_change": 0.0,
@@ -113,17 +113,17 @@
     },
     "2026-11-08": {
       "avg_sentiment": 0.446,
-      "articles": 75
+      "articles": 96
     }
   },
   "news_stats": {
-    "raw_total": 1073,
-    "dedup_total": 1053,
+    "raw_total": 1094,
+    "dedup_total": 1074,
     "duplicates_removed": 20,
     "per_day": {
       "2026-11-06": 706,
       "2026-11-07": 272,
-      "2026-11-08": 75
+      "2026-11-08": 96
     }
   },
   "phase": "震荡",
