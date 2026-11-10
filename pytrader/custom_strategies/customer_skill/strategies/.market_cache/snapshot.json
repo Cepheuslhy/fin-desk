@@ -1,0 +1,93 @@
+{
+  "index": 3663.72,
+  "index_name": "上证指数",
+  "index_change": 0.08,
+  "sci50": 1265.02,
+  "sci50_name": "科创50",
+  "sci50_change": 0.64,
+  "turnover": 0,
+  "stocks": {
+    "sh688017": {
+      "name": "绿的谐波",
+      "current": 302.76,
+      "change_pct": 2.21,
+      "open": 300.0,
+      "high": 315.95,
+      "low": 300.0,
+      "volume": 9986994.0,
+      "amount": 307538.0
+    },
+    "sz300502": {
+      "name": "新易盛",
+      "current": 183.8,
+      "change_pct": 4.43,
+      "open": 188.01,
+      "high": 191.51,
+      "low": 183.04,
+      "volume": 871256.0,
+      "amount": 1630417.0
+    },
+    "sh688981": {
+      "name": "中芯国际",
+      "current": 107.75,
+      "change_pct": -1.16,
+      "open": 110.61,
+      "high": 111.38,
+      "low": 107.3,
+      "volume": 25541770.0,
+      "amount": 278935.0
+    },
+    "sz002460": {
+      "name": "赣锋锂业",
+      "current": 36.99,
+      "change_pct": -0.3,
+      "open": 37.47,
+      "high": 37.5,
+      "low": 36.62,
+      "volume": 294043.0,
+      "amount": 108788.0
+    },
+    "sz000960": {
+      "name": "锡业股份",
+      "current": 23.37,
+      "change_pct": 0.86,
+      "open": 23.6,
+      "high": 23.86,
+      "low": 23.31,
+      "volume": 284454.0,
+      "amount": 66947.0
+    },
+    "sh601881": {
+      "name": "中国银河",
+      "current": 11.77,
+      "change_pct": 0.17,
+      "open": 11.81,
+      "high": 11.82,
+      "low": 11.71,
+      "volume": 136693.0,
+      "amount": 16063.0
+    },
+    "sh518880": {
+      "name": "黄金ETF华安",
+      "current": 8.398,
+      "change_pct": 0.27,
+      "open": 8.42,
+      "high": 8.438,
+      "low": 8.376,
+      "volume": 3563097.0,
+      "amount": 299354.0
+    },
+    "sh588000": {
+      "name": "科创50ETF华夏",
+      "current": 1.337,
+      "change_pct": 0.75,
+      "open": 1.357,
+      "high": 1.365,
+      "low": 1.333,
+      "volume": 53587215.0,
+      "amount": 721976.0
+    }
+  },
+  "source": "tencent",
+  "timestamp": "2026-11-10T07:59:19.631042"
+}
