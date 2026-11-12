@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-12T16:06:07.085757",
+  "timestamp": "2026-11-12T16:38:45.028682",
   "market": {
     "index": 3655.83,
     "index_change": 0.0,
@@ -112,18 +112,18 @@
       "articles": 543
     },
     "2026-11-12": {
-      "avg_sentiment": 0.499,
-      "articles": 323
+      "avg_sentiment": 0.445,
+      "articles": 542
     }
   },
   "news_stats": {
-    "raw_total": 1573,
-    "dedup_total": 1516,
-    "duplicates_removed": 57,
+    "raw_total": 1796,
+    "dedup_total": 1735,
+    "duplicates_removed": 61,
     "per_day": {
       "2026-11-10": 650,
       "2026-11-11": 543,
-      "2026-11-12": 323
+      "2026-11-12": 542
     }
   },
   "phase": "震荡",
@@ -134,7 +134,7 @@
       "name": "绿的谐波",
       "industry": "机器人",
       "position": "超配120%",
-      "news_hits": 10,
+      "news_hits": 11,
       "price": 283.93,
       "change_pct": -6.29
     },
@@ -152,7 +152,7 @@
       "name": "中芯国际",
       "industry": "半导体",
       "position": "满仓",
-      "news_hits": 21,
+      "news_hits": 24,
       "price": 111.72,
       "change_pct": 2.2
     },
@@ -161,7 +161,7 @@
       "name": "赣锋锂业",
       "industry": "锂矿",
       "position": "满仓",
-      "news_hits": 4,
+      "news_hits": 5,
       "price": 36.59,
       "change_pct": -1.51
     },
@@ -188,7 +188,7 @@
       "name": "黄金ETF",
       "industry": "黄金",
       "position": "加至25%",
-      "news_hits": 4,
+      "news_hits": 6,
       "price": 8.085,
       "change_pct": -2.46
     },
@@ -197,7 +197,7 @@
       "name": "科创50ETF",
       "industry": "科技",
       "position": "满仓",
-      "news_hits": 82,
+      "news_hits": 88,
       "price": 1.381,
       "change_pct": 0.44
     }
