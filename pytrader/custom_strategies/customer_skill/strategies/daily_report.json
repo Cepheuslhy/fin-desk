@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-14T07:20:26.335396",
+  "timestamp": "2026-11-14T14:45:37.201897",
   "market": {
     "index": 3634.35,
     "index_change": 0.0,
@@ -113,17 +113,17 @@
     },
     "2026-11-14": {
       "avg_sentiment": 0.003,
-      "articles": 179
+      "articles": 200
     }
   },
   "news_stats": {
-    "raw_total": 1237,
-    "dedup_total": 1204,
+    "raw_total": 1258,
+    "dedup_total": 1225,
     "duplicates_removed": 33,
     "per_day": {
       "2026-11-12": 542,
       "2026-11-13": 483,
-      "2026-11-14": 179
+      "2026-11-14": 200
     }
   },
   "phase": "震荡",
@@ -143,7 +143,7 @@
       "name": "新易盛",
       "industry": "光模块",
       "position": "减至60%",
-      "news_hits": 7,
+      "news_hits": 8,
       "price": 187.58,
       "change_pct": -8.76
     },
@@ -179,7 +179,7 @@
       "name": "中国银河",
       "industry": "券商",
       "position": "维持70%",
-      "news_hits": 1,
+      "news_hits": 2,
       "price": 11.53,
       "change_pct": -0.35
     },
