@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-17T16:59:26.974172",
+  "timestamp": "2026-11-17T18:08:30.991152",
   "market": {
     "index": 3584.58,
     "index_change": 0.0,
@@ -112,18 +112,18 @@
       "articles": 584
     },
     "2026-11-17": {
-      "avg_sentiment": 0.279,
-      "articles": 354
+      "avg_sentiment": 0.274,
+      "articles": 598
     }
   },
   "news_stats": {
-    "raw_total": 1121,
-    "dedup_total": 1087,
+    "raw_total": 1365,
+    "dedup_total": 1331,
     "duplicates_removed": 34,
     "per_day": {
       "2026-11-15": 149,
       "2026-11-16": 584,
-      "2026-11-17": 354
+      "2026-11-17": 598
     }
   },
   "phase": "分歧",
@@ -143,7 +143,7 @@
       "name": "新易盛",
       "industry": "光模块",
       "position": "维持85%",
-      "news_hits": 4,
+      "news_hits": 5,
       "price": 160.0,
       "change_pct": -4.08
     },
@@ -152,7 +152,7 @@
       "name": "中芯国际",
       "industry": "半导体",
       "position": "加至85%",
-      "news_hits": 20,
+      "news_hits": 22,
       "price": 113.45,
       "change_pct": 6.59
     },
@@ -161,7 +161,7 @@
       "name": "赣锋锂业",
       "industry": "锂矿",
       "position": "满仓",
-      "news_hits": 12,
+      "news_hits": 13,
       "price": 35.17,
       "change_pct": 0.8
     },
@@ -197,7 +197,7 @@
       "name": "科创50ETF",
       "industry": "科技",
       "position": "加至80%",
-      "news_hits": 66,
+      "news_hits": 76,
       "price": 1.294,
       "change_pct": 0.94
     }
