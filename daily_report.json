@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-20T17:32:00.388118",
+  "timestamp": "2026-11-21T07:58:31.057354",
   "market": {
     "index": 3533.79,
     "index_change": 0.0,
@@ -103,10 +103,6 @@
     }
   },
   "sentiment": {
-    "2026-11-18": {
-      "avg_sentiment": 0.226,
-      "articles": 545
-    },
     "2026-11-19": {
       "avg_sentiment": 0.101,
       "articles": 532
@@ -114,20 +110,24 @@
     "2026-11-20": {
       "avg_sentiment": 0.192,
       "articles": 549
+    },
+    "2026-11-21": {
+      "avg_sentiment": -0.26,
+      "articles": 161
     }
   },
   "news_stats": {
-    "raw_total": 1662,
-    "dedup_total": 1626,
-    "duplicates_removed": 36,
+    "raw_total": 1270,
+    "dedup_total": 1242,
+    "duplicates_removed": 28,
     "per_day": {
-      "2026-11-18": 545,
       "2026-11-19": 532,
-      "2026-11-20": 549
+      "2026-11-20": 549,
+      "2026-11-21": 161
     }
   },
-  "phase": "分歧",
-  "advice": "3-5成仓位，等待方向",
+  "phase": "震荡",
+  "advice": "3-5成仓位，灵活应对",
   "actions": [
     {
       "code": "sh688017",
@@ -143,7 +143,7 @@
       "name": "新易盛",
       "industry": "光模块",
       "position": "减至60%",
-      "news_hits": 13,
+      "news_hits": 5,
       "price": 165.0,
       "change_pct": -1.23
     },
@@ -152,7 +152,7 @@
       "name": "中芯国际",
       "industry": "半导体",
       "position": "减至60%",
-      "news_hits": 17,
+      "news_hits": 16,
       "price": 125.46,
       "change_pct": 2.63
     },
@@ -161,7 +161,7 @@
       "name": "赣锋锂业",
       "industry": "锂矿",
       "position": "满仓",
-      "news_hits": 15,
+      "news_hits": 13,
       "price": 33.12,
       "change_pct": -3.16
     },
@@ -188,7 +188,7 @@
       "name": "黄金ETF",
       "industry": "黄金",
       "position": "维持15%",
-      "news_hits": 4,
+      "news_hits": 2,
       "price": 7.282,
       "change_pct": -4.34
     },
@@ -197,7 +197,7 @@
       "name": "科创50ETF",
       "industry": "科技",
       "position": "加至80%",
-      "news_hits": 69,
+      "news_hits": 54,
       "price": 1.3,
       "change_pct": -3.27
     }
