@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-21T07:58:31.057354",
+  "timestamp": "2026-11-21T15:59:53.554804",
   "market": {
     "index": 3533.79,
     "index_change": 0.0,
@@ -112,18 +112,18 @@
       "articles": 549
     },
     "2026-11-21": {
-      "avg_sentiment": -0.26,
-      "articles": 161
+      "avg_sentiment": -0.321,
+      "articles": 204
     }
   },
   "news_stats": {
-    "raw_total": 1270,
-    "dedup_total": 1242,
+    "raw_total": 1313,
+    "dedup_total": 1285,
     "duplicates_removed": 28,
     "per_day": {
       "2026-11-19": 532,
       "2026-11-20": 549,
-      "2026-11-21": 161
+      "2026-11-21": 204
     }
   },
   "phase": "震荡",
@@ -197,7 +197,7 @@
       "name": "科创50ETF",
       "industry": "科技",
       "position": "加至80%",
-      "news_hits": 54,
+      "news_hits": 55,
       "price": 1.3,
       "change_pct": -3.27
     }
