@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-21T15:59:53.554804",
+  "timestamp": "2026-11-22T07:45:47.730199",
   "market": {
     "index": 3533.79,
     "index_change": 0.0,
@@ -103,10 +103,6 @@
     }
   },
   "sentiment": {
-    "2026-11-19": {
-      "avg_sentiment": 0.101,
-      "articles": 532
-    },
     "2026-11-20": {
       "avg_sentiment": 0.192,
       "articles": 549
@@ -114,27 +110,31 @@
     "2026-11-21": {
       "avg_sentiment": -0.321,
       "articles": 204
+    },
+    "2026-11-22": {
+      "avg_sentiment": 0.19,
+      "articles": 87
     }
   },
   "news_stats": {
-    "raw_total": 1313,
-    "dedup_total": 1285,
-    "duplicates_removed": 28,
+    "raw_total": 854,
+    "dedup_total": 840,
+    "duplicates_removed": 14,
     "per_day": {
-      "2026-11-19": 532,
       "2026-11-20": 549,
-      "2026-11-21": 204
+      "2026-11-21": 204,
+      "2026-11-22": 87
     }
   },
-  "phase": "震荡",
-  "advice": "3-5成仓位，灵活应对",
+  "phase": "分歧",
+  "advice": "3-5成仓位，等待方向",
   "actions": [
     {
       "code": "sh688017",
       "name": "绿的谐波",
       "industry": "机器人",
       "position": "满仓",
-      "news_hits": 3,
+      "news_hits": 2,
       "price": 230.8,
       "change_pct": -6.1
     },
@@ -143,7 +143,7 @@
       "name": "新易盛",
       "industry": "光模块",
       "position": "减至60%",
-      "news_hits": 5,
+      "news_hits": 3,
       "price": 165.0,
       "change_pct": -1.23
     },
@@ -152,7 +152,7 @@
       "name": "中芯国际",
       "industry": "半导体",
       "position": "减至60%",
-      "news_hits": 16,
+      "news_hits": 10,
       "price": 125.46,
       "change_pct": 2.63
     },
@@ -161,7 +161,7 @@
       "name": "赣锋锂业",
       "industry": "锂矿",
       "position": "满仓",
-      "news_hits": 13,
+      "news_hits": 7,
       "price": 33.12,
       "change_pct": -3.16
     },
@@ -196,8 +196,8 @@
       "code": "sh588000",
       "name": "科创50ETF",
       "industry": "科技",
-      "position": "加至80%",
-      "news_hits": 55,
+      "position": "维持80%",
+      "news_hits": 39,
       "price": 1.3,
       "change_pct": -3.27
     }
