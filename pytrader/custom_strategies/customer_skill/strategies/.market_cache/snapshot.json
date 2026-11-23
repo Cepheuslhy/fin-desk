@@ -1,0 +1,93 @@
+{
+  "index": 3538.95,
+  "index_name": "上证指数",
+  "index_change": 0.15,
+  "sci50": 1227.89,
+  "sci50_name": "科创50",
+  "sci50_change": -0.26,
+  "turnover": 0,
+  "stocks": {
+    "sh688017": {
+      "name": "绿的谐波",
+      "current": 260.28,
+      "change_pct": 12.77,
+      "open": 225.0,
+      "high": 266.0,
+      "low": 222.0,
+      "volume": 10849411.0,
+      "amount": 263884.0
+    },
+    "sz300502": {
+      "name": "新易盛",
+      "current": 181.36,
+      "change_pct": 9.92,
+      "open": 165.24,
+      "high": 183.6,
+      "low": 165.24,
+      "volume": 1173885.0,
+      "amount": 2056100.0
+    },
+    "sh688981": {
+      "name": "中芯国际",
+      "current": 121.6,
+      "change_pct": -3.08,
+      "open": 123.66,
+      "high": 124.35,
+      "low": 117.55,
+      "volume": 61213012.0,
+      "amount": 736336.0
+    },
+    "sz002460": {
+      "name": "赣锋锂业",
+      "current": 33.68,
+      "change_pct": 1.69,
+      "open": 32.52,
+      "high": 33.95,
+      "low": 32.37,
+      "volume": 253684.0,
+      "amount": 84033.0
+    },
+    "sz000960": {
+      "name": "锡业股份",
+      "current": 20.34,
+      "change_pct": 3.35,
+      "open": 19.56,
+      "high": 20.49,
+      "low": 19.28,
+      "volume": 367257.0,
+      "amount": 73234.0
+    },
+    "sh601881": {
+      "name": "中国银河",
+      "current": 11.27,
+      "change_pct": -1.23,
+      "open": 11.37,
+      "high": 11.41,
+      "low": 11.22,
+      "volume": 247264.0,
+      "amount": 27903.0
+    },
+    "sh518880": {
+      "name": "黄金ETF华安",
+      "current": 7.396,
+      "change_pct": 1.57,
+      "open": 7.378,
+      "high": 7.408,
+      "low": 7.304,
+      "volume": 6423338.0,
+      "amount": 473433.0
+    },
+    "sh588000": {
+      "name": "科创50ETF华夏",
+      "current": 1.298,
+      "change_pct": -0.15,
+      "open": 1.287,
+      "high": 1.316,
+      "low": 1.246,
+      "volume": 86900764.0,
+      "amount": 1111578.0
+    }
+  },
+  "source": "tencent",
+  "timestamp": "2026-11-23T20:52:03.684010"
+}
