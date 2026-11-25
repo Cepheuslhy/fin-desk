@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-11-25T18:05:33.314370",
+  "timestamp": "2026-11-25T19:44:46.954498",
   "market": {
     "index": 3476.47,
-    "index_change": 0.0,
+    "index_change": -2.03,
     "sci50": 1186.14,
-    "sci50_change": 0.0,
-    "turnover": 26644.0,
+    "sci50_change": -5.12,
+    "turnover": 13.637126666666667,
     "stocks": {
       "sh688017": {
         "name": "绿的谐波",
@@ -90,16 +90,16 @@
     },
     "source": "tencent",
     "validation": {
-      "validated": true,
+      "validated": false,
       "web_source": "eastmoney",
-      "web_index": 3476.47,
-      "web_index_change": 0.0,
-      "web_sci50": 1186.14,
-      "web_turnover": 26644.0,
-      "web_turnover_source": "default",
-      "index_diff_pct": 0.0,
-      "turnover_diff_pct": 0.0,
-      "note": "已与东方财富公开行情交叉校验一致(成交额:默认真实值)"
+      "web_index": null,
+      "web_index_change": null,
+      "web_sci50": null,
+      "web_turnover": null,
+      "web_turnover_source": null,
+      "index_diff_pct": null,
+      "turnover_diff_pct": null,
+      "note": "网络校验源(东方财富)不可达，维持拉取数据"
     }
   },
   "sentiment": {
@@ -126,8 +126,8 @@
       "2026-11-25": 0
     }
   },
-  "phase": "震荡",
-  "advice": "3-5成仓位，灵活应对",
+  "phase": "冰点/退潮",
+  "advice": "0-2成仓位，等待修复",
   "actions": [
     {
       "code": "sh688017",
@@ -178,7 +178,7 @@
       "code": "sh601881",
       "name": "中国银河",
       "industry": "券商",
-      "position": "维持70%",
+      "position": "维持50%",
       "news_hits": 1,
       "price": 10.74,
       "change_pct": -3.5
@@ -196,7 +196,7 @@
       "code": "sh588000",
       "name": "科创50ETF",
       "industry": "科技",
-      "position": "维持80%",
+      "position": "减至50%",
       "news_hits": 32,
       "price": 1.254,
       "change_pct": -4.93
