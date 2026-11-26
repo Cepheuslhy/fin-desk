@@ -1,112 +1,108 @@
 {
-  "timestamp": "2026-11-25T19:44:46.954498",
+  "timestamp": "2026-11-26T09:09:04.060729",
   "market": {
-    "index": 3476.47,
-    "index_change": -2.03,
-    "sci50": 1186.14,
-    "sci50_change": -5.12,
-    "turnover": 13.637126666666667,
+    "index": 3476.88,
+    "index_change": 0.0,
+    "sci50": 1169.99,
+    "sci50_change": 0.0,
+    "turnover": 26644.0,
     "stocks": {
       "sh688017": {
         "name": "绿的谐波",
-        "current": 241.4,
-        "change_pct": -5.33,
-        "open": 250.0,
-        "high": 257.85,
-        "low": 241.08,
-        "volume": 6568659.0,
-        "amount": 163960.0
+        "current": 227.54,
+        "change_pct": -5.74,
+        "open": 246.7,
+        "high": 248.0,
+        "low": 222.9,
+        "volume": 7334254.0,
+        "amount": 170054.0
       },
       "sz300502": {
         "name": "新易盛",
-        "current": 181.3,
-        "change_pct": 0.72,
-        "open": 175.1,
-        "high": 188.56,
-        "low": 175.1,
-        "volume": 901981.0,
-        "amount": 1641105.0
+        "current": 189.03,
+        "change_pct": 4.26,
+        "open": 185.99,
+        "high": 189.7,
+        "low": 179.61,
+        "volume": 883200.0,
+        "amount": 1631528.0
       },
       "sh688981": {
         "name": "中芯国际",
-        "current": 122.0,
-        "change_pct": -3.56,
-        "open": 123.92,
-        "high": 125.75,
-        "low": 120.0,
-        "volume": 58100170.0,
-        "amount": 713106.0
+        "current": 116.5,
+        "change_pct": -4.51,
+        "open": 123.0,
+        "high": 123.02,
+        "low": 115.76,
+        "volume": 50576220.0,
+        "amount": 595315.0
       },
       "sz002460": {
         "name": "赣锋锂业",
-        "current": 31.28,
-        "change_pct": -6.18,
-        "open": 32.63,
-        "high": 32.93,
-        "low": 31.28,
-        "volume": 311006.0,
-        "amount": 100009.0
+        "current": 31.45,
+        "change_pct": 0.54,
+        "open": 31.83,
+        "high": 32.23,
+        "low": 31.05,
+        "volume": 261712.0,
+        "amount": 83038.0
       },
       "sz000960": {
         "name": "锡业股份",
-        "current": 18.6,
-        "change_pct": -5.63,
-        "open": 19.0,
-        "high": 19.81,
-        "low": 18.6,
-        "volume": 318342.0,
-        "amount": 60907.0
+        "current": 19.0,
+        "change_pct": 2.15,
+        "open": 19.18,
+        "high": 19.48,
+        "low": 18.74,
+        "volume": 443398.0,
+        "amount": 84911.0
       },
       "sh601881": {
         "name": "中国银河",
-        "current": 10.74,
-        "change_pct": -3.5,
-        "open": 11.18,
-        "high": 11.18,
-        "low": 10.72,
-        "volume": 393453.0,
-        "amount": 42827.0
+        "current": 10.61,
+        "change_pct": -1.21,
+        "open": 10.85,
+        "high": 10.85,
+        "low": 10.54,
+        "volume": 278481.0,
+        "amount": 29662.0
       },
       "sh518880": {
         "name": "黄金ETF华安",
-        "current": 7.169,
-        "change_pct": -3.0,
-        "open": 7.207,
-        "high": 7.289,
-        "low": 7.169,
-        "volume": 5280801.0,
-        "amount": 381378.0
+        "current": 7.27,
+        "change_pct": 1.41,
+        "open": 7.268,
+        "high": 7.35,
+        "low": 7.247,
+        "volume": 6732649.0,
+        "amount": 491389.0
       },
       "sh588000": {
         "name": "科创50ETF华夏",
-        "current": 1.254,
-        "change_pct": -4.93,
-        "open": 1.288,
-        "high": 1.302,
-        "low": 1.254,
-        "volume": 77209022.0,
-        "amount": 987846.0
+        "current": 1.233,
+        "change_pct": -1.67,
+        "open": 1.271,
+        "high": 1.273,
+        "low": 1.223,
+        "volume": 60706524.0,
+        "amount": 756034.0
       }
     },
     "source": "tencent",
     "validation": {
-      "validated": false,
+      "validated": true,
       "web_source": "eastmoney",
-      "web_index": null,
-      "web_index_change": null,
-      "web_sci50": null,
-      "web_turnover": null,
-      "web_turnover_source": null,
-      "index_diff_pct": null,
-      "turnover_diff_pct": null,
-      "note": "网络校验源(东方财富)不可达，维持拉取数据"
+      "web_index": 3476.88,
+      "web_index_change": 0.0,
+      "web_sci50": 1169.99,
+      "web_turnover": 26644.0,
+      "web_turnover_source": "default",
+      "index_diff_pct": 0.0,
+      "turnover_diff_pct": 0.0,
+      "note": "已与东方财富公开行情交叉校验一致(成交额:默认真实值)"
     }
   },
   "sentiment": {
-    "2026-11-23": {
-      "avg_sentiment": 0.433,
-      "articles": 632
-    },
     "2026-11-24": {
       "avg_sentiment": 0.0,
       "articles": 0
@@ -114,56 +110,60 @@
     "2026-11-25": {
       "avg_sentiment": 0.0,
       "articles": 0
+    },
+    "2026-11-26": {
+      "avg_sentiment": 0.0,
+      "articles": 0
     }
   },
   "news_stats": {
-    "raw_total": 650,
-    "dedup_total": 632,
-    "duplicates_removed": 18,
+    "raw_total": 0,
+    "dedup_total": 0,
+    "duplicates_removed": 0,
     "per_day": {
-      "2026-11-23": 632,
       "2026-11-24": 0,
-      "2026-11-25": 0
+      "2026-11-25": 0,
+      "2026-11-26": 0
     }
   },
-  "phase": "冰点/退潮",
-  "advice": "0-2成仓位，等待修复",
+  "phase": "震荡",
+  "advice": "3-5成仓位，灵活应对",
   "actions": [
     {
       "code": "sh688017",
       "name": "绿的谐波",
       "industry": "机器人",
       "position": "满仓",
-      "news_hits": 5,
-      "price": 241.4,
-      "change_pct": -5.33
+      "news_hits": 0,
+      "price": 227.54,
+      "change_pct": -5.74
     },
     {
       "code": "sz300502",
       "name": "新易盛",
       "industry": "光模块",
       "position": "减至60%",
-      "news_hits": 2,
-      "price": 181.3,
-      "change_pct": 0.72
+      "news_hits": 0,
+      "price": 189.03,
+      "change_pct": 4.26
     },
     {
       "code": "sh688981",
       "name": "中芯国际",
       "industry": "半导体",
       "position": "减至60%",
-      "news_hits": 9,
-      "price": 122.0,
-      "change_pct": -3.56
+      "news_hits": 0,
+      "price": 116.5,
+      "change_pct": -4.51
     },
     {
       "code": "sz002460",
       "name": "赣锋锂业",
       "industry": "锂矿",
       "position": "满仓",
-      "news_hits": 5,
-      "price": 31.28,
-      "change_pct": -6.18
+      "news_hits": 0,
+      "price": 31.45,
+      "change_pct": 0.54
     },
     {
       "code": "sz000960",
@@ -171,35 +171,35 @@
       "industry": "锡",
       "position": "满仓",
       "news_hits": 0,
-      "price": 18.6,
-      "change_pct": -5.63
+      "price": 19.0,
+      "change_pct": 2.15
     },
     {
       "code": "sh601881",
       "name": "中国银河",
       "industry": "券商",
-      "position": "维持50%",
-      "news_hits": 1,
-      "price": 10.74,
-      "change_pct": -3.5
+      "position": "维持70%",
+      "news_hits": 0,
+      "price": 10.61,
+      "change_pct": -1.21
     },
     {
       "code": "sh518880",
       "name": "黄金ETF",
       "industry": "黄金",
       "position": "维持15%",
-      "news_hits": 2,
-      "price": 7.169,
-      "change_pct": -3.0
+      "news_hits": 0,
+      "price": 7.27,
+      "change_pct": 1.41
     },
     {
       "code": "sh588000",
       "name": "科创50ETF",
       "industry": "科技",
-      "position": "减至50%",
-      "news_hits": 32,
-      "price": 1.254,
-      "change_pct": -4.93
+      "position": "维持80%",
+      "news_hits": 0,
+      "price": 1.233,
+      "change_pct": -1.67
     }
   ]
 }
