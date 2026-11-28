@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-27T19:20:16.131753",
+  "timestamp": "2026-11-28T08:40:14.083444",
   "market": {
     "index": 3606.49,
     "index_change": 0.0,
@@ -103,15 +103,15 @@
     }
   },
   "sentiment": {
-    "2026-11-25": {
-      "avg_sentiment": 0.0,
-      "articles": 0
-    },
     "2026-11-26": {
       "avg_sentiment": 0.0,
       "articles": 0
     },
     "2026-11-27": {
+      "avg_sentiment": 0.0,
+      "articles": 0
+    },
+    "2026-11-28": {
       "avg_sentiment": 0.0,
       "articles": 0
     }
@@ -121,9 +121,9 @@
     "dedup_total": 0,
     "duplicates_removed": 0,
     "per_day": {
-      "2026-11-25": 0,
       "2026-11-26": 0,
-      "2026-11-27": 0
+      "2026-11-27": 0,
+      "2026-11-28": 0
     }
   },
   "phase": "震荡",
